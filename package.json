@@ -1,0 +1,28 @@
+{
+  "name": "wovenly",
+  "version": "1.0.0",
+  "description": "this is training project for Oleksandr Grin",
+  "main": "index.js",
+  "dependencies": {
+    "nodejs": "^0.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GrinOleksandr/wovenly.git"
+  },
+  "keywords": [
+    "EJS",
+    "Node.JS",
+    "BEM"
+  ],
+  "author": "Oleksandr Grin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GrinOleksandr/wovenly/issues"
+  },
+  "homepage": "https://github.com/GrinOleksandr/wovenly#readme"
+}
