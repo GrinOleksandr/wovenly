@@ -1,6 +1,6 @@
-const express = require("express");
-
-const app = express();
+const express = require("express"),
+    app = express(),
+    config = require('./config');
 
 app.set("view engine", "ejs");
 
@@ -17,4 +17,7 @@ app.use("/", function(request, response){
 
     response.send("Главная страница");
 });
-app.listen(8000);
+
+
+app.listen(config.port,config.ip);
+console.log(`*****Server running at ${config.ip}:${config.port}`);
