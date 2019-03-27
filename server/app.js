@@ -1,7 +1,8 @@
 const express = require('express'),
     app = express(),
     config = require('./config'),
-    path = require('path');
+    path = require('path'),
+    db = require('./DB/db.json');
 
 
 // Serve static files
