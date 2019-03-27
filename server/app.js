@@ -1,7 +1,7 @@
-const express = require("express"),
+const express = require('express'),
     app = express(),
     config = require('./config'),
-    path = require("path");
+    path = require('path');
 
 
 // Serve static files
