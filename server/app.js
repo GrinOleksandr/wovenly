@@ -1,6 +1,7 @@
 const express = require("express"),
     app = express(),
-    config = require('./config');
+    config = require('./config'),
+    path = require('path');
 
 // Serve static files
 app.use(express.static(path.join(__dirname, '../public')));
