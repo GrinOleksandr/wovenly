@@ -12,7 +12,5 @@ app.get('/', (req, res) => {
 })
 
 app.listen(config.port, config.ip)
-console.log(path.join(process.env.PWD + '/public'))
-console.log(process.env.PWD)
-console.log(process.cwd())
+
 console.log(`*****Server running at localhost ${config.port}`)
