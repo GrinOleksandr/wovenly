@@ -11,5 +11,5 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname + './../public'))
 })
 
-app.listen(config.port, config.ip)
+app.listen(config.port)
 console.log(`*****Server running at localhost ${config.port}`)
