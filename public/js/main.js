@@ -1,1 +1,1 @@
-let asd = "";
+let asd = ''
