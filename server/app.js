@@ -5,10 +5,10 @@ const express = require('express'),
   db = require('./DB/db.json')
 
 // Serve static files
-app.use(express.static(path.join(__dirname, '../public')))
+app.use(express.static(path.join(__dirname, './../public')))
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname + '../public'))
+  res.sendFile(path.join(__dirname + './../public'))
 })
 
 app.listen(config.port, config.ip)
