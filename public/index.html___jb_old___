@@ -19,10 +19,10 @@
 <header>
 <nav>
   <div class = "navigation__logo">Wovenly</div>
-  <div class = "navigation__search button" ></div>
-  <div class = "navigation__chat button" ></div>
-  <div class = "navigation__cart button" ></div>
-  <div class = "navigation__burger button"></div>
+   <div class = "navigation__search--button" >0xe803</div>
+   <div class = "navigation__chat" ></div>
+   <div class = "navigation__cart"></div>
+   <div class = "navigation__burger"></div>
 
 </nav>
 
