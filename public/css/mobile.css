@@ -105,6 +105,12 @@ nav .navigation__logo {
   pointer-events: none;
 }
 
+.dropdown {
+  transition: opacity 1s;
+  opacity: 0.4;
+  visibility: hidden;
+}
+
 .more-styles__dropdown {
   list-style: none;
   border: 1px solid #e5e5e5;
@@ -116,10 +122,8 @@ nav .navigation__logo {
   background: white;
   width: 162px;
   text-align: center;
-  transition: opacity 1s;
-  opacity: 0.4;
-  visibility: hidden;
 }
+
 
 .more-styles__style--item {
   border-bottom: 1px solid #e5e5e5;
