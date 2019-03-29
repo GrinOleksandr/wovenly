@@ -6,7 +6,7 @@ moreStylesBtn.addEventListener('click', function (ev) {
   console.log(moreStylesMenu.style.display)
   moreStylesMenu.classList.toggle('visible')
 })
-
+// TODO test pull before push 
 let navMenu = document.getElementById('navMenu')
 let burgerBtn = document.getElementById('burger')
 burgerBtn.addEventListener('click', function () {
