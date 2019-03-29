@@ -1,3 +1,11 @@
+html {
+  font-size:10px;
+}
+
+body{
+  position:relative;
+}
+
 header {
   width:100%;
   display:grid;
@@ -7,6 +15,7 @@ nav {
   display:grid;
   border-bottom:1px solid #e5e5e5;
   grid-template-columns: 3.5fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 49px;
   height: 49px;
 
 }
@@ -23,8 +32,21 @@ nav .navigation__logo {
 
 nav .button {
   font-family: "icon-font1";
+  font-size: 21px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-left: 1px solid #e5e5e5;
+}
+
+.nav-menu {
+  list-style:none;
+  padding-left:0;
+  margin:0;
+}
+
+.nav-menu__item--link  {
+  text-decoration: none;
+  color:black;
 }
