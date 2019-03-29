@@ -1,6 +1,5 @@
 <!DOCTYPE HTML>
 <html lang = en>
-
 <head>
     <title>Wovenly</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -19,19 +18,29 @@
 <header>
 <nav>
   <div class = "navigation__logo">Wovenly</div>
-  <div class = "navigation__search button" ></div>
-  <div class = "navigation__chat button" ></div>
-  <div class = "navigation__cart button" ></div>
-  <div class = "navigation__burger button" id = 'burger'></div>
+  <div class = "navigation__search--button" ><a class = "navigation__button" href = "#"></a></div>
+  <div class = "navigation__chat " ><a class = "navigation__button" href = "#"></a></div>
+  <div class = "navigation__cart " ><a class = "navigation__button" href = "#"></a></div>
+  <div class = "navigation__burger " id = 'burger'><a class = "navigation__button" href = "#"></a></div>
   <ul class = "nav-menu" id="navMenu">
     <li class = "nav-menu__item"><a class = "nav-menu__item--link" href = "#">Shag</a></li>
     <li class = "nav-menu__item"><a class = "nav-menu__item--link" href = "#">Contemporary</a></li>
-    <li class = "nav-menu__item"><a class = "nav-menu__item--link" href = "#">More Styles</a></li>
+    <li class = "nav-menu__item more-styles">
+      <a class = "nav-menu__item--link more-styles__link" id = "moreStylesBtn" href = "#">More Styles</a>
+      <ul class = "more-styles__dropdown" id = 'moreStylesMenu'>
+        <li class="more-styles__style--item"><a class="more-styles__style--link" href = "#">Test Link 1</a></li>
+        <li class="more-styles__style--item"><a class="more-styles__style--link" href = "#">Test Link 2</a></li>
+        <li class="more-styles__style--item"><a class="more-styles__style--link" href = "#">Test Link 3</a></li>
+        <li class="more-styles__style--item"><a class="more-styles__style--link" href = "#">Test Link 4</a></li>
+        <li class="more-styles__style--item"><a class="more-styles__style--link" href = "#">Test Link 5</a></li>
+      </ul>
+    </li>
     <li class = "nav-menu__item"><a class = "nav-menu__item--link" href = "#">Sale</a></li>
     <li class = "nav-menu__item"><a class = "nav-menu__item--link" href = "#">Shop All Rugs</a></li>
   </ul>
 </nav>
 
+<script src= "/js/navigation.js"></script>
 
 
 
