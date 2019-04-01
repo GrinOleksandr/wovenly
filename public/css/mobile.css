@@ -36,6 +36,9 @@ nav .navigation__logo {
   top: 50px;
   left: 0px;
   width: 350px;
+  transition: opacity 0.5s;
+  opacity: 0.4;
+  visibility: hidden;
 }
 
 .search__field {
@@ -71,6 +74,10 @@ nav .navigation__logo {
   grid-column-start: 3;
   grid-column-end: 6;
   grid-row-start: 2;
+  transition: opacity 0.5s;
+  opacity: 0.4;
+  visibility: hidden;
+  background: white;
 }
 
 .navigation__button {
@@ -125,11 +132,7 @@ nav .navigation__logo {
   pointer-events: none;
 }
 
-.dropdown {
-  transition: opacity 1s;
-  opacity: 0.4;
-  visibility: hidden;
-}
+
 
 .more-styles__dropdown {
   list-style: none;
@@ -142,6 +145,9 @@ nav .navigation__logo {
   background: white;
   width: 162px;
   text-align: center;
+  transition: opacity 0.5s;
+  opacity: 0.4;
+  visibility: hidden;
 }
 
 .more-styles__style--item {
@@ -160,7 +166,7 @@ nav .navigation__logo {
   position: relative;
 }
 
-.visible {
+.dropdown__visible {
   visibility: visible;
   opacity: 1;
 }
