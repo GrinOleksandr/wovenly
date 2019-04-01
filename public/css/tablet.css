@@ -1,4 +1,8 @@
 @media (min-width: 768px) {
+html {
+      font-size: .91vw;
+  }
+
   nav {
     grid-template-areas: "logo search__wrapper navmenu chat cart ";
     border-bottom: .1rem solid #e5e5e5;

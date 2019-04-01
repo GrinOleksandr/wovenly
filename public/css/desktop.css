@@ -1,4 +1,9 @@
 @media (min-width: 1440px) {
+
+  html {
+    font-size: .7vw;
+  }
+
   nav {
     grid-template-columns: 16rem 61.8rem 52.9rem 6.5rem 6.5rem;
   }
