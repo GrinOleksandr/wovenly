@@ -1,26 +1,21 @@
-// document.body.addEventListener('click', (ev) => {
-//   if (document.querySelector('.dropdown__visible')) {
-//     console.log(ev)
-//     document.querySelector('.dropdown__visible').classList.remove('dropdown__visible')
-//   }
-// })
-
 let moreStylesMenu = document.getElementById('moreStylesMenu')
 let moreStylesBtn = document.getElementById('moreStylesBtn')
-moreStylesBtn.addEventListener('click', function () {
+moreStylesBtn.addEventListener('click', moreStylesHandler)
+moreStylesBtn.nextSibling.addEventListener('click', moreStylesHandler)
+function moreStylesHandler () {
   moreStylesMenu.classList.toggle('dropdown__visible')
   if (searchFieldWrapper.classList.contains('dropdown__visible')) {
-    searchFieldWrapper.classList.remove('dropdown__visible')
-  }
-})
+    searchFieldWrapper.classList.remove('dropdown__visible');
+}
+}
 
 let navMenu = document.getElementById('navMenu')
 let burgerBtn = document.getElementById('burger')
 burgerBtn.addEventListener('click', function () {
   navMenu.classList.toggle('dropdown__visible')
   if (searchFieldWrapper.classList.contains('dropdown__visible')) {
-    searchFieldWrapper.classList.remove('dropdown__visible')
-  }
+    searchFieldWrapper.classList.remove('dropdown__visible');
+}
 })
 
 let searchFieldWrapper = document.getElementById('searchFieldWrapper')
@@ -29,10 +24,23 @@ searchBtn.addEventListener('click', function (ev) {
   ev.stopPropagation()
   searchFieldWrapper.classList.toggle('dropdown__visible')
   if (navMenu.classList.contains('dropdown__visible')) {
-    navMenu.classList.remove('dropdown__visible')
-  }
+    navMenu.classList.remove('dropdown__visible');
+}
 
-  if (moreStylesMenu.classList.contains('dropdown__visible')) {
-    moreStylesMenu.classList.remove('dropdown__visible')
-  }
+if (moreStylesMenu.classList.contains('dropdown__visible')) {
+  moreStylesMenu.classList.remove('dropdown__visible');
+}
+})
+
+let cartCount = document.getElementById('cartCount')
+let cart = document.getElementById('cart')
+cart.addEventListener('click', () => {
+  console.log(cartCount.style.display)
+  if (!cartCount.classList.contains('visible')) {
+    cartCount.classList.add('visible')
+    console.log(cartCount.classList.add('visible'))
+  // cartCount.innerText = '0';
+}
+
+cartCount.innerText++;
 })

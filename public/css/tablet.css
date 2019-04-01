@@ -2,87 +2,84 @@
   nav {
     grid-template-areas: "logo search__wrapper navmenu chat cart ";
     border-bottom: 1px solid #e5e5e5;
-    160px 280px 4fr 0.5fr 0.5fr;
+    grid-template-columns: 160px 280px 529px 65px 65px;
     grid-template-rows: 63px;
-  height: 63px;
+    height: 63px;
   }
 
-  .navigation__logo{
-    padding-left: 16px;
-
+  .navigation__logo {
+    padding-left: 17px;
+    font-size: 31px;
   }
-.search__button {
-  display: none;
-}
 
-.navigation__burger {
-  display:none;
-}
+  .search__button {
+    display: none;
+  }
 
-.search__wrapper {
-  visibility:visible;
-  opacity:1;
-  grid-column-start: auto;
-grid-column-end: auto;
- grid-row-start: auto;
- display: flex;
+  .navigation__burger {
+    display: none;
+  }
+
+  .search__wrapper {
+    visibility: visible;
+    opacity: 1;
+    grid-column-start: auto;
+    grid-column-end: auto;
+    grid-row-start: auto;
+    display: flex;
     align-items: center;
     padding-left: 19px;
-}
+    border: none;
+    border-left: 1px solid  #e5e5e5;
+    height: 100%;
+  }
 
-.search__wrapper::after {
-
+  .search__wrapper::after {
     font-size: 30px;
-
     top: 16px;
     left: 20px;
   }
 
+  .search__field {
+    border: none;
+    height: 100%;
+  }
 
-.search__field{
-border:none;
-}
+  .nav-menu {
+    visibility: visible;
+    opacity: 1;
+    grid-column-start: auto;
+    grid-column-end: auto;
+    grid-row-start: auto;
+    display: flex;
+    font-size: 10px;
+    border: none;
+    border-left: 1px solid #e5e5e5;
+  }
 
-.nav-menu {
-  visibility:visible;
-  opacity:1;
-  grid-column-start: auto;
-  grid-column-end:auto;
-  grid-row-start:auto;
-  display:flex;
-  font-size:10px;
-  border-bottom:none;
-}
+  .nav-menu__item {
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+  }
 
-.nav-menu__item {
-  border-bottom:none;
-}
+  .nav-menu__item--link {
+    font-size: 15px;
+    padding: 4px 4px 4px 26px;
+  }
 
+  .more-styles::after {
+    font-size: 16px;
+    top: 23px;
+    left: 114px;
+  }
 
-.nav-menu__item--link {
-  font-size:10px;
-}
+  .more-styles__dropdown {
+    left: -10px;
+    top: 62px;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .navigation__button {
+    font-size: 25px;
+  }
 }

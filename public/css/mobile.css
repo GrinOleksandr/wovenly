@@ -8,17 +8,15 @@ header {
 }
 
 nav {
-
   display: grid;
   grid-template-areas: "logo search-button chat cart burger navmenu search__wrapper";
-
   border-bottom: 1px solid #e5e5e5;
   grid-template-columns: 175px 1fr 1fr 1fr 1fr;
   grid-template-rows: 49px;
   height: 49px;
 }
 
-nav .navigation__logo {
+.navigation__logo {
   grid-area: logo;
   font-family: "Graphik-Web", sans-serif;
   font-size: 28px;
@@ -31,6 +29,7 @@ nav .navigation__logo {
 .search__button {
   grid-area: search-button;
   position: relative;
+  border-left: 1px solid #e5e5e5;
 }
 
 .search__wrapper {
@@ -38,10 +37,12 @@ nav .navigation__logo {
   grid-column-start: 1;
   grid-column-end: 8;
   grid-row-start: 2;
-position:relative;
+  position: relative;
   transition: opacity 0.5s;
   opacity: 0.4;
   visibility: hidden;
+  border: 1px solid #e5e5e5;
+  height: 49px;
 }
 
 .search__field {
@@ -49,6 +50,7 @@ position:relative;
   width: 100%;
   height: 49px;
   padding-left: 44px;
+  border: none;
 }
 
 .search__wrapper::after {
@@ -62,14 +64,32 @@ position:relative;
 
 .navigation__chat {
   grid-area: chat;
+  border-left: 1px solid #e5e5e5;
 }
 
 .navigation__cart {
   grid-area: cart;
+  position: relative;
+  border-left: 1px solid #e5e5e5;
+}
+
+.cart-count {
+  width: 20px;
+  height: 20px;
+  background: #066551;
+  position: absolute;
+  top: 10px;
+  left: 34px;
+  border-radius: 20px;
+  color: white;
+  display: none;
+  align-items: center;
+  justify-content: center;
 }
 
 .navigation__burger {
   grid-area: burger;
+  border-left: 1px solid #e5e5e5;
 }
 
 .nav-menu {
@@ -90,10 +110,10 @@ position:relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-left: 1px solid #e5e5e5;
   color: black;
   width: 100%;
   height: 100%;
+  padding: 1px;
 }
 
 .navigation__button:link {
@@ -117,7 +137,7 @@ position:relative;
   color: black;
   font-size: 19px;
   display: block;
-  padding: 4px;
+  padding: 13px;
 }
 
 .more-styles__link {
@@ -129,19 +149,16 @@ position:relative;
   content: '';
   font-size: 18px;
   position: absolute;
-  top: 7px;
-  left: 119px;
+  top: 13px;
+  left: 124px;
   cursor: pointer;
   pointer-events: none;
 }
-
-
 
 .more-styles__dropdown {
   list-style: none;
   border: 1px solid #e5e5e5;
   margin: 0;
-  padding-left: 0;
   position: absolute;
   left: -164px;
   top: -1px;
@@ -151,6 +168,15 @@ position:relative;
   transition: opacity 0.5s;
   opacity: 0.4;
   visibility: hidden;
+  padding-left: 0;
+}
+
+.nav-menu a {
+  cursor: pointer;
+}
+
+.more-styles__dropdown:last-child {
+  border-bottom: none;
 }
 
 .more-styles__style--item {
@@ -162,7 +188,7 @@ position:relative;
   color: black;
   font-size: 19px;
   display: block;
-  padding: 4px;
+  padding: 13px 0;
 }
 
 .more-styles {
@@ -172,4 +198,8 @@ position:relative;
 .dropdown__visible {
   visibility: visible;
   opacity: 1;
+}
+
+.visible {
+  display: flex;
 }
