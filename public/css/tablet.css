@@ -2,9 +2,14 @@
   nav {
     grid-template-areas: "logo search__wrapper navmenu chat cart ";
     border-bottom: 1px solid #e5e5e5;
-    grid-template-columns: 2fr 3fr 100px 4fr 0.5fr 0.5fr;
-    grid-template-rows: 49px;
-    height: 49px;
+    160px 280px 4fr 0.5fr 0.5fr;
+    grid-template-rows: 63px;
+  height: 63px;
+  }
+
+  .navigation__logo{
+    padding-left: 16px;
+
   }
 .search__button {
   display: none;
@@ -20,10 +25,22 @@
   grid-column-start: auto;
 grid-column-end: auto;
  grid-row-start: auto;
+ display: flex;
+    align-items: center;
+    padding-left: 19px;
 }
 
+.search__wrapper::after {
+
+    font-size: 30px;
+
+    top: 16px;
+    left: 20px;
+  }
+
+
 .search__field{
-  /* min-width:300px; */
+border:none;
 }
 
 .nav-menu {
@@ -34,7 +51,36 @@ grid-column-end: auto;
   grid-row-start:auto;
   display:flex;
   font-size:10px;
+  border-bottom:none;
 }
+
+.nav-menu__item {
+  border-bottom:none;
+}
+
+
+.nav-menu__item--link {
+  font-size:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
