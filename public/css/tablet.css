@@ -79,6 +79,10 @@
     top: 62px;
   }
 
+  .more-styles__style--link {
+    padding: 5px 0;
+  }
+
   .navigation__button {
     font-size: 25px;
   }

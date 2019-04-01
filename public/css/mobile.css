@@ -8,6 +8,7 @@ header {
 }
 
 nav {
+  font-family: "Graphik-Web", sans-serif;
   display: grid;
   grid-template-areas: "logo search-button chat cart burger navmenu search__wrapper";
   border-bottom: 1px solid #e5e5e5;
@@ -74,17 +75,20 @@ nav {
 }
 
 .cart-count {
-  width: 20px;
-  height: 20px;
+  width: 29px;
+  height: 29px;
   background: #066551;
   position: absolute;
-  top: 10px;
-  left: 34px;
+  top: 4px;
+  left: 32px;
   border-radius: 20px;
   color: white;
   display: none;
   align-items: center;
+  font-size: 14px;
   justify-content: center;
+  font-weight: 300;
+  cursor: pointer;
 }
 
 .navigation__burger {

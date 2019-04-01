@@ -34,13 +34,15 @@ if (moreStylesMenu.classList.contains('dropdown__visible')) {
 
 let cartCount = document.getElementById('cartCount')
 let cart = document.getElementById('cart')
-cart.addEventListener('click', () => {
+cart.addEventListener('click', cartCounterIncrement)
+cartCount.addEventListener('click', cartCounterIncrement)
+
+function cartCounterIncrement () {
   console.log(cartCount.style.display)
   if (!cartCount.classList.contains('visible')) {
     cartCount.classList.add('visible')
-    console.log(cartCount.classList.add('visible'))
-  // cartCount.innerText = '0';
+    console.log(cartCount.classList.add('visible'));
 }
 
 cartCount.innerText++;
-})
+}
