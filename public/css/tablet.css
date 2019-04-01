@@ -65,7 +65,7 @@
 
   .nav-menu__item--link {
     font-size: 15px;
-    padding: 4px 4px 4px 26px;
+    padding: 4px 0px 4px 28px;
   }
 
   .more-styles::after {
@@ -77,6 +77,10 @@
   .more-styles__dropdown {
     left: -10px;
     top: 62px;
+  }
+
+  .more-styles__link {
+    padding-right: 11px;
   }
 
   .more-styles__style--link {
