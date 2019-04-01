@@ -8,8 +8,10 @@ header {
 }
 
 nav {
+
   display: grid;
-  grid-template-areas: "logo search-button chat cart burger";
+  grid-template-areas: "logo search-button chat cart burger navmenu search__wrapper";
+
   border-bottom: 1px solid #e5e5e5;
   grid-template-columns: 175px 1fr 1fr 1fr 1fr;
   grid-template-rows: 49px;
@@ -32,10 +34,11 @@ nav .navigation__logo {
 }
 
 .search__wrapper {
-  position: absolute;
-  top: 50px;
-  left: 0px;
-  width: 350px;
+  grid-area: search__wrapper;
+  grid-column-start: 1;
+  grid-column-end: 8;
+  grid-row-start: 2;
+position:relative;
   transition: opacity 0.5s;
   opacity: 0.4;
   visibility: hidden;
@@ -43,7 +46,7 @@ nav .navigation__logo {
 
 .search__field {
   font-size: 16px;
-  width: 326px;
+  width: 100%;
   height: 49px;
   padding-left: 44px;
 }
@@ -127,7 +130,7 @@ nav .navigation__logo {
   font-size: 18px;
   position: absolute;
   top: 7px;
-  left: 103px;
+  left: 119px;
   cursor: pointer;
   pointer-events: none;
 }

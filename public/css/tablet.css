@@ -1,0 +1,42 @@
+@media (min-width: 768px) {
+  nav {
+    grid-template-areas: "logo search__wrapper navmenu chat cart ";
+    border-bottom: 1px solid #e5e5e5;
+    grid-template-columns: 2fr 3fr 100px 4fr 0.5fr 0.5fr;
+    grid-template-rows: 49px;
+    height: 49px;
+  }
+.search__button {
+  display: none;
+}
+
+.navigation__burger {
+  display:none;
+}
+
+.search__wrapper {
+  visibility:visible;
+  opacity:1;
+  grid-column-start: auto;
+grid-column-end: auto;
+ grid-row-start: auto;
+}
+
+.search__field{
+  /* min-width:300px; */
+}
+
+.nav-menu {
+  visibility:visible;
+  opacity:1;
+  grid-column-start: auto;
+  grid-column-end:auto;
+  grid-row-start:auto;
+  display:flex;
+  font-size:10px;
+}
+
+
+
+
+}

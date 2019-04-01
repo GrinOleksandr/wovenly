@@ -1,3 +1,10 @@
+// document.body.addEventListener('click', (ev) => {
+//   if (document.querySelector('.dropdown__visible')) {
+//     console.log(ev)
+//     document.querySelector('.dropdown__visible').classList.remove('dropdown__visible')
+//   }
+// })
+
 let moreStylesMenu = document.getElementById('moreStylesMenu')
 let moreStylesBtn = document.getElementById('moreStylesBtn')
 moreStylesBtn.addEventListener('click', function () {
