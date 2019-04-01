@@ -11,26 +11,32 @@ nav {
   font-family: "Graphik-Web", sans-serif;
   display: grid;
   grid-template-areas: "logo search-button chat cart burger navmenu search__wrapper";
-  border-bottom: 1px solid #e5e5e5;
-  grid-template-columns: 175px 1fr 1fr 1fr 1fr;
-  grid-template-rows: 49px;
-  height: 49px;
+  border-bottom: 0.1rem solid #e5e5e5;
+  grid-template-columns: 17.55rem 1fr 1fr 1fr 1fr;
+  grid-template-rows: 4.9rem;
+  height: 4.9rem;
 }
 
 .navigation__logo {
   grid-area: logo;
   font-family: "Graphik-Web", sans-serif;
-  font-size: 28px;
+  font-size: 2.8rem;
   display: flex;
   align-items: center;
-  padding-left: 11px;
+  padding-left: 1.1rem;
   font-weight: 700;
+}
+
+.navigation__logo a:link, .navigation__logo a:visited {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
 }
 
 .search__button {
   grid-area: search-button;
   position: relative;
-  border-left: 1px solid #e5e5e5;
+  border-left: .1rem solid #e5e5e5;
 }
 
 .search__wrapper {
@@ -42,50 +48,50 @@ nav {
   transition: opacity 0.5s;
   opacity: 0.4;
   visibility: hidden;
-  border: 1px solid #e5e5e5;
-  height: 49px;
+  border: .1rem solid #e5e5e5;
+  height: 4.9rem;
 }
 
 .search__field {
-  font-size: 16px;
+  font-size: 1.6rem;
   width: 100%;
-  height: 49px;
-  padding-left: 44px;
+  height: 4.9rem;
+  padding-left: 4.4rem;
   border: none;
 }
 
 .search__wrapper::after {
   font-family: "icon-font1", sans-serif;
   content: "";
-  font-size: 21px;
+  font-size: 2.1rem;
   position: absolute;
-  top: 12px;
-  left: 19px;
+  top: 1.2rem;
+  left: 1.9rem;
 }
 
 .navigation__chat {
   grid-area: chat;
-  border-left: 1px solid #e5e5e5;
+  border-left: .1rem solid #e5e5e5;
 }
 
 .navigation__cart {
   grid-area: cart;
   position: relative;
-  border-left: 1px solid #e5e5e5;
+  border-left: .1rem solid #e5e5e5;
 }
 
 .cart-count {
-  width: 29px;
-  height: 29px;
+  width: 2.3rem;
+  height: 2.3rem;
   background: #066551;
   position: absolute;
-  top: 4px;
-  left: 32px;
-  border-radius: 20px;
+  top: 0.6rem;
+  left: 4.8rem;
+  border-radius: 2rem;
   color: white;
   display: none;
   align-items: center;
-  font-size: 14px;
+  font-size: 1.1rem;
   justify-content: center;
   font-weight: 300;
   cursor: pointer;
@@ -99,12 +105,12 @@ nav {
 
 .navigation__burger {
   grid-area: burger;
-  border-left: 1px solid #e5e5e5;
+  border-left: .1rem solid #e5e5e5;
 }
 
 .nav-menu {
   grid-area: navmenu;
-  grid-column-start: 3;
+  grid-column-start: 2;
   grid-column-end: 6;
   grid-row-start: 2;
   transition: opacity 0.5s;
@@ -115,7 +121,7 @@ nav {
 
 .navigation__button {
   font-family: "icon-font1";
-  font-size: 21px;
+  font-size: 2.1rem;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -123,7 +129,7 @@ nav {
   color: black;
   width: 100%;
   height: 100%;
-  padding: 1px;
+  padding: .1rem;
 }
 
 .navigation__button:link {
@@ -133,21 +139,21 @@ nav {
 
 .nav-menu {
   list-style: none;
-  border: 1px solid #e5e5e5;
+  border: .1rem solid #e5e5e5;
   margin: 0;
   padding-left: 0;
 }
 
 .nav-menu__item {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: .1rem solid #e5e5e5;
 }
 
 .nav-menu__item--link {
   text-decoration: none;
   color: black;
-  font-size: 19px;
+  font-size: 1.9rem;
   display: block;
-  padding: 13px;
+  padding: 1.3rem;
 }
 
 .more-styles__link {
@@ -157,23 +163,23 @@ nav {
 .more-styles::after {
   font-family: "icon-font1";
   content: '';
-  font-size: 18px;
+  font-size: 1.8rem;
   position: absolute;
-  top: 13px;
-  left: 124px;
+  top: 1.3rem;
+  left: 12.4rem;
   cursor: pointer;
   pointer-events: none;
 }
 
 .more-styles__dropdown {
   list-style: none;
-  border: 1px solid #e5e5e5;
+  border: .1rem solid #e5e5e5;
   margin: 0;
   position: absolute;
-  left: -164px;
-  top: -1px;
+  left: -16.4rem;
+  top: -.1rem;
   background: white;
-  width: 162px;
+  width: 16.2rem;
   text-align: center;
   transition: opacity 0.5s;
   opacity: 0.4;
@@ -190,15 +196,15 @@ nav {
 }
 
 .more-styles__style--item {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: .1rem solid #e5e5e5;
 }
 
 .more-styles__style--link {
   text-decoration: none;
   color: black;
-  font-size: 19px;
+  font-size: 1.9rem;
   display: block;
-  padding: 13px 0;
+  padding: 1.3rem 0;
 }
 
 .more-styles {

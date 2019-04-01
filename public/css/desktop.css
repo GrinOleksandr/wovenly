@@ -1,9 +1,9 @@
 @media (min-width: 1440px) {
   nav {
-    grid-template-columns: 160px 618px 529px 65px 65px;
+    grid-template-columns: 16rem 61.8rem 52.9rem 6.5rem 6.5rem;
   }
 
   nav-menu__item--link {
-    padding: 4px 0px 1px 29px;
+    padding: .4rem 0 .1rem 2.9rem;
   }
 }

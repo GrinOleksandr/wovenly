@@ -1,15 +1,15 @@
 @media (min-width: 768px) {
   nav {
     grid-template-areas: "logo search__wrapper navmenu chat cart ";
-    border-bottom: 1px solid #e5e5e5;
-    grid-template-columns: 160px 280px 529px 65px 65px;
-    grid-template-rows: 63px;
-    height: 63px;
+    border-bottom: .1rem solid #e5e5e5;
+    grid-template-columns: 16rem 28rem 52.9rem 6.5rem 6.5rem;
+    grid-template-rows: 6.3rem;
+    height: 6.3rem;
   }
 
   .navigation__logo {
-    padding-left: 17px;
-    font-size: 31px;
+    padding-left: 1.7rem;
+    font-size: 3.1rem;
   }
 
   .search__button {
@@ -28,16 +28,16 @@
     grid-row-start: auto;
     display: flex;
     align-items: center;
-    padding-left: 19px;
+    padding-left: 1.9rem;
     border: none;
-    border-left: 1px solid  #e5e5e5;
+    border-left: .1rem solid  #e5e5e5;
     height: 100%;
   }
 
   .search__wrapper::after {
-    font-size: 30px;
-    top: 16px;
-    left: 20px;
+    font-size: 3rem;
+    top: 1.6rem;
+    left: 2rem;
   }
 
   .search__field {
@@ -52,9 +52,9 @@
     grid-column-end: auto;
     grid-row-start: auto;
     display: flex;
-    font-size: 10px;
+    font-size: 1rem;
     border: none;
-    border-left: 1px solid #e5e5e5;
+    border-left: .1rem solid #e5e5e5;
   }
 
   .nav-menu__item {
@@ -64,30 +64,30 @@
   }
 
   .nav-menu__item--link {
-    font-size: 15px;
-    padding: 4px 0px 4px 28px;
+    font-size: 1.5rem;
+    padding: .4rem 0 .4rem 2.8rem;
   }
 
   .more-styles::after {
-    font-size: 16px;
-    top: 23px;
-    left: 114px;
+    font-size: 1.6rem;
+    top: 2.3rem;
+    left: 11.4rem;
   }
 
   .more-styles__dropdown {
-    left: -10px;
-    top: 62px;
+    left: -1rem;
+    top: 6.2rem;
   }
 
   .more-styles__link {
-    padding-right: 11px;
+    padding-right: 1.1rem;
   }
 
   .more-styles__style--link {
-    padding: 5px 0;
+    padding: .5rem 0;
   }
 
   .navigation__button {
-    font-size: 25px;
+    font-size: 2.5rem;
   }
 }
