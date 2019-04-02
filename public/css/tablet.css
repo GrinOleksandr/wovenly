@@ -9,8 +9,11 @@
   }
 
   .navigation__logo {
-    padding-left: 1.7rem;
+    padding-top: 1.4rem;
+    padding-left: .7rem;
     font-size: 3.1rem;
+    order: 1;
+    width: 14%;
   }
 
   .search__button {
@@ -22,6 +25,7 @@
   }
 
   .search__wrapper {
+    order: 2;
     visibility: visible;
     opacity: 1;
     display: flex;
@@ -33,7 +37,7 @@
     position: relative;
     top: 0;
     left: 0;
-    width: auto;
+    width: 23.8%;
   }
 
   .search__wrapper::after {
@@ -48,6 +52,7 @@
   }
 
   .nav-menu {
+    order: 3;
     visibility: visible;
     opacity: 1;
     display: flex;
@@ -60,6 +65,7 @@
     left: 0;
     flex-direction: row;
     height: 100%;
+    width: 48%;
   }
 
   .nav-menu__item {
@@ -94,5 +100,20 @@
 
   .navigation__button {
     font-size: 2.5rem;
+  }
+
+  .navigation__chat {
+    order: 4;
+    width: 5.8%;
+  }
+
+  .navigation__cart {
+    order: 5;
+    width: 5.8%;
+  }
+
+  .cart-count {
+    top: 14%;
+    left: 50%;
   }
 }
