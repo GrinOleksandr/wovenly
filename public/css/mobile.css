@@ -26,7 +26,7 @@ nav div {
   margin: 0;
   display: flex;
   justify-content: center;
-  padding-top: 7px;
+  padding-top: .7rem;
 }
 
 .navigation__logo a:link, .navigation__logo a:visited {
@@ -47,9 +47,11 @@ nav div {
   display: none;
   border: .1rem solid #e5e5e5;
   height: 4.9rem;
-  width: 304%;
+  width: 305%;
   position: absolute;
-  left: -1px;
+  left: 33.4%;
+  top: 99%;
+  box-sizing: content-box;
 }
 
 .search__field {
@@ -65,7 +67,7 @@ nav div {
   content: "";
   font-size: 2.1rem;
   position: absolute;
-  top: 1.2rem;
+  top: 1.4rem;
   left: 1.9rem;
 }
 
@@ -83,8 +85,8 @@ nav div {
   height: 2.3rem;
   background: #066551;
   position: absolute;
-  top: 0.6rem;
-  left: 4.8rem;
+  top: 0.3rem;
+  left: 4.1rem;
   border-radius: 2rem;
   color: white;
   display: none;
@@ -111,6 +113,15 @@ nav div {
   visibility: hidden;
   display: none;
   background: white;
+  flex-direction: column;
+  position: absolute;
+  width: 40%;
+  top: 98%;
+  left: 60%;
+}
+
+.nav-menu:last-child {
+  border-bottom: none;
 }
 
 .navigation__button {
@@ -168,9 +179,11 @@ nav div {
   list-style: none;
   border: .1rem solid #e5e5e5;
   margin: 0;
+  flex-direction: column;
   position: absolute;
-  left: -16.4rem;
+  width: 40%;
   top: -.1rem;
+  left: -82%;
   background: white;
   width: 16.2rem;
   text-align: center;
