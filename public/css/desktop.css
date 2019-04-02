@@ -5,7 +5,8 @@
   }
 
   nav {
-    grid-template-columns: 16rem 61.8rem 52.9rem 6.5rem 6.5rem;
+    /* grid-template-columns: 16rem 61.8rem 52.9rem 6.5rem 6.5rem; */
+    ;
   }
 
   nav-menu__item--link {

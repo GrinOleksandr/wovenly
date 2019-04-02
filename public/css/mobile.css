@@ -4,27 +4,29 @@ body {
 
 header {
   width: 100%;
-  display: grid;
 }
 
 nav {
   font-family: "Graphik-Web", sans-serif;
-  display: grid;
-  grid-template-areas: "logo search-button chat cart burger navmenu search__wrapper";
   border-bottom: 0.1rem solid #e5e5e5;
-  grid-template-columns: 17.55rem 1fr 1fr 1fr 1fr;
-  grid-template-rows: 4.9rem;
   height: 4.9rem;
 }
 
+nav div {
+  box-sizing: border-box;
+  height: 100%;
+}
+
 .navigation__logo {
-  grid-area: logo;
   font-family: "Graphik-Web", sans-serif;
   font-size: 2.8rem;
   display: flex;
   align-items: center;
-  padding-left: 1.1rem;
   font-weight: 700;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  padding-top: 7px;
 }
 
 .navigation__logo a:link, .navigation__logo a:visited {
@@ -34,22 +36,20 @@ nav {
 }
 
 .search__button {
-  grid-area: search-button;
   position: relative;
   border-left: .1rem solid #e5e5e5;
 }
 
 .search__wrapper {
-  grid-area: search__wrapper;
-  grid-column-start: 1;
-  grid-column-end: 8;
-  grid-row-start: 2;
-  position: relative;
   transition: opacity 0.5s;
   opacity: 0.4;
   visibility: hidden;
+  display: none;
   border: .1rem solid #e5e5e5;
   height: 4.9rem;
+  width: 304%;
+  position: absolute;
+  left: -1px;
 }
 
 .search__field {
@@ -70,12 +70,10 @@ nav {
 }
 
 .navigation__chat {
-  grid-area: chat;
   border-left: .1rem solid #e5e5e5;
 }
 
 .navigation__cart {
-  grid-area: cart;
   position: relative;
   border-left: .1rem solid #e5e5e5;
 }
@@ -104,18 +102,14 @@ nav {
 }
 
 .navigation__burger {
-  grid-area: burger;
   border-left: .1rem solid #e5e5e5;
 }
 
 .nav-menu {
-  grid-area: navmenu;
-  grid-column-start: 2;
-  grid-column-end: 6;
-  grid-row-start: 2;
   transition: opacity 0.5s;
   opacity: 0.4;
   visibility: hidden;
+  display: none;
   background: white;
 }
 
@@ -129,7 +123,6 @@ nav {
   color: black;
   width: 100%;
   height: 100%;
-  padding: .1rem;
 }
 
 .navigation__button:link {
@@ -212,6 +205,7 @@ nav {
 }
 
 .dropdown__visible {
+  display: flex;
   visibility: visible;
   opacity: 1;
 }
