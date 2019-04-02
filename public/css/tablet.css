@@ -1,13 +1,10 @@
 @media (min-width: 768px) {
-html {
-      font-size: .91vw;
+  html {
+    font-size: .91vw;
   }
 
   nav {
-    /* grid-template-areas: "logo search__wrapper navmenu chat cart "; */
     border-bottom: .1rem solid #e5e5e5;
-    /* grid-template-columns: 16rem 28rem 52.9rem 6.5rem 6.5rem;
-    grid-template-rows: 6.3rem; */
     height: 6.3rem;
   }
 
@@ -27,15 +24,16 @@ html {
   .search__wrapper {
     visibility: visible;
     opacity: 1;
-    /* grid-column-start: auto;
-    grid-column-end: auto;
-    grid-row-start: auto; */
     display: flex;
     align-items: center;
     padding-left: 1.9rem;
     border: none;
     border-left: .1rem solid  #e5e5e5;
     height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: auto;
   }
 
   .search__wrapper::after {
@@ -52,13 +50,16 @@ html {
   .nav-menu {
     visibility: visible;
     opacity: 1;
-    /* grid-column-start: auto;
-    grid-column-end: auto;
-    grid-row-start: auto; */
     display: flex;
+    flex-direction: row;
     font-size: 1rem;
     border: none;
     border-left: .1rem solid #e5e5e5;
+    position: inherit;
+    top: 0;
+    left: 0;
+    flex-direction: row;
+    height: 100%;
   }
 
   .nav-menu__item {
