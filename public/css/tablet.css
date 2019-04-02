@@ -113,7 +113,9 @@
   }
 
   .cart-count {
-    top: 14%;
+    top: 7%;
     left: 50%;
+    width: 44%;
+    height: 44%;
   }
 }

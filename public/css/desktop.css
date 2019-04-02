@@ -9,7 +9,27 @@
     ;
   }
 
-  nav-menu__item--link {
+  .nav-menu__item--link {
     padding: .4rem 0 .1rem 2.9rem;
+  }
+
+  .navigation__logo {
+    width: 10.6%;
+  }
+
+  .search__wrapper {
+    width: 41.5%;
+  }
+
+  .nav-menu {
+    width: 36.7%;
+  }
+
+  .navigation__chat {
+    width: 4.5%;
+  }
+
+  .navigation__cart {
+    width: 4.5%;
   }
 }
