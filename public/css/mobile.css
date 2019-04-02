@@ -47,11 +47,12 @@ nav div {
   display: none;
   border: .1rem solid #e5e5e5;
   height: 4.9rem;
-  width: 305%;
+  width: 100%;
   position: absolute;
-  left: 33.4%;
-  top: 99%;
+  left: 0;
+  top: 98%;
   box-sizing: content-box;
+  border: 1px solid  #e5e5e5;
 }
 
 .search__field {
