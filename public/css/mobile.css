@@ -10,6 +10,7 @@ nav {
   font-family: "Graphik-Web", sans-serif;
   border-bottom: 0.1rem solid #e5e5e5;
   height: 4.9rem;
+  position: relative;
 }
 
 nav div {
@@ -27,6 +28,7 @@ nav div {
   display: flex;
   justify-content: center;
   padding-top: .7rem;
+  padding-right: 5rem;
 }
 
 .navigation__logo a:link, .navigation__logo a:visited {
@@ -38,6 +40,7 @@ nav div {
 .search__button {
   position: relative;
   border-left: .1rem solid #e5e5e5;
+  width: 13%;
 }
 
 .search__wrapper {
@@ -47,12 +50,11 @@ nav div {
   display: none;
   border: .1rem solid #e5e5e5;
   height: 4.9rem;
-  width: 100%;
+  width: 305%;
   position: absolute;
-  left: 0;
-  top: 98%;
+  left: 33.4%;
+  top: 99%;
   box-sizing: content-box;
-  border: 1px solid  #e5e5e5;
 }
 
 .search__field {
@@ -74,11 +76,13 @@ nav div {
 
 .navigation__chat {
   border-left: .1rem solid #e5e5e5;
+  width: 13%;
 }
 
 .navigation__cart {
   position: relative;
   border-left: .1rem solid #e5e5e5;
+  width: 13%;
 }
 
 .cart-count {
@@ -106,6 +110,7 @@ nav div {
 
 .navigation__burger {
   border-left: .1rem solid #e5e5e5;
+  width: 13%;
 }
 
 .nav-menu {
@@ -147,6 +152,9 @@ nav div {
   border: .1rem solid #e5e5e5;
   margin: 0;
   padding-left: 0;
+  width: 44%;
+  top: 99%;
+  left: 55.5%;
 }
 
 .nav-menu__item {
@@ -184,7 +192,7 @@ nav div {
   position: absolute;
   width: 40%;
   top: -.1rem;
-  left: -82%;
+  left: -93.5%;
   background: white;
   width: 16.2rem;
   text-align: center;
@@ -222,8 +230,41 @@ nav div {
   display: flex;
   visibility: visible;
   opacity: 1;
+  background: white;
+  z-index: 2;
 }
 
 .visible {
   display: flex;
+}
+
+/* Promo description */
+
+.promo__title {
+  color: #066551;
+  font-size: 20px;
+}
+
+.promo__description {
+  font-size: 10px;
+  color: ababa9;
+}
+
+.promo {
+  padding: 20px;
+}
+
+.theme-green {
+  background-color: #066551;
+  color: white;
+}
+
+.size-L {
+  width: 100px;
+  height: 30px;
+}
+
+.button {
+  border: none;
+  outline: none;
 }
