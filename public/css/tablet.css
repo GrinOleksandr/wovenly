@@ -1,19 +1,19 @@
 @media (min-width: 768px) {
-html {
-      font-size: .91vw;
+  html {
+    font-size: .91vw;
   }
 
   nav {
-    grid-template-areas: "logo search__wrapper navmenu chat cart ";
     border-bottom: .1rem solid #e5e5e5;
-    grid-template-columns: 16rem 28rem 52.9rem 6.5rem 6.5rem;
-    grid-template-rows: 6.3rem;
     height: 6.3rem;
   }
 
   .navigation__logo {
-    padding-left: 1.7rem;
+    padding-top: 1.4rem;
+    padding-left: .7rem;
     font-size: 3.1rem;
+    order: 1;
+    width: 14%;
   }
 
   .search__button {
@@ -25,17 +25,19 @@ html {
   }
 
   .search__wrapper {
+    order: 2;
     visibility: visible;
     opacity: 1;
-    grid-column-start: auto;
-    grid-column-end: auto;
-    grid-row-start: auto;
     display: flex;
     align-items: center;
     padding-left: 1.9rem;
     border: none;
     border-left: .1rem solid  #e5e5e5;
     height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 23.8%;
   }
 
   .search__wrapper::after {
@@ -50,15 +52,20 @@ html {
   }
 
   .nav-menu {
+    order: 3;
     visibility: visible;
     opacity: 1;
-    grid-column-start: auto;
-    grid-column-end: auto;
-    grid-row-start: auto;
     display: flex;
+    flex-direction: row;
     font-size: 1rem;
     border: none;
     border-left: .1rem solid #e5e5e5;
+    position: inherit;
+    top: 0;
+    left: 0;
+    flex-direction: row;
+    height: 100%;
+    width: 48%;
   }
 
   .nav-menu__item {
@@ -74,8 +81,8 @@ html {
 
   .more-styles::after {
     font-size: 1.6rem;
-    top: 2.3rem;
-    left: 11.4rem;
+    top: 39%;
+    left: 104%;
   }
 
   .more-styles__dropdown {
@@ -93,5 +100,22 @@ html {
 
   .navigation__button {
     font-size: 2.5rem;
+  }
+
+  .navigation__chat {
+    order: 4;
+    width: 5.8%;
+  }
+
+  .navigation__cart {
+    order: 5;
+    width: 5.8%;
+  }
+
+  .cart-count {
+    top: 7%;
+    left: 50%;
+    width: 44%;
+    height: 44%;
   }
 }
