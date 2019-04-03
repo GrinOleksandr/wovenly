@@ -32,4 +32,8 @@
   .navigation__cart {
     width: 4.5%;
   }
+/* PROMO */
+  .promo {
+    padding: 18px 46px 54px 76px;
+  }
 }
