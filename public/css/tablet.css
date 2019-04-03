@@ -11,6 +11,7 @@
   .navigation__logo {
     padding-top: 1.4rem;
     padding-left: .7rem;
+    padding-right: 0;
     font-size: 3.1rem;
     order: 1;
     width: 14%;
@@ -37,7 +38,7 @@
     position: relative;
     top: 0;
     left: 0;
-    width: 23.8%;
+    width: 23.5%;
   }
 
   .search__wrapper::after {
@@ -81,8 +82,8 @@
 
   .more-styles::after {
     font-size: 1.6rem;
-    top: 39%;
-    left: 104%;
+    top: 2.3rem;
+    left: 11.4rem;
   }
 
   .more-styles__dropdown {
@@ -117,5 +118,56 @@
     left: 50%;
     width: 44%;
     height: 44%;
+  }
+
+/* PROMO */
+
+  .header-content {
+    overflow: hidden;
+    height: 37.7rem;
+  }
+
+  .promo {
+    box-sizing: border-box;
+    padding: 1.2rem 2.4rem 5.4rem 6.5rem;
+    width: 39%;
+  }
+
+  .promo__title {
+    font-size: 4.1rem;
+    padding: 3.2rem 2.5rem 1.4rem .4rem;
+    line-height: 4.4rem;
+  }
+
+  .promo__description {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    padding: 0 9rem 1.7rem .4rem;
+  }
+
+  .button-size-L {
+    width: 16.3rem;
+    height: 5rem;
+  }
+
+  .promo .button {
+    padding-right: 5.5rem;
+    position: relative;
+  }
+
+  .promo .button::after {
+    content: "Now";
+    position: absolute;
+    top: 1.45rem;
+    left: 8.7rem;
+  }
+
+  .header__image {
+    width: 61%;
+    height: 37.7rem;
+  }
+
+  .header-content__image {
+    height: auto;
   }
 }

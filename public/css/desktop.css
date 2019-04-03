@@ -4,11 +4,6 @@
     font-size: .7vw;
   }
 
-  nav {
-    /* grid-template-columns: 16rem 61.8rem 52.9rem 6.5rem 6.5rem; */
-    ;
-  }
-
   .nav-menu__item--link {
     padding: .4rem 0 .1rem 2.9rem;
   }
@@ -31,5 +26,40 @@
 
   .navigation__cart {
     width: 4.5%;
+  }
+
+  .more-styles::after {
+    top: 2.5rem;
+  }
+
+/* PROMO */
+
+  .header-content {
+  /* height: 40rem; */
+    overflow: hidden;
+  }
+
+  .promo {
+    padding: 1.8rem 4.68rem 11.8rem 7.6rem;
+  }
+
+  .promo__description {
+    padding: 0 7rem 1.5rem .4rem;
+  }
+
+  .promo .button::after {
+    top: 1.5rem;left: 8.8rem;
+  }
+
+  .promo__title {
+    padding: 3.2rem 2.6rem 1.1rem .4rem;
+  }
+
+  .header__image {
+    height: auto;
+  }
+
+  .header-content__image {
+    height: 38rem;
   }
 }

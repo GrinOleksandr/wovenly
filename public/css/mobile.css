@@ -7,7 +7,6 @@ header {
 }
 
 nav {
-  font-family: "Graphik-Web", sans-serif;
   border-bottom: 0.1rem solid #e5e5e5;
   height: 4.9rem;
   position: relative;
@@ -91,7 +90,7 @@ nav div {
   background: #066551;
   position: absolute;
   top: 0.3rem;
-  left: 4.1rem;
+  left: 2.6rem;
   border-radius: 2rem;
   color: white;
   display: none;
@@ -238,20 +237,25 @@ nav div {
   display: flex;
 }
 
-/* Promo description */
+/* Promo */
+.promo {
+  padding: 1.2rem 0 3.7rem 3.7rem;
+  background: #f4f5f0;
+}
 
 .promo__title {
   color: #066551;
-  font-size: 20px;
+  font-size: 2.5rem;
+  padding: 2.1rem 2.5rem .8rem .4rem;
+  margin: 0;
 }
 
 .promo__description {
-  font-size: 10px;
-  color: ababa9;
-}
-
-.promo {
-  padding: 20px;
+  font-size: 1.4rem;
+  color: #ababa9;
+  padding: 0 9rem 1.5rem .4rem;
+  margin: 0;
+  font-family: "Graphik-Web", serif;
 }
 
 .theme-green {
@@ -259,12 +263,24 @@ nav div {
   color: white;
 }
 
-.size-L {
-  width: 100px;
-  height: 30px;
+.button-size-L {
+  width: 11.2rem;
+  height: 4rem;
+  font-size: 1.9rem;
 }
 
 .button {
   border: none;
   outline: none;
+  border-radius: .5rem;
+  font-family: "Graphik-Web", serif;
+}
+
+.header-content .button {
+  margin-left: .4rem;
+}
+
+.header-content__image {
+  width: 100%;
+  height: 21.4rem;
 }
