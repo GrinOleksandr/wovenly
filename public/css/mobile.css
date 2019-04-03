@@ -7,7 +7,6 @@ header {
 }
 
 nav {
-  font-family: "Graphik-Web", sans-serif;
   border-bottom: 0.1rem solid #e5e5e5;
   height: 4.9rem;
   position: relative;
@@ -238,20 +237,24 @@ nav div {
   display: flex;
 }
 
-/* Promo description */
+/* Promo */
 
 .promo__title {
   color: #066551;
-  font-size: 20px;
+  font-size: 25px;
+  padding: 21px 20px 8px 4px;
+  margin: 0;
 }
 
 .promo__description {
   font-size: 10px;
-  color: ababa9;
+  color: #ababa9;
+  padding: 0 90px 23px 4px;
+  margin: 0;
 }
 
 .promo {
-  padding: 20px;
+  padding: 12px 0 24px 37px;
 }
 
 .theme-green {
@@ -260,11 +263,18 @@ nav div {
 }
 
 .size-L {
-  width: 100px;
-  height: 30px;
+  width: 112px;
+  height: 40px;
+  font-size: 19px;
 }
 
 .button {
   border: none;
   outline: none;
+  border-radius: 4px;
+  font-family: "Graphik-Web", serif;
+}
+
+.header-content .button {
+  margin-left: 4px;
 }
