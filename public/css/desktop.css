@@ -1,14 +1,35 @@
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
 
   html {
     font-size: .7vw;
   }
 
   nav {
-    grid-template-columns: 16rem 61.8rem 52.9rem 6.5rem 6.5rem;
+    /* grid-template-columns: 16rem 61.8rem 52.9rem 6.5rem 6.5rem; */
+    ;
   }
 
-  nav-menu__item--link {
+  .nav-menu__item--link {
     padding: .4rem 0 .1rem 2.9rem;
+  }
+
+  .navigation__logo {
+    width: 10.6%;
+  }
+
+  .search__wrapper {
+    width: 41.5%;
+  }
+
+  .nav-menu {
+    width: 36.7%;
+  }
+
+  .navigation__chat {
+    width: 4.5%;
+  }
+
+  .navigation__cart {
+    width: 4.5%;
   }
 }
