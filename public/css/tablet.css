@@ -124,7 +124,7 @@
   .promo {
     box-sizing: border-box;
     padding: 1.2rem 24px 54px 65px;
-    width: 40%;
+    width: 39%;
   }
 
   .promo__title {
@@ -157,6 +157,6 @@
   }
 
   .header__image {
-    width: 60%;
+    width: 61%;
   }
 }

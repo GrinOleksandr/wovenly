@@ -34,6 +34,27 @@
   }
 /* PROMO */
   .promo {
-    padding: 18px 46px 54px 76px;
+    padding: 18px 46px 118px 76px;
+  }
+
+  .promo__description {
+    padding: 0 86px 15px .4rem;
+  }
+
+  .promo .button::after {
+    top: 15px;
+    left: 88px;
+  }
+
+  .promo__title {
+    padding: 32px 26px 11px 4px;
+  }
+
+  .header__image {
+    height: auto;
+  }
+
+  .header-content__image {
+    height: 37.1rem;
   }
 }
