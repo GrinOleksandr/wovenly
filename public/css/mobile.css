@@ -10,6 +10,7 @@ nav {
   font-family: "Graphik-Web", sans-serif;
   border-bottom: 0.1rem solid #e5e5e5;
   height: 4.9rem;
+  position: relative;
 }
 
 nav div {
@@ -27,7 +28,7 @@ nav div {
   display: flex;
   justify-content: center;
   padding-top: .7rem;
-padding-right: 5rem;
+  padding-right: 5rem;
 }
 
 .navigation__logo a:link, .navigation__logo a:visited {
@@ -40,7 +41,6 @@ padding-right: 5rem;
   position: relative;
   border-left: .1rem solid #e5e5e5;
   width: 13%;
-
 }
 
 .search__wrapper {
@@ -77,14 +77,12 @@ padding-right: 5rem;
 .navigation__chat {
   border-left: .1rem solid #e5e5e5;
   width: 13%;
-
 }
 
 .navigation__cart {
   position: relative;
   border-left: .1rem solid #e5e5e5;
   width: 13%;
-
 }
 
 .cart-count {
@@ -113,7 +111,6 @@ padding-right: 5rem;
 .navigation__burger {
   border-left: .1rem solid #e5e5e5;
   width: 13%;
-
 }
 
 .nav-menu {
@@ -155,6 +152,9 @@ padding-right: 5rem;
   border: .1rem solid #e5e5e5;
   margin: 0;
   padding-left: 0;
+  width: 44%;
+  top: 99%;
+  left: 55.5%;
 }
 
 .nav-menu__item {
@@ -192,7 +192,7 @@ padding-right: 5rem;
   position: absolute;
   width: 40%;
   top: -.1rem;
-  left: -82%;
+  left: -93.5%;
   background: white;
   width: 16.2rem;
   text-align: center;
@@ -230,6 +230,8 @@ padding-right: 5rem;
   display: flex;
   visibility: visible;
   opacity: 1;
+  background: white;
+  z-index: 2;
 }
 
 .visible {
@@ -240,29 +242,29 @@ padding-right: 5rem;
 
 .promo__title {
   color: #066551;
-  font-size:20px;
+  font-size: 20px;
 }
 
 .promo__description {
-  font-size:10px;
-  color:ababa9;
+  font-size: 10px;
+  color: ababa9;
 }
 
 .promo {
-  padding:20px;
+  padding: 20px;
 }
 
 .theme-green {
   background-color: #066551;
-  color : white;
+  color: white;
 }
 
 .size-L {
-  width:100px;
-  height:30px;
+  width: 100px;
+  height: 30px;
 }
 
 .button {
-  border:none;
-  outline:none;
+  border: none;
+  outline: none;
 }
