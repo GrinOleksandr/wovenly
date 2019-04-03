@@ -33,21 +33,27 @@
     width: 4.5%;
   }
 /* PROMO */
+
+  .header-content {
+    height: 40rem;
+    overflow:hidden;
+  }
+
   .promo {
-    padding: 18px 46px 118px 76px;
+    padding: 1.8rem 4.68rem 11.8rem 7.6rem;
   }
 
   .promo__description {
-    padding: 0 86px 15px .4rem;
+    padding: 0 8.6rem 1.5rem .4rem;
   }
 
   .promo .button::after {
-    top: 15px;
-    left: 88px;
+    top: 1.5rem;
+    left: 8.8rem;
   }
 
   .promo__title {
-    padding: 32px 26px 11px 4px;
+    padding: 3.2rem 2.6rem 1.1rem .4rem;
   }
 
   .header__image {
@@ -55,6 +61,6 @@
   }
 
   .header-content__image {
-    height: 37.1rem;
+    height: 40rem;
   }
 }
