@@ -247,14 +247,15 @@ nav div {
 }
 
 .promo__description {
-  font-size: 10px;
+  font-size: 14px;
   color: #ababa9;
-  padding: 0 90px 23px 4px;
+  padding: 0 90px 15px 4px;
   margin: 0;
+  font-family: "Graphik-Web", serif;
 }
 
 .promo {
-  padding: 12px 0 24px 37px;
+  padding: 12px 0 37px 37px;
 }
 
 .theme-green {
@@ -271,7 +272,7 @@ nav div {
 .button {
   border: none;
   outline: none;
-  border-radius: 4px;
+  border-radius: 5px;
   font-family: "Graphik-Web", serif;
 }
 
