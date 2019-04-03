@@ -80,22 +80,22 @@
     padding: .4rem 0 .4rem 2.8rem;
   }
 
-  .more-styles::after {
+  .nav-menu__dropdown::after {
     font-size: 1.6rem;
     top: 2.3rem;
     left: 11.4rem;
   }
 
-  .more-styles__dropdown {
+  .nav-menu__dropdown--list {
     left: -1rem;
     top: 6.2rem;
   }
 
-  .more-styles__link {
+  .nav-menu__dropdown--link {
     padding-right: 1.1rem;
   }
 
-  .more-styles__style--link {
+  .nav-menu__level2--link {
     padding: .5rem 0;
   }
 

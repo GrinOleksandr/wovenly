@@ -168,11 +168,11 @@ nav div {
   padding: 1.3rem;
 }
 
-.more-styles__link {
+.nav-menu__dropdown--link {
   position: relative;
 }
 
-.more-styles::after {
+.nav-menu__dropdown::after {
   font-family: "icon-font1";
   content: '';
   font-size: 1.8rem;
@@ -183,7 +183,7 @@ nav div {
   pointer-events: none;
 }
 
-.more-styles__dropdown {
+.nav-menu__dropdown--list {
   list-style: none;
   border: .1rem solid #e5e5e5;
   margin: 0;
@@ -205,15 +205,15 @@ nav div {
   cursor: pointer;
 }
 
-.more-styles__dropdown:last-child {
+.nav-menu__dropdown--list:last-child {
   border-bottom: none;
 }
 
-.more-styles__style--item {
+.nav-menu__level2--item {
   border-bottom: .1rem solid #e5e5e5;
 }
 
-.more-styles__style--link {
+.nav-menu__level2--link {
   text-decoration: none;
   color: black;
   font-size: 1.9rem;
@@ -221,7 +221,7 @@ nav div {
   padding: 1.3rem 0;
 }
 
-.more-styles {
+.nav-menu__dropdown {
   position: relative;
 }
 

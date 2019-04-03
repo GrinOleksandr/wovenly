@@ -1,11 +1,12 @@
-let moreStylesMenu = document.getElementById('moreStylesMenu')
-let moreStylesBtn = document.getElementById('moreStylesBtn')
-moreStylesBtn.addEventListener('click', moreStylesHandler)
-moreStylesBtn.nextSibling.addEventListener('click', moreStylesHandler)
+let navMenuDropDown = document.getElementById('navMenuDropDown')
+let navMenuDropDownBtn = document.getElementById('navMenuDropDownBtn')
+navMenuDropDownBtn.addEventListener('click', navMenuDropDownExpander)
+navMenuDropDownBtn.nextSibling.addEventListener('click',
+                                                navMenuDropDownExpander)
 
-function moreStylesHandler(ev) {
+function navMenuDropDownExpander(ev) {
   ev.preventDefault();
-  moreStylesMenu.classList.toggle('dropdown__visible')
+  navMenuDropDown.classList.toggle('dropdown__visible')
   if (searchFieldWrapper.classList.contains('dropdown__visible')) {
     searchFieldWrapper.classList.remove('dropdown__visible');
 }
@@ -16,8 +17,12 @@ let burgerBtn = document.getElementById('burger')
 burgerBtn.addEventListener('click', function(ev) {
   ev.preventDefault();
   navMenu.classList.toggle('dropdown__visible')
-  if (searchFieldWrapper.classList.contains('dropdown__visible')) {
-    searchFieldWrapper.classList.remove('dropdown__visible');
+  if (navMenuDropDown.classList.contains('dropdown__visible')) {
+    navMenuDropDown.classList.remove('dropdown__visible');
+}
+
+if (searchFieldWrapper.classList.contains('dropdown__visible')) {
+  searchFieldWrapper.classList.remove('dropdown__visible');
 }
 })
 
@@ -31,8 +36,8 @@ searchBtn.addEventListener('click', function(ev) {
     navMenu.classList.remove('dropdown__visible');
 }
 
-if (moreStylesMenu.classList.contains('dropdown__visible')) {
-  moreStylesMenu.classList.remove('dropdown__visible');
+if (navMenuDropDown.classList.contains('dropdown__visible')) {
+  navMenuDropDown.classList.remove('dropdown__visible');
 }
 })
 
