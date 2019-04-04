@@ -287,7 +287,8 @@ nav div {
 
 /* BENEFITS! */
 .benefits__wrapper {
-  padding: 11px 19px;
+  padding: 1.1rem 5% ;
+  width:100%;
 }
 
 .benefits {
@@ -295,15 +296,16 @@ nav div {
 }
 
 .benefit {
-padding-top: 17px;
-    padding-bottom: 2px;
+padding-top: 1.7rem ;
+    padding-bottom: .2rem ;
 display:flex;
 }
 
 .benefit__img {
-  width:51px;
-  height:51px;
+  width:5.1rem ;
+  height:5.1rem;
   display:block;
+  background-size: 100%;
 }
 
 .benefit__img1{
@@ -327,7 +329,7 @@ display:flex;
   font-weight: 700;
   color: #066551;
   display: block;
-  font-size: 14px;
+  font-size: 1.4rem ;
 }
 
 .benefit__link {
@@ -336,8 +338,8 @@ display:flex;
   color: #066551;
   display: block;
   text-decoration: underline;
-  font-size: 14px;
-  padding-top: 4px;
+  font-size: 1.4rem;
+      padding-top: 0.9rem;
 }
 
 
@@ -345,6 +347,6 @@ display:flex;
 .benefit__wrapper {
   display:flex;
   flex-direction:column;
-  padding-left: 9px;
-padding-top: 6px;
+  padding-left: .9rem ;
+padding-top: .6rem ;
 }
