@@ -142,7 +142,7 @@
   .promo__description {
     font-size: 1.8rem;
     line-height: 2.3rem;
-    padding: 0 9rem 1.7rem .4rem;
+    padding: 0 9rem 1.3rem .4rem;
   }
 
   .button-size-L {
@@ -168,7 +168,7 @@
   }
 
   .header-content__image {
-    height: auto;
+    height: 37.35rem;
   }
 
   /* BENEFITS */
@@ -184,6 +184,8 @@
 .contact-us {
   display:flex;
   color: #066551;
+  padding-left: 48px;
+    padding-top: 18px;
 }
 
 .contact-us__img {
@@ -193,10 +195,24 @@
 .contact-us__title {
   font-family: "Graphik-Web", serif;
   }
+.contact-us__wrapper{
+  padding-top: 11px;
+padding-left: 9px;
+font-size: 12px;
+
+display: flex;
+flex-direction: column;
+}
+.contact-us__title {
+  font-weight: 300;
+  padding-bottom: 3%;
+
+}
 
   .contact-us__link {
     font-family: "Graphik-Web", serif;
     color: #066551;
+    font-weight: 700;
   }
 
   .benefit{
@@ -216,6 +232,9 @@
 padding-top: 7px;
 }
 
+.button-size-L{
+      width: 16rem;
+}
 
 
 }
