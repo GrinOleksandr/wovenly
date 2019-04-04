@@ -170,4 +170,52 @@
   .header-content__image {
     height: auto;
   }
+
+  /* BENEFITS */
+  .benefits__wrapper{
+    padding: 0 2.6%;
+    display:flex;
+  }
+.benefits {
+  display:flex;
+  margin:0;
+}
+
+.contact-us {
+  display:flex;
+  color: #066551;
+}
+
+.contact-us__img {
+  background-image: url(./../img/benefits-message.png)
+}
+
+.contact-us__title {
+  font-family: "Graphik-Web", serif;
+  }
+
+  .contact-us__link {
+    font-family: "Graphik-Web", serif;
+    color: #066551;
+  }
+
+  .benefit{
+        padding-right: 39px;
+  }
+
+  .benefit__wrapper{
+        padding-top: 10px;
+  }
+
+.benefit__title{
+  font-size: 12px;
+}
+
+.benefit__link{
+  font-size: 12px;
+padding-top: 7px;
+}
+
+
+
 }
