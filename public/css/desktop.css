@@ -62,4 +62,38 @@
   .header-content__image {
     height: 38rem;
   }
+/* BENEFITS */
+.benefit__img3{
+  background-image: url(./../img/benefits-low.png)
+}
+
+.benefit__wrapper {
+  padding-left: 2rem;
+      padding-top: .5rem;
+}
+
+.benefit__title {
+    font-size: 1.4rem;
+}
+.benefit__link {
+    font-size: 1.4rem;
+    padding-top: 0.6rem;
+}
+
+.benefit {
+    padding-right: 9.1rem;
+}
+
+.contact-us {
+  padding-left: 6.3rem;
+  padding-top: 1.7rem;
+}
+
+.contact-us__wrapper{
+  font-size: 1.4rem;
+padding-top: .6rem;
+padding-left: 1.9rem;
+}
+
+
 }
