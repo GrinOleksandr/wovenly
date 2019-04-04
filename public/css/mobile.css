@@ -282,5 +282,69 @@ nav div {
 
 .header-content__image {
   width: 100%;
-  height: 21.4rem;
+  height: 22rem;
+}
+
+/* BENEFITS! */
+.benefits__wrapper {
+  padding: 11px 19px;
+}
+
+.benefits {
+  list-style:none;
+}
+
+.benefit {
+padding-top: 17px;
+    padding-bottom: 2px;
+display:flex;
+}
+
+.benefit__img {
+  width:51px;
+  height:51px;
+  display:block;
+}
+
+.benefit__img1{
+  background-image: url(./../img/benefits-trial.png)
+}
+
+.benefit__img2{
+  background-image: url(./../img/benefits-shipping.png)
+}
+
+.benefit__img3{
+  background-image: url(./../img/benefits-low-mobile.png)
+}
+
+.contact-us  {
+  display: none;
+}
+
+.benefit__title{
+  font-family: "Graphik-Web", serif;
+  font-weight: 700;
+  color: #066551;
+  display: block;
+  font-size: 14px;
+}
+
+.benefit__link {
+  font-family: "Graphik-Web", serif;
+  font-weight: 300;
+  color: #066551;
+  display: block;
+  text-decoration: underline;
+  font-size: 14px;
+  padding-top: 4px;
+}
+
+
+
+.benefit__wrapper {
+  display:flex;
+  flex-direction:column;
+  padding-left: 9px;
+padding-top: 6px;
 }
