@@ -1,99 +1,34 @@
 @media (min-width: 1200px) {
 
   html {
-    font-size: .7vw;
+    font-size: 20px;
   }
 
-  .nav-menu__item--link {
-    padding: .4rem 0 .1rem 2.9rem;
-  }
-
-  .navigation__logo {
-    width: 10.6%;
-  }
-
-  .search__wrapper {
-    width: 41.5%;
-  }
-
-  .nav-menu {
-    width: 36.7%;
-  }
-
-  .navigation__chat {
-    width: 4.5%;
-  }
-
-  .navigation__cart {
-    width: 4.5%;
-  }
-
-  .nav-menu__dropdown::after {
-    top: 2.5rem;
-  }
 
 /* PROMO */
 
   .header-content {
-  /* height: 40rem; */
+
     overflow: hidden;
   }
 
-  .promo {
-    padding: 1.8rem 4.68rem 11.8rem 7.6rem;
-  }
 
-  .promo__description {
-    padding: 0 7rem 1.5rem .4rem;
-  }
-
-  .promo .button::after {
-    top: 1.5rem;left: 8.8rem;
-  }
-
-  .promo__title {
-    padding: 3.2rem 2.6rem 1.1rem .4rem;
-  }
-
-  .header__image {
-    height: auto;
-  }
-
-  .header-content__image {
-    height: 38rem;
-  }
 /* BENEFITS */
 .benefit__img3{
   background-image: url(./../img/benefits-low.png)
 }
 
-.benefit__wrapper {
-  padding-left: 2rem;
-      padding-top: .5rem;
-}
 
 .benefit__title {
-    font-size: 1.4rem;
+    font-size: 14px;
 }
 .benefit__link {
-    font-size: 1.4rem;
-    padding-top: 0.6rem;
-}
-
-.benefit {
-    padding-right: 9.1rem;
-}
-
-.contact-us {
-  padding-left: 6.3rem;
-  padding-top: 1.7rem;
+    font-size: 14px;
 }
 
 .contact-us__wrapper{
-  font-size: 1.4rem;
-padding-top: .6rem;
-padding-left: 1.9rem;
-}
+  font-size: 14px;
 
+}
 
 }
