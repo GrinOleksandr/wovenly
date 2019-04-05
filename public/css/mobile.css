@@ -3,7 +3,7 @@ body {
 }
 
 header {
-  overflow:hidden
+  overflow: hidden;
 }
 
 nav {
@@ -16,7 +16,7 @@ nav {
   font-family: "Graphik-Web", sans-serif;
   font-size: 28px;
   font-weight: 700;
-  margin:0;
+  margin: 0;
   padding: 4px 10px;
 }
 
@@ -26,19 +26,21 @@ nav {
   cursor: pointer;
 }
 
-.navigation__buttons--wrapper{
-  display:flex;
+.navigation__buttons--wrapper {
+  display: flex;
   justify-content: flex-end;
-  height:100%;
-  list-style:none;
-  margin:0;
-
+  height: 100%;
+  list-style: none;
+  margin: 0;
 }
 
 .navigation__button {
-  padding:20px;
-  border-left:1px solid #e5e5e5;
+  padding: 20px;
+  border-left: 1px solid #e5e5e5;
+}
 
+.navigation__button a:link, .navigation__button a:visited, .navigation__button a:active, .navigation__button a:hover {
+  color: black;
 }
 
 .search__wrapper {
@@ -53,51 +55,49 @@ nav {
   left: 0;
   top: 100%;
   box-sizing: content-box;
-  background:white;
-  overflow:hidden;
+  background: white;
+  overflow: hidden;
   justify-content: space-between;
 }
 
 .search__field {
   font-size: 16px;
-width: 100%;
-  height:49px;
+  width: 100%;
+  height: 49px;
   padding-left: 44px;
   border: none;
 }
 
-.search__buttons--wrapper{
-  height:100%;
-  display:flex;
+.search__buttons--wrapper {
+  height: 100%;
+  display: flex;
 }
 
 .search__controls--button {
-  padding:10px 18px;
-  display:block;
-  flot:right;
-  cursor:pointer;
+  padding: 10px 18px;
+  display: block;
+  flot: right;
+  cursor: pointer;
 }
+
 .search__submit {
   font-family: "icon-font1", sans-serif;
   font-size: 21px;
-
-  color:white;
+  color: white;
 }
 
-.search__clear{
+.search__clear {
   font-family: "icon-font1", sans-serif;
   font-size: 21px;
-  color:grey;
+  color: grey;
 }
-
-
 
 .cart-count {
   width: 23px;
   height: 23px;
   background: #066551;
   position: absolute;
-  top:3px;
+  top: 3px;
   left: 26px;
   border-radius: 20px;
   color: white;
@@ -123,10 +123,17 @@ width: 100%;
   background: white;
   flex-direction: column;
   position: absolute;
+  top: 100%;
+  right: 0;
   list-style: none;
   border: 1px solid #e5e5e5;
   margin: 0;
   padding-left: 0;
+  width: 182px;
+}
+
+.nav-menu a {
+  text-decoration: none;
 }
 
 .nav-menu:last-child {
@@ -159,7 +166,7 @@ width: 100%;
   color: black;
   font-size: 19px;
   display: block;
-  padding:13px;
+  padding: 13px;
 }
 
 .nav-menu__dropdown--link {
@@ -171,8 +178,8 @@ width: 100%;
   content: '';
   font-size: 18px;
   position: absolute;
-  top: 18px;
-  left: 124px;
+  top: 13px;
+  left: 117px;
   cursor: pointer;
   pointer-events: none;
 }
@@ -189,6 +196,10 @@ width: 100%;
   opacity: 0.4;
   visibility: hidden;
   padding-left: 0;
+  position: absolute;
+  top: -1px;
+  right: 180px;
+  width: 182px;
 }
 
 .nav-menu a {
@@ -208,7 +219,7 @@ width: 100%;
   color: black;
   font-size: 19px;
   display: block;
-
+  padding: 13px;
 }
 
 .nav-menu__dropdown {
@@ -229,21 +240,18 @@ width: 100%;
 
 /* Promo */
 .promo {
-
   background: #f4f5f0;
 }
 
 .promo__title {
   color: #066551;
   font-size: 25px;
-
   margin: 0;
 }
 
 .promo__description {
   font-size: 14px;
   color: #ababa9;
-
   margin: 0;
   font-family: "Graphik-Web", serif;
 }
@@ -254,7 +262,6 @@ width: 100%;
 }
 
 .button-size-L {
-
   font-size: 19px;
 }
 
@@ -264,9 +271,10 @@ width: 100%;
   border-radius: 5px;
   font-family: "Graphik-Web", serif;
 }
+
 .header-content {
-  overflow:hidden;
-  height:700px;
+  overflow: hidden;
+  height: 700px;
 }
 
 .header-content .button {
@@ -275,52 +283,50 @@ width: 100%;
 
 .header-content__image {
   width: 100%;
-
 }
 
 /* BENEFITS! */
 .benefits__wrapper {
-  width:100%;
+  width: 100%;
 }
 
 .benefits {
-  list-style:none;
+  list-style: none;
 }
 
 .benefit {
-
-display:flex;
+  display: flex;
 }
 
 .benefit__img {
-  width:51px;
-  height:51px;
-  display:block;
+  width: 51px;
+  height: 51px;
+  display: block;
   background-size: 100%;
 }
 
-.benefit__img1{
-  background-image: url(./../img/benefits-trial.png)
+.benefit__img1 {
+  background-image: url(./../img/benefits-trial.png);
 }
 
-.benefit__img2{
-  background-image: url(./../img/benefits-shipping.png)
+.benefit__img2 {
+  background-image: url(./../img/benefits-shipping.png);
 }
 
-.benefit__img3{
-  background-image: url(./../img/benefits-low-mobile.png)
+.benefit__img3 {
+  background-image: url(./../img/benefits-low-mobile.png);
 }
 
-.contact-us  {
+.contact-us {
   display: none;
 }
 
-.benefit__title{
+.benefit__title {
   font-family: "Graphik-Web", serif;
   font-weight: 700;
   color: #066551;
   display: block;
-  font-size: 14px ;
+  font-size: 14px;
 }
 
 .benefit__link {
@@ -329,14 +335,10 @@ display:flex;
   color: #066551;
   display: block;
   text-decoration: underline;
-  font-size:14px;
-
+  font-size: 14px;
 }
 
-
-
 .benefit__wrapper {
-  display:flex;
-  flex-direction:column;
-
+  display: flex;
+  flex-direction: column;
 }
