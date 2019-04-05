@@ -5,11 +5,12 @@
 
   nav {
     border-bottom: 1px solid #e5e5e5;
-    height: 63px;
+    height: 49px;
   }
 
   .navigation__logo {
-    font-size: 31px;
+    font-size: 26px;
+    padding: 10px;
   }
 
   .search__button {
@@ -33,10 +34,10 @@
   .search__wrapper::after {
     content: "";
     font-family: "icon-font1", sans-serif;
-    font-size: 30px;
+    font-size: 23px;
     position: absolute;
-    top: 9px;
-    left: 19px;
+    top: 8px;
+    left: 16px;
   }
 
   .search__field {
@@ -61,14 +62,153 @@
     width: auto;
   }
 
-  .nav-menu__item {
-    border-bottom: none;
-    display: flex;
-    align-items: center;
+  .nav-menu__dropdown {
+    position: relative;
+  }
+
+  .dropdown__triangle {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000000;
+    border-width: 1px 0 0 1px;
+    transform: rotate(-45deg);
+    position: absolute;
+  }
+}
+
+.nav-menu__item {
+  border-bottom: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu__item--link {
+  font-size: 11px;
+  padding: 11px;
+}
+
+.nav-menu__dropdown::after {
+  font-size: 13px;
+  top: 15px;
+  left: 71px;
+}
+
+.nav-menu__dropdown--list {
+  left: -33px;
+  top: 71px;
+}
+
+.navigation__button {
+  font-size: 19px;
+  padding: 14px;
+}
+
+.navigation__cart {
+  position: relative;
+}
+
+.cart-count {
+  top: 5px;
+  left: 24px;
+  width: 20px;
+  height: 20px;
+}
+
+/* PROMO */
+
+.promo {
+  box-sizing: border-box;
+}
+
+.promo__title {
+  font-size: 41px;
+  line-height: 44px;
+}
+
+.promo__description {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.promo .button {
+  position: relative;
+}
+
+.header__image {
+  padding: 0;
+}
+
+  /* BENEFITS */
+.benefits__wrapper {
+  display: flex;
+}
+
+.benefits {
+  display: flex;
+  margin: 0;
+}
+
+.contact-us {
+  display: flex;
+  color: #066551;
+}
+
+.contact-us__img {
+  background-image: url(./../img/benefits-message.png);
+}
+
+.contact-us__title {
+  font-family: "Graphik-Web", serif;
+}
+
+.contact-us__wrapper {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-us__title {
+  font-weight: 300;
+}
+
+.contact-us__link {
+  font-family: "Graphik-Web", serif;
+  color: #066551;
+  font-weight: 700;
+}
+
+.benefit__title {
+  font-size: 12px;
+}
+
+.benefit__link {
+  font-size: 12px;
+}
+}
+
+@media (min-width: 992px) {
+  nav {
+    height: 63px;
+  }
+
+  .navigation__logo {
+    font-size: 31px;
+    padding: 4px 10px;
+  }
+
+  .search__wrapper::after {
+    font-size: 30px;
+    top: 9px;
+    left: 19px;
+  }
+
+  .navigation__button {
+    font-size: 19px;
   }
 
   .nav-menu__item--link {
     font-size: 16px;
+    padding: 13px;
   }
 
   .nav-menu__dropdown::after {
@@ -77,94 +217,10 @@
     left: 101px;
   }
 
-  .nav-menu__dropdown--list {
-    left: -10px;
-    top: 62px;
-  }
-
-  .navigation__button {
-    font-size: 25px;
-  }
-
-  .navigation__cart {
-    position: relative;
-  }
-
   .cart-count {
     top: 6px;
     left: 31px;
     width: 25px;
     height: 25px;
-  }
-
-/* PROMO */
-
-  .promo {
-    box-sizing: border-box;
-  }
-
-  .promo__title {
-    font-size: 41px;
-    line-height: 44px;
-  }
-
-  .promo__description {
-    font-size: 18px;
-    line-height: 23px;
-  }
-
-  .promo .button {
-    position: relative;
-  }
-
-  .header__image {
-    padding: 0;
-  }
-
-  /* BENEFITS */
-  .benefits__wrapper {
-    display: flex;
-  }
-
-  .benefits {
-    display: flex;
-    margin: 0;
-  }
-
-  .contact-us {
-    display: flex;
-    color: #066551;
-  }
-
-  .contact-us__img {
-    background-image: url(./../img/benefits-message.png);
-  }
-
-  .contact-us__title {
-    font-family: "Graphik-Web", serif;
-  }
-
-  .contact-us__wrapper {
-    font-size: 12px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .contact-us__title {
-    font-weight: 300;
-  }
-
-  .contact-us__link {
-    font-family: "Graphik-Web", serif;
-    color: #066551;
-    font-weight: 700;
-  }
-
-  .benefit__title {
-    font-size: 12px;
-  }
-
-  .benefit__link {
-    font-size: 12px;
   }
 }
