@@ -43,11 +43,10 @@ nav {
   color: black;
 }
 
-.search__wrapper {
+.search__wrapper--dropdown {
   transition: opacity 0.5s;
   opacity: 0.4;
   visibility: hidden;
-  display: none;
   border: 1px solid #e5e5e5;
   height: 49px;
   width: 100%;
@@ -58,6 +57,10 @@ nav {
   background: white;
   overflow: hidden;
   justify-content: space-between;
+}
+
+.search__wrapper {
+  display: none;
 }
 
 .search__field {

@@ -25,41 +25,47 @@
 <body>
   <header class= 'containter-fluid'>
     <nav class= "row ">
-      <h2 class = "navigation__logo col-xs-4 col-sm-2 col-md-2 col-lg-1"  ><a  href = # >Wovenly</a></h2>
-      <div class = "search__wrapper col-xs-12" id = "searchFieldWrapper">
+      <h2 class = "navigation__logo col-xs-4 col-md-2 col-lg-1"  ><a  href = # >Wovenly</a></h2>
+      <div class = "search__wrapper--dropdown col-xs-12" id = "searchFieldWrapper">
         <input class = "search__field" id="searchFieldDropdown" type="search" name="search"  placeholder="Search">
         <div class = "search__buttons--wrapper ">
-        <span class="search__clear search__controls--button" id="clearSearchBtn">✕</span>
-        <span class="search__submit  search__controls--button theme-green" id="submitSearchBtn"></span>
+          <span class="search__clear search__controls--button" id="clearSearchBtn">✕</span>
+          <span class="search__submit  search__controls--button theme-green" id="submitSearchBtn"></span>
+        </div>
       </div>
+      <div class = "search__wrapper col-md-3">
+        <input class = "search__field" type="text" placeholder = "Search"/>
       </div>
-      <ul class = "nav-menu col-md-7 col-sm-7 col-lg-7" id="navMenu">
-        <li class = "nav-menu__item"><a class = "nav-menu__item--link" href = "#">Shag</a></li>
-        <li class = "nav-menu__item"><a class = "nav-menu__item--link" href = "#">Contemporary</a></li>
-        <li class = "nav-menu__item nav-menu__dropdown">
-          <a class = "nav-menu__item--link nav-menu__dropdown--link" id = "navMenuDropDownBtn" href = "#">More Styles</a>
-          <ul class = "nav-menu__dropdown--list" id = 'navMenuDropDown'>
-            <li class="nav-menu__level2--item"><a class="nav-menu__level2--link" href = "#">Test Link 1</a></li>
-            <li class="nav-menu__level2--item"><a class="nav-menu__level2--link" href = "#">Test Link 2</a></li>
-            <li class="nav-menu__level2--item"><a class="nav-menu__level2--link" href = "#">Test Link 3</a></li>
-            <li class="nav-menu__level2--item"><a class="nav-menu__level2--link" href = "#">Test Link 4</a></li>
-            <li class="nav-menu__level2--item"><a class="nav-menu__level2--link" href = "#">Test Link 5</a></li>
+      <!-- <div class = "navigation__wrapper col-md-7"> -->
+
+        <ul class = "navigation__buttons--wrapper col-xs-8 col-md-7">
+          <ul class = "nav-menu " id="navMenu">
+            <li class = "nav-menu__item"><a class = "nav-menu__item--link" href = "#">Shag</a></li>
+            <li class = "nav-menu__item"><a class = "nav-menu__item--link" href = "#">Contemporary</a></li>
+            <li class = "nav-menu__item nav-menu__dropdown">
+              <a class = "nav-menu__item--link nav-menu__dropdown--link" id = "navMenuDropDownBtn" href = "#">More Styles</a>
+              <ul class = "nav-menu__dropdown--list" id = 'navMenuDropDown'>
+                <li class="nav-menu__level2--item"><a class="nav-menu__level2--link" href = "#">Test Link 1</a></li>
+                <li class="nav-menu__level2--item"><a class="nav-menu__level2--link" href = "#">Test Link 2</a></li>
+                <li class="nav-menu__level2--item"><a class="nav-menu__level2--link" href = "#">Test Link 3</a></li>
+                <li class="nav-menu__level2--item"><a class="nav-menu__level2--link" href = "#">Test Link 4</a></li>
+                <li class="nav-menu__level2--item"><a class="nav-menu__level2--link" href = "#">Test Link 5</a></li>
+              </ul>
+            </li>
+            <li class = "nav-menu__item"><a class = "nav-menu__item--link" href = "#">Sale</a></li>
+            <li class = "nav-menu__item"><a class = "nav-menu__item--link" href = "#">Shop All Rugs</a></li>
           </ul>
-        </li>
-        <li class = "nav-menu__item"><a class = "nav-menu__item--link" href = "#">Sale</a></li>
-        <li class = "nav-menu__item"><a class = "nav-menu__item--link" href = "#">Shop All Rugs</a></li>
-      </ul>
-      <ul class = "navigation__buttons--wrapper col-xs-8">
-      <li class = "search__button"  id = "searchButton">
-        <a class = "navigation__button" href = "#"></a>
-      </li>
-      <li class = "navigation__chat "><a class = "navigation__button" href = "#"></a></li>
-      <li class = "navigation__cart ">
-        <a class = "navigation__button" href = "#" id='cart'></a>
-        <span class= "cart-count" id = "cartCount"></span>
-      </li>
-      <li class = "navigation__burger" id = 'burger'><a class = "navigation__button" href = "#"></a></li>
-    </ul>
+          <li class = "search__button"  id = "searchButton">
+            <a class = "navigation__button" href = "#"></a>
+          </li>
+          <li class = "navigation__chat "><a class = "navigation__button" href = "#"></a></li>
+          <li class = "navigation__cart ">
+            <a class = "navigation__button" href = "#" id='cart'></a>
+            <span class= "cart-count" id = "cartCount"></span>
+          </li>
+          <li class = "navigation__burger" id = 'burger'><a class = "navigation__button" href = "#"></a></li>
+        </ul>
+      <!-- </div> -->
     </nav>
 
     <section class= "header-content  row">
