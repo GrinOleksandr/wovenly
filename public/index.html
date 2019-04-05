@@ -26,12 +26,12 @@
   <header class= 'containter-fluid'>
     <nav class= "row ">
       <h2 class = "navigation__logo col-xs-4 col-sm-2 col-md-2 col-lg-1"  ><a  href = # >Wovenly</a></h2>
-      <div class = "search__button col-xs-2" id = "searchButton">
-        <a class = "navigation__button" href = "#"></a>
-
+      <div class = "search__wrapper col-xs-12" id = "searchFieldWrapper">
+        <input class = "search__field" id="searchFieldDropdown" type="search" name="search"  placeholder="Search">
+        <div class = "search__buttons--wrapper ">
+        <span class="search__clear search__controls--button" id="clearSearchBtn">✕</span>
+        <span class="search__submit  search__controls--button theme-green" id="submitSearchBtn"></span>
       </div>
-      <div class = "search__wrapper col-md-2 col-sm-2 col-lg-2" id = "searchFieldWrapper">
-        <input type="search" name="search" class = "search__field" placeholder="Search">
       </div>
       <ul class = "nav-menu col-md-7 col-sm-7 col-lg-7" id="navMenu">
         <li class = "nav-menu__item"><a class = "nav-menu__item--link" href = "#">Shag</a></li>
@@ -49,13 +49,17 @@
         <li class = "nav-menu__item"><a class = "nav-menu__item--link" href = "#">Sale</a></li>
         <li class = "nav-menu__item"><a class = "nav-menu__item--link" href = "#">Shop All Rugs</a></li>
       </ul>
-      <div class = "navigation__chat col-xs-2 col-sm-1 col-md-1 col-lg-1"><a class = "navigation__button" href = "#"></a></div>
-      <div class = "navigation__cart col-xs-2 col-sm-1 col-md-1 col-lg-1">
+      <ul class = "navigation__buttons--wrapper col-xs-8">
+      <li class = "search__button"  id = "searchButton">
+        <a class = "navigation__button" href = "#"></a>
+      </li>
+      <li class = "navigation__chat "><a class = "navigation__button" href = "#"></a></li>
+      <li class = "navigation__cart ">
         <a class = "navigation__button" href = "#" id='cart'></a>
         <span class= "cart-count" id = "cartCount"></span>
-      </div>
-      <div class = "navigation__burger col-xs-2" id = 'burger'><a class = "navigation__button" href = "#"></a></div>
-
+      </li>
+      <li class = "navigation__burger" id = 'burger'><a class = "navigation__button" href = "#"></a></li>
+    </ul>
     </nav>
 
     <section class= "header-content  row">
@@ -67,9 +71,6 @@
       <div class = "header__image col-xs-12 col-sm-8 col-md-8 col-lg-8">
         <img class= "image header-content__image" src="img/header-content-image.jpeg" alt = "cozy living room" />
       </div>
-
-
-
     </section>
     <section class = "benefits__wrapper" class ="container-fluid">
       <ul class="benefits">
@@ -104,6 +105,10 @@
 
     </div>
     </section>
+
+
+
+
 
 
 

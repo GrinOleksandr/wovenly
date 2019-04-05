@@ -9,7 +9,7 @@ function navMenuDropDownExpander(ev) {
   navMenuDropDown.classList.toggle('dropdown__visible')
   if (searchFieldWrapper.classList.contains('dropdown__visible')) {
     searchFieldWrapper.classList.remove('dropdown__visible');
-}
+  }
 }
 
 let navMenu = document.getElementById('navMenu')
@@ -19,11 +19,11 @@ burgerBtn.addEventListener('click', function(ev) {
   navMenu.classList.toggle('dropdown__visible')
   if (navMenuDropDown.classList.contains('dropdown__visible')) {
     navMenuDropDown.classList.remove('dropdown__visible');
-}
+  }
 
-if (searchFieldWrapper.classList.contains('dropdown__visible')) {
-  searchFieldWrapper.classList.remove('dropdown__visible');
-}
+  if (searchFieldWrapper.classList.contains('dropdown__visible')) {
+    searchFieldWrapper.classList.remove('dropdown__visible');
+  }
 })
 
 let searchFieldWrapper = document.getElementById('searchFieldWrapper')
@@ -34,11 +34,11 @@ searchBtn.addEventListener('click', function(ev) {
   searchFieldWrapper.classList.toggle('dropdown__visible')
   if (navMenu.classList.contains('dropdown__visible')) {
     navMenu.classList.remove('dropdown__visible');
-}
+  }
 
-if (navMenuDropDown.classList.contains('dropdown__visible')) {
-  navMenuDropDown.classList.remove('dropdown__visible');
-}
+  if (navMenuDropDown.classList.contains('dropdown__visible')) {
+    navMenuDropDown.classList.remove('dropdown__visible');
+  }
 })
 
 let cartCount = document.getElementById('cartCount')
@@ -50,7 +50,17 @@ function cartCounterIncrement(ev) {
   ev.preventDefault();
   if (!cartCount.classList.contains('visible')) {
     cartCount.classList.add('visible');
+  }
+
+  cartCount.innerText++;
 }
 
-cartCount.innerText++;
-}
+let searchFieldDropdown = document.getElementById('searchFieldDropdown');
+let submitSearchBtn = document.getElementById('submitSearchBtn');
+submitSearchBtn.addEventListener(
+    'click',
+    function() { alert(`searching for: ${searchFieldDropdown.value} `) })
+
+let clearSearchBtn = document.getElementById('clearSearchBtn');
+clearSearchBtn.addEventListener('click',
+                                function() { searchFieldDropdown.value = ""; })
