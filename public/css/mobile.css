@@ -172,9 +172,10 @@ nav {
 }
 
 .nav-menu__item--link {
+  font-family: "Graphik-Web", sans-serif;
   text-decoration: none;
   color: black;
-  font-size: 19px;
+  font-size: 15px;
   display: block;
   padding: 13px;
 }
@@ -188,8 +189,9 @@ nav {
   content: '';
   font-size: 18px;
   position: absolute;
-  top: 13px;
-  left: 117px;
+  top: 11px;
+
+  left: 103px;
   cursor: pointer;
   pointer-events: none;
 }
@@ -220,14 +222,19 @@ nav {
   border-bottom: none;
 }
 
+.nav-menu__dropdown--list{
+  border-radius:6px;
+}
+
 .nav-menu__level2--item {
   border-bottom: 1px solid #e5e5e5;
 }
 
 .nav-menu__level2--link {
+  font-family: "Graphik-Web", sans-serif;
   text-decoration: none;
   color: black;
-  font-size: 19px;
+  font-size: 15px;
   display: block;
   padding: 13px;
 }
