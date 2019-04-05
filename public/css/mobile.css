@@ -3,32 +3,20 @@ body {
 }
 
 header {
-  width: 100%;
+
   overflow:hidden
 }
 
 nav {
   border-bottom: 0.1rem solid #e5e5e5;
-  height: 4.9rem;
+  height: 49px;
   position: relative;
-}
-
-nav div {
-  box-sizing: border-box;
-  height: 100%;
 }
 
 .navigation__logo {
   font-family: "Graphik-Web", sans-serif;
-  font-size: 2.8rem;
-  display: flex;
-  align-items: center;
+  font-size: 28px;
   font-weight: 700;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  padding-top: .7rem;
-  padding-right: 5.5rem;
 }
 
 .navigation__logo a:link, .navigation__logo a:visited {
@@ -39,8 +27,8 @@ nav div {
 
 .search__button {
   position: relative;
-  border-left: .1rem solid #e5e5e5;
-  width: 13%;
+  border-left: 1px solid #e5e5e5;
+
 }
 
 .search__wrapper {
@@ -48,8 +36,8 @@ nav div {
   opacity: 0.4;
   visibility: hidden;
   display: none;
-  border: .1rem solid #e5e5e5;
-  height: 4.9rem;
+  border: 1px solid #e5e5e5;
+  height: 49px;
   width: 100%;
   position: absolute;
   left: 0;
@@ -58,7 +46,7 @@ nav div {
 }
 
 .search__field {
-  font-size: 1.6rem;
+  font-size: 16px;
   width: 100%;
   height: 4.9rem;
   padding-left: 4.4rem;
@@ -68,35 +56,35 @@ nav div {
 .search__wrapper::after {
   font-family: "icon-font1", sans-serif;
   content: "";
-  font-size: 2.1rem;
+  font-size: 21px;
   position: absolute;
-  top: 1.4rem;
-  left: 1.9rem;
+  top: 14px;
+  left: 19px;
 }
 
 .navigation__chat {
-  border-left: .1rem solid #e5e5e5;
-  width: 13%;
+  border-left: 1px solid #e5e5e5;
+
 }
 
 .navigation__cart {
   position: relative;
-  border-left: .1rem solid #e5e5e5;
-  width: 13%;
+  border-left: 1px solid #e5e5e5;
+
 }
 
 .cart-count {
-  width: 2.3rem;
-  height: 2.3rem;
+  width: 23px;
+  height: 23px;
   background: #066551;
   position: absolute;
-  top: 0.3rem;
-  left: 2.6rem;
-  border-radius: 2rem;
+  top:3px;
+  left: 26px;
+  border-radius: 20px;
   color: white;
   display: none;
   align-items: center;
-  font-size: 1.1rem;
+  font-size: 11px;
   justify-content: center;
   font-weight: 300;
   cursor: pointer;
@@ -109,8 +97,7 @@ nav div {
 }
 
 .navigation__burger {
-  border-left: .1rem solid #e5e5e5;
-  width: 13%;
+  border-left: 1px solid #e5e5e5;
 }
 
 .nav-menu {
@@ -121,9 +108,10 @@ nav div {
   background: white;
   flex-direction: column;
   position: absolute;
-  width: 40%;
-  top: 98%;
-  left: 60%;
+  list-style: none;
+  border: 1px solid #e5e5e5;
+  margin: 0;
+  padding-left: 0;
 }
 
 .nav-menu:last-child {
@@ -132,7 +120,7 @@ nav div {
 
 .navigation__button {
   font-family: "icon-font1";
-  font-size: 2.1rem;
+  font-size: 21px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -147,26 +135,18 @@ nav div {
   text-decoration: none;
 }
 
-.nav-menu {
-  list-style: none;
-  border: .1rem solid #e5e5e5;
-  margin: 0;
-  padding-left: 0;
-  width: 44%;
-  top: 99%;
-  left: 55.5%;
-}
+
 
 .nav-menu__item {
-  border-bottom: .1rem solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .nav-menu__item--link {
   text-decoration: none;
   color: black;
-  font-size: 1.9rem;
+  font-size: 19px;
   display: block;
-  padding: 1.3rem;
+  padding:13px;
 }
 
 .nav-menu__dropdown--link {
@@ -176,25 +156,24 @@ nav div {
 .nav-menu__dropdown::after {
   font-family: "icon-font1";
   content: '';
-  font-size: 1.8rem;
+  font-size: 18px;
   position: absolute;
-  top: 1.3rem;
-  left: 12.4rem;
+  top: 18px;
+  left: 124px;
   cursor: pointer;
   pointer-events: none;
 }
 
 .nav-menu__dropdown--list {
   list-style: none;
-  border: .1rem solid #e5e5e5;
+  border: 1px solid #e5e5e5;
   margin: 0;
   flex-direction: column;
   position: absolute;
-  width: 40%;
-  top: -.1rem;
-  left: -93.5%;
+
+
   background: white;
-  width: 16.2rem;
+
   text-align: center;
   transition: opacity 0.5s;
   opacity: 0.4;
@@ -211,15 +190,15 @@ nav div {
 }
 
 .nav-menu__level2--item {
-  border-bottom: .1rem solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .nav-menu__level2--link {
   text-decoration: none;
   color: black;
-  font-size: 1.9rem;
+  font-size: 19px;
   display: block;
-  padding: 1.3rem 0;
+
 }
 
 .nav-menu__dropdown {
@@ -240,21 +219,21 @@ nav div {
 
 /* Promo */
 .promo {
-  padding: 1.2rem 0 3.7rem 3.7rem;
+
   background: #f4f5f0;
 }
 
 .promo__title {
   color: #066551;
-  font-size: 2.5rem;
-  padding: 2.1rem 2.5rem .8rem .4rem;
+  font-size: 25px;
+
   margin: 0;
 }
 
 .promo__description {
-  font-size: 1.4rem;
+  font-size: 14px;
   color: #ababa9;
-  padding: 0 9rem 1.5rem .4rem;
+
   margin: 0;
   font-family: "Graphik-Web", serif;
 }
@@ -265,15 +244,14 @@ nav div {
 }
 
 .button-size-L {
-  width: 11.2rem;
-  height: 4rem;
-  font-size: 1.9rem;
+
+  font-size: 19px;
 }
 
 .button {
   border: none;
   outline: none;
-  border-radius: .5rem;
+  border-radius: 5px;
   font-family: "Graphik-Web", serif;
 }
 .header-content {
@@ -292,7 +270,6 @@ nav div {
 
 /* BENEFITS! */
 .benefits__wrapper {
-  padding: 1.1rem 5% ;
   width:100%;
 }
 
@@ -301,14 +278,13 @@ nav div {
 }
 
 .benefit {
-padding-top: 1.7rem ;
-    padding-bottom: .2rem ;
+
 display:flex;
 }
 
 .benefit__img {
-  width:5.1rem ;
-  height:5.1rem;
+  width:51px;
+  height:51px;
   display:block;
   background-size: 100%;
 }
@@ -334,7 +310,7 @@ display:flex;
   font-weight: 700;
   color: #066551;
   display: block;
-  font-size: 1.4rem ;
+  font-size: 14px ;
 }
 
 .benefit__link {
@@ -343,8 +319,8 @@ display:flex;
   color: #066551;
   display: block;
   text-decoration: underline;
-  font-size: 1.4rem;
-      padding-top: 0.9rem;
+  font-size:14px;
+
 }
 
 
@@ -352,6 +328,5 @@ display:flex;
 .benefit__wrapper {
   display:flex;
   flex-direction:column;
-  padding-left: .9rem ;
-padding-top: .6rem ;
+
 }
