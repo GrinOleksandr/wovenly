@@ -202,7 +202,7 @@
 
   .navigation__logo {
     font-size: 31px;
-    padding: 4px 10px;
+        padding: 6px 14px;
   }
 
   .search__wrapper::after {
@@ -212,18 +212,19 @@
   }
 
   .navigation__button {
-    font-size: 19px;
+    font-size: 26px;
+    padding: 20px;
   }
 
   .nav-menu__item--link {
-    font-size: 16px;
+    font-size: 15px;
     padding: 13px;
   }
 
   .nav-menu__dropdown::after {
     font-size: 16px;
     top: 18px;
-    left: 101px;
+    left: 95px;
   }
 
   .cart-count {
