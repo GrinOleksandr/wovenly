@@ -1,12 +1,14 @@
 let navMenuDropDown = document.getElementById('navMenuDropDown')
 let navMenuDropDownBtn = document.getElementById('navMenuDropDownBtn')
+let triangle = document.getElementById('dropdown_triangle')
 navMenuDropDownBtn.addEventListener('click', navMenuDropDownExpander)
 navMenuDropDownBtn.nextSibling.addEventListener('click',
                                                 navMenuDropDownExpander)
-
+dropdown_triangle
 function navMenuDropDownExpander(ev) {
   ev.preventDefault();
   navMenuDropDown.classList.toggle('dropdown__visible')
+  triangle.classList.toggle('dropdown__visible')
   if (searchFieldWrapper.classList.contains('dropdown__visible')) {
     searchFieldWrapper.classList.remove('dropdown__visible');
   }
