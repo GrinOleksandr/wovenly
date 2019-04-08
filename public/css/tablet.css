@@ -183,12 +183,13 @@ top: -31%;
   /* BENEFITS */
 .benefits__wrapper {
   display: flex;
-  width:max-content;
+  width: fit-content;
 }
 
 .benefits {
   display: flex;
   margin: 0;
+  padding-left:0;
 }
 
 .contact-us {
@@ -197,7 +198,7 @@ top: -31%;
 }
 
 .contact-us__img {
-  background-image: url(./../img/benefits-message.png);
+  /* background-image: url(./../img/benefits-message.png); */
   background-size:cover;
 }
 

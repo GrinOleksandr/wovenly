@@ -344,20 +344,18 @@ object-fit:cover;
   width: 51px;
   height: 51px;
   display: block;
-      padding-right: 44px;
-
 }
 
-.benefit__img1 {
+/* .benefit__img1 {
   background-image: url(./../img/benefits-trial.png);
-}
+} */
 
-.benefit__img2 {
+/* .benefit__img2 {
   background-image: url(./../img/benefits-shipping.png);
-}
+} */
 
 .benefit__img3 {
-  background-image: url(./../img/benefits-low-mobile.png);
+display:none;
 }
 
 .contact-us {

@@ -14,10 +14,25 @@
 
 
 /* BENEFITS */
-.benefit__img3{
-  background-image: url(./../img/benefits-low.png)
+
+.benefits {
+  padding-right: 65px;
+
 }
 
+
+.benefit__img3{
+display:block;
+}
+
+.benefit__img3--mobile{
+display:none;
+}
+
+.benefit {
+  padding:13px 39px 13px 7px;
+
+}
 
 .benefit__title {
     font-size: 14px;
