@@ -183,6 +183,7 @@ top: -31%;
   /* BENEFITS */
 .benefits__wrapper {
   display: flex;
+  width:max-content;
 }
 
 .benefits {
@@ -197,6 +198,7 @@ top: -31%;
 
 .contact-us__img {
   background-image: url(./../img/benefits-message.png);
+  background-size:cover;
 }
 
 .contact-us__title {
@@ -281,6 +283,10 @@ top: 90px;
 }
 .dropdown__triangle{
   top: 82px;
+}
+
+.benefits__inner-wrapper{
+  padding-right: 115px;
 }
 
 
