@@ -134,10 +134,13 @@
 .row.header-content {
   display: flex;
   flex-wrap: wrap;
+  overflow:hidden;
+  height:auto;
 }
 
 .header-content__image {
 top: -31%;
+
 }
 
 .header__image{

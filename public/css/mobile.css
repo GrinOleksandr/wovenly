@@ -318,8 +318,8 @@ overflow: hidden;
 height: 131%;
 overflow:hidden;
 position: absolute;
-
 top: -32%;
+object-fit:cover;
 }
 
 /* BENEFITS! */
