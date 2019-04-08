@@ -130,8 +130,31 @@
 
 /* PROMO */
 
+
+.row.header-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-content__image {
+top: -31%;
+}
+
+.header__image{
+  height:auto;
+}
+.button-size-L {
+      font-size: 20px;
+          padding: 10px 30px;
+}
+
+.promo__button--addition{
+  display:inline;
+}
+
 .promo {
   box-sizing: border-box;
+        padding: 46px 0 46px 70px;
 }
 
 .promo__title {
@@ -140,8 +163,10 @@
 }
 
 .promo__description {
-  font-size: 18px;
-  line-height: 23px;
+  padding: 0 126px 15px 0;
+
+        font-size: 18px;
+
 }
 
 .promo .button {
