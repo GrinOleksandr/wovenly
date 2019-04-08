@@ -258,12 +258,16 @@ nav {
 /* Promo */
 .promo {
   background: #f4f5f0;
+  padding: 20px 40px;
 }
 
 .promo__title {
   color: #066551;
+  font-family: "Graphik-Web", serif;
   font-size: 25px;
   margin: 0;
+  line-height: 26px;
+padding: 0 60px 10px 0;
 }
 
 .promo__description {
@@ -271,6 +275,7 @@ nav {
   color: #ababa9;
   margin: 0;
   font-family: "Graphik-Web", serif;
+  padding: 0 60px 10px 0;
 }
 
 .theme-green {
@@ -287,19 +292,31 @@ nav {
   outline: none;
   border-radius: 5px;
   font-family: "Graphik-Web", serif;
+  padding: 5px 30px;
+}
+
+.promo__button--addition {
+  display:none;
 }
 
 .header-content {
   overflow: hidden;
-  height: 700px;
 }
 
 .header-content .button {
-  margin-left: .4rem;
+
+}
+
+.header__image {
+  height: 300px;
+width: 100%;
+
+overflow: hidden;
 }
 
 .header-content__image {
   width: 100%;
+height: 100%;
 }
 
 /* BENEFITS! */

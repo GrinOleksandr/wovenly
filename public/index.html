@@ -23,8 +23,9 @@
 
 </head>
 <body>
-  <header class= 'containter-fluid'>
-    <nav class= "row ">
+  <header >
+    <nav class= 'containter-fluid'>
+
       <h2 class = "navigation__logo col-xs-4 col-sm-2 col-lg-2"  ><a  href = # >Wovenly</a></h2>
       <div class = "search__wrapper--dropdown col-xs-12" id = "searchFieldWrapper">
         <input class = "search__field" id="searchFieldDropdown" type="search" name="search"  placeholder="Search">
@@ -67,18 +68,23 @@
         <li class = "navigation__burger" id = 'burger'><a class = "navigation__button" href = "#"></a></li>
       </ul>
       <!-- </div> -->
-    </nav>
 
-    <section class= "header-content  row">
-      <div class="promo header__promo col-xs-12 col-sm-4 col-md-4 col-lg-4">
+    </nav>
+    <section class="container-fluid">
+      <div class = 'row'>
+      <div class="header-content promo header__promo col-xs-12 col-sm-4 col-md-4 col-lg-4">
         <h2 class = "title promo__title">The #1 Destination for Premium Rugs</h2>
         <p class = "description promo__description">Shop best sellers and enjoy 60-Day home trial with free shipping and returns</p>
-        <button class = "button theme-green button-size-L">Shop</button>
+        <button class = "button theme-green button-size-L">Shop <span class="promo__button--addition">Now</span></button>
       </div>
-      <div class = "header__image col-xs-12 col-sm-8 col-md-8 col-lg-8">
+    </div>
+    <div class = 'row'>
+      <div class = "header-content header__image col-xs-12 col-sm-8 col-md-8 col-lg-8">
         <img class= "image header-content__image" src="img/header-content-image.jpeg" alt = "cozy living room" />
       </div>
-    </section>
+    </div>
+  </section>
+
     <section class = "benefits__wrapper" class ="container-fluid">
       <ul class="benefits">
         <li class="benefit">

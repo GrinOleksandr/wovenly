@@ -14,6 +14,7 @@ function navMenuDropDownExpander(ev) {
   }
 }
 
+
 let navMenu = document.getElementById('navMenu')
 let burgerBtn = document.getElementById('burger')
 burgerBtn.addEventListener('click', function(ev) {
@@ -22,6 +23,7 @@ burgerBtn.addEventListener('click', function(ev) {
   if (navMenuDropDown.classList.contains('dropdown__visible')) {
     navMenuDropDown.classList.remove('dropdown__visible');
   }
+
 
   if (searchFieldWrapper.classList.contains('dropdown__visible')) {
     searchFieldWrapper.classList.remove('dropdown__visible');
@@ -50,7 +52,6 @@ cartCount.addEventListener('click', cartCounterIncrement)
 
 function cartCounterIncrement(ev) {
   ev.preventDefault();
-  console.log("prodduct added to cart!++")
   if (!cartCount.classList.contains('visible')) {
     cartCount.classList.add('visible');
   }
