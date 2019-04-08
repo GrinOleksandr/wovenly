@@ -4,7 +4,7 @@ let triangle = document.getElementById('dropdown_triangle')
 navMenuDropDownBtn.addEventListener('click', navMenuDropDownExpander)
 navMenuDropDownBtn.nextSibling.addEventListener('click',
                                                 navMenuDropDownExpander)
-dropdown_triangle
+
 function navMenuDropDownExpander(ev) {
   ev.preventDefault();
   navMenuDropDown.classList.toggle('dropdown__visible')
@@ -50,6 +50,7 @@ cartCount.addEventListener('click', cartCounterIncrement)
 
 function cartCounterIncrement(ev) {
   ev.preventDefault();
+  console.log("prodduct added to cart!++")
   if (!cartCount.classList.contains('visible')) {
     cartCount.classList.add('visible');
   }
@@ -61,7 +62,7 @@ let searchFieldDropdown = document.getElementById('searchFieldDropdown');
 let submitSearchBtn = document.getElementById('submitSearchBtn');
 submitSearchBtn.addEventListener(
     'click',
-    function() { alert(`searching for: ${searchFieldDropdown.value} `) })
+    function() { alert('searching for:',searchFieldDropdown.value) })
 
 let clearSearchBtn = document.getElementById('clearSearchBtn');
 clearSearchBtn.addEventListener('click',
