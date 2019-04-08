@@ -5,7 +5,9 @@ let ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 
 let conf = {
-    entry: './src/navigation.js',
+    entry: {
+      navigation: './src/navigation.js'
+    },
     output: {
         path: path.resolve(__dirname, 'public'),
         filename: 'js/main.js',
