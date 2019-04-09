@@ -33,11 +33,12 @@ let navMenuDropDown = document.getElementById('navMenuDropDown')
 let navMenuDropDownBtn = document.getElementById('navMenuDropDownBtn')
 let triangle = document.getElementById('dropdown_triangle')
 navMenuDropDownBtn.addEventListener('click', navMenuDropDownExpander)
-navMenuDropDownBtn.nextSibling.addEventListener('click',
+document.getElementByClassName('chevron').addEventListener('click',
                                                 navMenuDropDownExpander)
 
 function navMenuDropDownExpander(ev) {
   ev.preventDefault();
+  console.log(ev.target);
   navMenuDropDown.classList.toggle('dropdown__visible')
   triangle.classList.toggle('dropdown__visible')
   if (searchFieldWrapper.classList.contains('dropdown__visible')) {
@@ -98,7 +99,7 @@ let searchFieldDropdown = document.getElementById('searchFieldDropdown');
 let submitSearchBtn = document.getElementById('submitSearchBtn');
 submitSearchBtn.addEventListener(
     'click',
-    function() {alert(`searching for: ${searchFieldDropdown.value}`) })
+    function() { alert(`searching for: ${searchFieldDropdown.value}`) })
 
 let clearSearchBtn = document.getElementById('clearSearchBtn');
 clearSearchBtn.addEventListener('click',
