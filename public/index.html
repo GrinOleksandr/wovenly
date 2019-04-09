@@ -25,7 +25,6 @@
 <body>
   <header >
     <nav class= 'containter-fluid'>
-
       <h2 class = "navigation__logo col-xs-4 col-sm-2 col-lg-2"  ><a  href = # >Wovenly</a></h2>
       <div class = "search__wrapper--dropdown col-xs-12" id = "searchFieldWrapper">
         <input class = "search__field" id="searchFieldDropdown" type="search" name="search"  placeholder="Search">
@@ -34,12 +33,12 @@
           <span class="search__submit  search__controls--button theme-green" id="submitSearchBtn"></span>
         </div>
       </div>
-      <div class = "search__wrapper col-sm-3 col-lg-4">
+      <div class = "search__wrapper col-sm-4 col-lg-5">
         <input class = "search__field" type="text" placeholder = "Search"/>
       </div>
       <!-- <div class = "navigation__wrapper col-md-7"> -->
 
-      <ul class = "navigation__buttons--wrapper col-xs-8 col-sm-7 col-lg-6">
+      <ul class = "navigation__buttons--wrapper col-xs-8 col-sm-6 col-lg-5">
         <ul class = "nav-menu " id="navMenu">
           <li class = "nav-menu__item"><a class = "nav-menu__item--link" href = "#">Shag</a></li>
           <li class = "nav-menu__item"><a class = "nav-menu__item--link" href = "#">Contemporary</a></li>
@@ -65,7 +64,7 @@
           <a class = "navigation__button" href = "#" id='cart'></a>
           <span class= "cart-count" id = "cartCount"></span>
         </li>
-        <li class = "navigation__burger" id = 'burger'><a class = "navigation__button" href = "#"></a></li>
+        <li class = "navigation__burger" id = 'burger'><a class = "navigation__button navigation__burger--link"  href = "#"></a></li>
       </ul>
       <!-- </div> -->
 
@@ -73,15 +72,15 @@
     <section class="container-fluid">
       <div class = 'row header-content'>
         <div class=" promo header__promo col-xs-12 col-sm-5  ">
-            <h2 class = "title promo__title">The #1 Destination for Premium Rugs</h2>
-            <p class = "description promo__description">Shop best sellers and enjoy 60-Day home trial with free shipping and returns</p>
-            <button class = "button theme-green button-size-L">Shop <span class="promo__button--addition">Now</span></button>
+          <h2 class = "title promo__title">The #1 Destination for Premium Rugs</h2>
+          <p class = "description promo__description">Shop best sellers and enjoy 60-Day home trial with free shipping and returns</p>
+          <button class = "button theme-green button-size-L">Shop <span class="promo__button--addition">Now</span></button>
         </div>
         <div class = "header__image col-xs-12 col-sm-7 ">
-        <img class= "image header-content__image" src="img/header-content-image.jpeg" alt = "cozy living room" />
+          <img class= "image header-content__image" src="img/header-content-image.jpeg" alt = "cozy living room" />
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
     <section class = "benefits__wrapper container-fluid content">
       <div class = "row">
         <div class = "benefits__inner-wrapper col-xs-12 col-sm-9 col-md=9">
@@ -102,43 +101,59 @@
               </div>
             </li>
             <li class="benefit">
-            <img src = "img/benefits-low-mobile.png" class = "benefit__img3--mobile benefit__img" alt= "0% APR"/>
-            <img src = "img/benefits-low.png" class = "benefit__img3 benefit__img" alt= "0% APR"/>
-            <div class = "benefit__wrapper">
-              <span class = "benefit__title">As low as 0% APR with Affirm</span>
-              <a class = "benefit__link" href = "#">Pre-Qualify Now</a>
-            </div>
+              <img src = "img/benefits-low-mobile.png" class = "benefit__img3--mobile benefit__img" alt= "0% APR"/>
+              <img src = "img/benefits-low.png" class = "benefit__img3 benefit__img" alt= "0% APR"/>
+              <div class = "benefit__wrapper">
+                <span class = "benefit__title">As low as 0% APR with Affirm</span>
+                <a class = "benefit__link" href = "#">Pre-Qualify Now</a>
+              </div>
             </li>
           </ul>
         </div>
-    <div class = "contact-us header col-sm-3 col-md-3">
+        <div class = "contact-us header col-sm-3 col-md-3">
           <img class="contact-us__img benefit__img" src = "./img/message_bubble.svg" alt="contact us" />
           <div class = contact-us__wrapper>
             <span class="contact-us__title"><a class = "contact-us__link" href = "#">Message Us</a> or</span>
             <a href="tel:1-888 - 888 - 8888" class = "contact-us__link">Call Us at 1 - 888 - 888 - 8888</a>
           </div>
 
-      </div>
+        </div>
       </div>
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   </header>
-  <footer></footer>
+  <main>
+    <section class = "popular container content">
+      <header class = "popular row">
+        <title class = "popular col-xs-3">Popular</title>
+        <div class = "popular slider__controls--wrapper top col col-sm-3">
+          <a href = "#" class = "slider__controls--link theme-green-text">See All</a>
+          <div class = "slider__controls wrapper">
+            <span class = "slider__controls--button slider__controls--prev"></span>
+            <span class = "slider__controls--button slider__controls--prev"></span>
+          </div>
+        </div>
+      </header>
+      <ul class = "popular slider row">
+        <li class = "slider__item product popular">
+          <img src = "#" class = "product__img popular" alt= "rug" />
+          <span class = "product__title popular">name of rug</span>
+          <div class = "product__price--wrapper popular">
+            <span class = "product__oldprice popular">$500</span>
+            <span class = "product__price--from popular">$469</span>
+            <span class = "product__price--to popular">$769</span>
+          </div>
+          <ul class = "product__colors popular">
+              <li class = "product__color popular"></li>
+              <li class = "product__color popular"></li>
+          </ul>
+        </li>
+      </ul>
 
-  <script src= "/js/main.js"></script>
-</body>
-</html>
+      </section>
+    </main>
+
+    <footer></footer>
+
+    <script src= "/js/main.js"></script>
+  </body>
+  </html>

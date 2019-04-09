@@ -24,9 +24,9 @@
     "webpack-dev-server": "^3.1.14"
   },
   "scripts": {
-    "start": "npm-run-all -p dev serv",
+    "start": "npm-run-all -p build serv",
     "build": "webpack --mode production",
-    "dev": "webpack-dev-server --mode development",
+    "dev": "webpack-dev-server --mode development --open",
     "test": "echo \"Error: no test specified\" && exit 1",
     "serv": "nodemon --inspect -w server/ server/app.js -L"
   },

@@ -6,12 +6,12 @@ let ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 let conf = {
     entry: {
-      navigation: './src/navigation.js'
+      navigation: path.resolve(__dirname, 'src/navigation.js')
     },
     output: {
-        path: path.resolve(__dirname, 'public'),
-        filename: 'js/main.js',
-        publicPath: 'public/'
+        path: path.resolve(__dirname, 'public/js/'),
+        filename: 'main.js',
+        publicPath: 'js/'
     },
     devServer: {
         overlay: true

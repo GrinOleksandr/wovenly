@@ -17,7 +17,7 @@ nav {
   font-size: 28px;
   font-weight: 700;
   margin: 0;
-  padding: 5px;
+  padding: 5px 5px 4px 5px;
 }
 
 .navigation__logo a:link, .navigation__logo a:visited {
@@ -70,6 +70,11 @@ nav {
   padding-left: 44px;
   border: none;
 }
+
+.search__field:active, .search__field:focus {
+  outline:0;
+}
+
 
 .search__buttons--wrapper {
   height: 100%;
@@ -267,7 +272,7 @@ nav {
   font-size: 25px;
   margin: 0;
   line-height: 26px;
-padding: 0 60px 10px 0;
+padding: 0 0 10px 0;
 }
 
 .promo__description {
@@ -275,7 +280,7 @@ padding: 0 60px 10px 0;
   color: #ababa9;
   margin: 0;
   font-family: "Graphik-Web", serif;
-  padding: 0 60px 10px 0;
+  padding: 0 0 10px 0;
 }
 
 .theme-green {
@@ -345,14 +350,6 @@ object-fit:cover;
   height: 51px;
   display: block;
 }
-
-/* .benefit__img1 {
-  background-image: url(./../img/benefits-trial.png);
-} */
-
-/* .benefit__img2 {
-  background-image: url(./../img/benefits-shipping.png);
-} */
 
 .benefit__img3 {
 display:none;
