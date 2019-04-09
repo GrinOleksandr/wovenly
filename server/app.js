@@ -11,6 +11,8 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname + '../public/index.html'))
 })
 
+console.log(db.result.data[2]);
+
 app.listen(config.port, config.ip)
 
 console.log(`*****Server running at localhost ${config.port}`)

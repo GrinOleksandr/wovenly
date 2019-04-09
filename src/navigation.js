@@ -1,40 +1,14 @@
-document.addEventListener('DOMContentLoaded', function(){
-  document.body.addEventListener('click', function(ev){
-      if(!ev.target.classList.contains("nav-menu__item--link") && !ev.target.classList.contains("nav-menu__level2--link") &&
-  !ev.target.classList.contains("navigation__burger--link")){
-      closeDropDown();
-    }
-  })
-})
-
-document.addEventListener('DOMContentLoaded', function(){
-  document.body.addEventListener('click', function(ev){
-    if(ev.target.id!=="searchFieldDropdown" && ev.target.id!=="submitSearchBtn" &&  ev.target.id!=="clearSearchBtn"){
-      if (searchFieldWrapper.classList.contains('dropdown__visible')) {
-        searchFieldWrapper.classList.remove('dropdown__visible');
-      }
-    }
-  })
-})
-
-
-
-
-
-
-
-
-
-
-
 
 
 let navMenuDropDown = document.getElementById('navMenuDropDown')
 let navMenuDropDownBtn = document.getElementById('navMenuDropDownBtn')
 let triangle = document.getElementById('dropdown_triangle')
 navMenuDropDownBtn.addEventListener('click', navMenuDropDownExpander)
-document.getElementByClassName('chevron').addEventListener('click',
-                                                navMenuDropDownExpander)
+if(document.getElementsByClassName('chevron')[0]){
+  document.getElementsByClassName('chevron')[0].addEventListener(
+      'click', navMenuDropDownExpander)
+}
+
 
 function navMenuDropDownExpander(ev) {
   ev.preventDefault();
@@ -46,7 +20,6 @@ function navMenuDropDownExpander(ev) {
   }
 }
 
-
 let navMenu = document.getElementById('navMenu')
 let burgerBtn = document.getElementById('burger')
 burgerBtn.addEventListener('click', function(ev) {
@@ -55,7 +28,6 @@ burgerBtn.addEventListener('click', function(ev) {
   if (navMenuDropDown.classList.contains('dropdown__visible')) {
     navMenuDropDown.classList.remove('dropdown__visible');
   }
-
 
   if (searchFieldWrapper.classList.contains('dropdown__visible')) {
     searchFieldWrapper.classList.remove('dropdown__visible');
@@ -71,7 +43,7 @@ searchBtn.addEventListener('click', function(ev) {
   closeDropDown();
 })
 
-function closeDropDown(){
+function closeDropDown() {
   if (navMenu.classList.contains('dropdown__visible')) {
     navMenu.classList.remove('dropdown__visible');
   }
@@ -104,3 +76,26 @@ submitSearchBtn.addEventListener(
 let clearSearchBtn = document.getElementById('clearSearchBtn');
 clearSearchBtn.addEventListener('click',
                                 function() { searchFieldDropdown.value = ""; })
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.body.addEventListener('click', function(ev) {
+    if (!ev.target.classList.contains("nav-menu__item--link") &&
+        !ev.target.classList.contains("nav-menu__level2--link") &&
+        !ev.target.classList.contains("navigation__burger--link")) {
+      closeDropDown();
+    }
+  })
+})
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.body.addEventListener('click', function(ev) {
+    console.log(ev.target);
+    if (ev.target.id !== "searchFieldDropdown" &&
+        ev.target.id !== "submitSearchBtn" &&
+        ev.target.id !== "clearSearchBtn") {
+      if (searchFieldWrapper.classList.contains('dropdown__visible')) {
+        searchFieldWrapper.classList.remove('dropdown__visible');
+      }
+    }
+  })
+})
