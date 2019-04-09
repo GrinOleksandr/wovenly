@@ -183,22 +183,16 @@ nav {
   font-size: 15px;
   display: block;
   padding: 13px;
+  white-space: nowrap;
 }
 
 .nav-menu__dropdown--link {
   position: relative;
+
 }
 
-.nav-menu__dropdown::after {
+.chevron {
   font-family: "icon-font1";
-  content: '';
-  font-size: 18px;
-  position: absolute;
-  top: 11px;
-
-  left: 103px;
-  cursor: pointer;
-  pointer-events: none;
 }
 
 .nav-menu__dropdown--list {
@@ -326,8 +320,8 @@ object-fit:cover;
 }
 
 .benefits__wrapper {
-  width: 100%;
-  padding: 11px 0px;
+  padding-top: 11px;
+  padding-bottom:11px;
 }
 
 .benefits__inner-wrapper{

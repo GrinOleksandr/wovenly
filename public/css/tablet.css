@@ -181,24 +181,24 @@ top: -31%;
 }
 
   /* BENEFITS */
-.benefits__wrapper {
-  display: flex;
-  width: fit-content;
-}
 
 .benefits {
   display: flex;
-  margin: 0;
-  padding-left:0;
+justify-content: space-evenly;
+margin: 0;
+padding-left: 0;
+width: 100%;
 }
+
 
 .contact-us {
   display: flex;
   color: #066551;
+justify-content: flex-end;
+padding-left: 20px;
 }
 
 .contact-us__img {
-  /* background-image: url(./../img/benefits-message.png); */
   background-size:cover;
 }
 
@@ -286,9 +286,6 @@ top: 90px;
   top: 82px;
 }
 
-.benefits__inner-wrapper{
-  padding-right: 115px;
-}
 
 
 }

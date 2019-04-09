@@ -9,9 +9,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 document.addEventListener('DOMContentLoaded', function(){
   document.body.addEventListener('click', function(ev){
-    console.log(ev.target);
     if(ev.target.id!=="searchFieldDropdown" && ev.target.id!=="submitSearchBtn" &&  ev.target.id!=="clearSearchBtn"){
-      console.log('closeSearch!')
       if (searchFieldWrapper.classList.contains('dropdown__visible')) {
         searchFieldWrapper.classList.remove('dropdown__visible');
       }
@@ -100,9 +98,7 @@ let searchFieldDropdown = document.getElementById('searchFieldDropdown');
 let submitSearchBtn = document.getElementById('submitSearchBtn');
 submitSearchBtn.addEventListener(
     'click',
-    function() {
-      console.log(document.getElementById('searchFieldDropdown'))
-      alert(`searching for: ${searchFieldDropdown.value}`) })
+    function() {alert(`searching for: ${searchFieldDropdown.value}`) })
 
 let clearSearchBtn = document.getElementById('clearSearchBtn');
 clearSearchBtn.addEventListener('click',
