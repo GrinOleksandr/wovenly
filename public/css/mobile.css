@@ -331,21 +331,29 @@ object-fit:cover;
 }
 
 .benefits {
+  display:inline-block;
   list-style: none;
       padding-left: 0;
 }
 
 .benefit {
-  display: flex;
+text-align:left;
   padding: 13px 8px 13px 7px;
-  width: 259px;
-white-space: nowrap;
+  outline:none;
+  cursor:auto;
+  display:block;
+}
+.benefit:active {
+  outline:none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .benefit__img {
   width: 51px;
   height: 51px;
   display: block;
+  float:left;
 }
 
 .benefit__img3 {
@@ -378,9 +386,9 @@ display:none;
   display: flex;
   flex-direction: column;
       padding-left: 13px;
-      padding-top: 5px;
+    padding-top: 9px;
 }
 
 .contact-us__wrapper {
-      padding: 0 12px;
+      padding: 5px 12px;
 }
