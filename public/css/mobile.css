@@ -332,11 +332,14 @@ object-fit:cover;
 
 .benefits {
   list-style: none;
+      padding-left: 0;
 }
 
 .benefit {
   display: flex;
   padding: 13px 8px 13px 7px;
+  width: 259px;
+white-space: nowrap;
 }
 
 .benefit__img {
