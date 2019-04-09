@@ -346,14 +346,6 @@ object-fit:cover;
   display: block;
 }
 
-/* .benefit__img1 {
-  background-image: url(./../img/benefits-trial.png);
-} */
-
-/* .benefit__img2 {
-  background-image: url(./../img/benefits-shipping.png);
-} */
-
 .benefit__img3 {
 display:none;
 }
