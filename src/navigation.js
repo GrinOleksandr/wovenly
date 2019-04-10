@@ -24,6 +24,7 @@ if(document.getElementsByClassName('chevron')[0]){
 function navMenuDropDownExpander(ev) {
   ev.preventDefault();
   ev.stopPropagation();
+  console.log('CLOSED!')
   console.log(ev.target);
   navMenuDropDown.classList.toggle('dropdown__visible')
   triangle.classList.toggle('dropdown__visible')

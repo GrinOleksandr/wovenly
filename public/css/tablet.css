@@ -10,7 +10,7 @@
 
   .navigation__logo {
     font-size: 26px;
-    padding: 5px 19px;
+    padding: 10px;
   }
 
   .search__button {
@@ -243,7 +243,7 @@
 
   .navigation__logo {
     font-size: 31px;
-    padding: 14px 24px;
+    padding: 10px;
   }
 
   .search__wrapper::after {
