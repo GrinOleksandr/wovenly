@@ -1,6 +1,7 @@
 const express = require('express'), app = express(),
       config = require('./config'), path = require('path'),
-      incomingDB = require('./DB/incomingDB.json'), fs = require('fs'),
+      incomingDB = require('./DB/incomingDB.json'),
+      fs = require('fs'),
       fetch = require('node-fetch'),
       downloadImage = require('image-downloader');
 
