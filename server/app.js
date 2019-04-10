@@ -14,6 +14,4 @@ app.get('/', (req, res) => {
 
 app.listen(config.port)
 
-
-
 console.log(`*****Server running at localhost ${config.port}`)
