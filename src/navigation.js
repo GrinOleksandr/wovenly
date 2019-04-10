@@ -3,6 +3,17 @@
 let navMenuDropDown = document.getElementById('navMenuDropDown')
 let navMenuDropDownBtn = document.getElementById('navMenuDropDownBtn')
 let triangle = document.getElementById('dropdown_triangle')
+let navMenu = document.getElementById('navMenu')
+let burgerBtn = document.getElementById('burger')
+let searchFieldWrapper = document.getElementById('searchFieldWrapper')
+let searchBtn = document.getElementById('searchButton')
+let cartCount = document.getElementById('cartCount')
+let cart = document.getElementById('cart')
+let searchFieldDropdown = document.getElementById('searchFieldDropdown');
+let submitSearchBtn = document.getElementById('submitSearchBtn');
+let clearSearchBtn = document.getElementById('clearSearchBtn');
+
+
 navMenuDropDownBtn.addEventListener('click', navMenuDropDownExpander)
 if(document.getElementsByClassName('chevron')[0]){
   document.getElementsByClassName('chevron')[0].addEventListener(
@@ -12,6 +23,7 @@ if(document.getElementsByClassName('chevron')[0]){
 
 function navMenuDropDownExpander(ev) {
   ev.preventDefault();
+  ev.stopPropagation();
   console.log(ev.target);
   navMenuDropDown.classList.toggle('dropdown__visible')
   triangle.classList.toggle('dropdown__visible')
@@ -20,8 +32,7 @@ function navMenuDropDownExpander(ev) {
   }
 }
 
-let navMenu = document.getElementById('navMenu')
-let burgerBtn = document.getElementById('burger')
+
 burgerBtn.addEventListener('click', function(ev) {
   ev.preventDefault();
   navMenu.classList.toggle('dropdown__visible')
@@ -34,8 +45,7 @@ burgerBtn.addEventListener('click', function(ev) {
   }
 })
 
-let searchFieldWrapper = document.getElementById('searchFieldWrapper')
-let searchBtn = document.getElementById('searchButton')
+
 searchBtn.addEventListener('click', function(ev) {
   ev.preventDefault();
   ev.stopPropagation()
@@ -48,13 +58,16 @@ function closeDropDown() {
     navMenu.classList.remove('dropdown__visible');
   }
 
+  if (triangle.classList.contains('dropdown__visible')) {
+    triangle.classList.remove('dropdown__visible');
+  }
+
   if (navMenuDropDown.classList.contains('dropdown__visible')) {
     navMenuDropDown.classList.remove('dropdown__visible');
   }
 }
 
-let cartCount = document.getElementById('cartCount')
-let cart = document.getElementById('cart')
+
 cart.addEventListener('click', cartCounterIncrement)
 cartCount.addEventListener('click', cartCounterIncrement)
 
@@ -67,18 +80,18 @@ function cartCounterIncrement(ev) {
   cartCount.innerText++;
 }
 
-let searchFieldDropdown = document.getElementById('searchFieldDropdown');
-let submitSearchBtn = document.getElementById('submitSearchBtn');
+
 submitSearchBtn.addEventListener(
     'click',
     function() { alert(`searching for: ${searchFieldDropdown.value}`) })
 
-let clearSearchBtn = document.getElementById('clearSearchBtn');
+
 clearSearchBtn.addEventListener('click',
                                 function() { searchFieldDropdown.value = ""; })
 
 document.addEventListener('DOMContentLoaded', function() {
   document.body.addEventListener('click', function(ev) {
+    ev.stopPropagation();
     if (!ev.target.classList.contains("nav-menu__item--link") &&
         !ev.target.classList.contains("nav-menu__level2--link") &&
         !ev.target.classList.contains("navigation__burger--link")) {

@@ -6,6 +6,8 @@
   "dependencies": {
     "ejs": "^2.6.1",
     "express": "^4.16.4",
+    "image-downloader": "^3.4.2",
+    "node-fetch": "^2.3.0",
     "nodejs": "^0.0.0"
   },
   "devDependencies": {
