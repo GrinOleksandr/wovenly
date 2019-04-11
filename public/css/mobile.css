@@ -44,20 +44,21 @@ header {
 }
 
 .search__wrapper--dropdown {
-  transition: opacity 0.5s;
-  opacity: 0.4;
-  visibility: hidden;
-  border: 1px solid #e5e5e5;
-  height: 49px;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  top: 100%;
-  box-sizing: content-box;
-  background: white;
-  overflow: hidden;
-  justify-content: space-between;
+      transition: opacity 0.5s;
+      opacity: 0.4;
+      visibility: hidden;
+      border-bottom: 1px solid #e5e5e5;
+      
+      height: 49px;
+      background: white;
+      overflow: hidden;
+      display: none;
+      justify-content: space-between;
 }
+
+ .search__wrapper--dropdown__wrapper {
+   display:flex;
+ }
 
 .search__wrapper {
   display: none;
