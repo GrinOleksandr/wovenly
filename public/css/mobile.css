@@ -17,6 +17,15 @@ header {
   font-size: 28px;
   font-weight: 700;
   margin: 0;
+}
+
+.navigation__logo--wide {
+  display:none;
+  padding: 10px 5px 4px 15px;
+}
+
+.navigation__logo--mobile{
+  font-size: 30px;
   padding: 10px 5px 4px 15px;
 }
 
@@ -155,7 +164,7 @@ header {
 
 .navigation__button {
   font-family: "icon-font1";
-  font-size: 21px;
+  font-size: 15px;
   cursor: pointer;
   display: flex;
   align-items: center;
