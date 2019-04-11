@@ -44,11 +44,11 @@ header {
 }
 
 .search__wrapper--dropdown {
-      transition: opacity 0.5s;
+      /* transition: opacity 0.5s; */
       opacity: 0.4;
       visibility: hidden;
       border-bottom: 1px solid #e5e5e5;
-      
+
       height: 49px;
       background: white;
       overflow: hidden;
@@ -128,7 +128,7 @@ header {
 }
 
 .nav-menu {
-  transition: opacity 0.5s;
+  /* transition: opacity 0.5s; */
   opacity: 0.4;
   visibility: hidden;
   display: none;
@@ -142,6 +142,7 @@ header {
   margin: 0;
   padding-left: 0;
   width: 182px;
+  z-index:2;
 }
 
 .nav-menu a {
@@ -199,7 +200,7 @@ header {
   position: absolute;
   background: white;
   text-align: center;
-  transition: opacity 0.5s;
+  /* transition: opacity 0.5s; */
   opacity: 0.4;
   visibility: hidden;
   padding-left: 0;
@@ -207,6 +208,25 @@ header {
   top: -1px;
   right: 180px;
   width: 182px;
+  z-index:2;
+}
+
+
+.dropdown__triangle {
+  width: 17px;
+  height: 17px;
+  border: 1px solid #e5e5e5;
+  border-width: 1px 0 0 1px;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 63px;
+  left: 42px;
+  z-index: 3;
+  border-bottom-color: white;
+  background: white;
+  visibility:hidden;
+  opacity:0.4;
+  /* transition: opacity 0.5s; */
 }
 
 .nav-menu a {
@@ -243,7 +263,6 @@ header {
   visibility: visible;
   opacity: 1;
   background: white;
-  z-index: 2;
 }
 
 .visible {

@@ -14,12 +14,28 @@ let submitSearchBtn = document.getElementById('submitSearchBtn');
 let clearSearchBtn = document.getElementById('clearSearchBtn');
 
 
+navMenu.addEventListener('click', function(ev){
+  ev.preventDefault();
+  ev.stopPropagation();
+
+  if(navMenuDropDown.classList.contains('dropdown__visible')){
+    navMenuDropDown.classList.remove('dropdown__visible')
+  }
+
+  if(triangle.classList.contains('dropdown__visible')){
+    triangle.classList.remove('dropdown__visible')
+  }
+
+    if (searchFieldWrapper.classList.contains('dropdown__visible')) {
+    searchFieldWrapper.classList.remove('dropdown__visible');
+  }
+})
+
 navMenuDropDownBtn.addEventListener('click', navMenuDropDownExpander)
 if(document.getElementsByClassName('chevron')[0]){
   document.getElementsByClassName('chevron')[0].addEventListener(
       'click', navMenuDropDownExpander)
 }
-
 
 function navMenuDropDownExpander(ev) {
   ev.preventDefault();

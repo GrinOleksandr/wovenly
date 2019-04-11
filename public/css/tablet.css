@@ -66,20 +66,7 @@
     position: relative;
   }
 
-  .dropdown__triangle {
-    width: 17px;
-    height: 17px;
-    border: 1px solid #e5e5e5;
-    border-width: 1px 0 0 1px;
-    transform: rotate(45deg);
-    position: absolute;
-    top: 63px;
-    left: 42px;
-    z-index: 3;
-    border-bottom-color: white;
-    background: white;
-    display: none;
-  }
+
 
   .dropdown__visible {
     display: flex;
