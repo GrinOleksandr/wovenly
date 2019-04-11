@@ -352,6 +352,7 @@ header {
 
 .benefit {
   display: flex;
+  align-items: center;
   padding: 13px 8px 13px 7px;
 }
 
