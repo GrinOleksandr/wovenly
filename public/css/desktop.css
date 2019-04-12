@@ -1,65 +1,53 @@
 @media (min-width: 1200px) {
 
   html {
-    font-size: .7vw;
+    font-size: 20px;
   }
 
-  .nav-menu__item--link {
-    padding: .4rem 0 .1rem 2.9rem;
-  }
-
-  .navigation__logo {
-    width: 10.6%;
-  }
-
-  .search__wrapper {
-    width: 41.5%;
-  }
-
-  .nav-menu {
-    width: 36.7%;
-  }
-
-  .navigation__chat {
-    width: 4.5%;
-  }
-
-  .navigation__cart {
-    width: 4.5%;
-  }
-
-  .more-styles::after {
-    top: 2.5rem;
-  }
 
 /* PROMO */
 
   .header-content {
-  /* height: 40rem; */
+
     overflow: hidden;
   }
 
-  .promo {
-    padding: 1.8rem 4.68rem 11.8rem 7.6rem;
-  }
 
-  .promo__description {
-    padding: 0 7rem 1.5rem .4rem;
-  }
+/* BENEFITS */
 
-  .promo .button::after {
-    top: 1.5rem;left: 8.8rem;
-  }
+.benefits {
 
-  .promo__title {
-    padding: 3.2rem 2.6rem 1.1rem .4rem;
-  }
 
-  .header__image {
-    height: auto;
-  }
+}
 
-  .header-content__image {
-    height: 38rem;
-  }
+
+.benefit__img3{
+display:block;
+}
+
+.benefit__img3--mobile{
+display:none;
+}
+
+.benefit {
+  padding:13px 39px 13px 7px;
+
+}
+
+.benefit__title {
+    font-size: 14px;
+}
+.benefit__link {
+    font-size: 14px;
+}
+
+.contact-us {
+  
+}
+
+.contact-us__wrapper{
+  font-size: 14px;
+
+}
+
 }

@@ -8,8 +8,9 @@
   <meta name="description" content="This website is best of the best of the best!  Buy our carpets and enjoy your life!" />
   <meta property="og:site_name" content="grinoleksandr.github.io/wovenly/" />
   <meta property="og:description" content="This website is best of the best of the best!  Buy our carpets and enjoy your life!" />
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/bootstrap_grid.css">
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/mobile.css">
   <link rel="stylesheet" href="css/tablet.css">
@@ -17,69 +18,139 @@
 
 </head>
 <body>
-  <header class= 'containter-fluid'>
-    <nav class= "row ">
-      <h2 class = "navigation__logo col-xs-4 col-sm-2 col-md-2 col-lg-1"  ><a  href = # >Wovenly</a></h2>
-      <div class = "search__button col-xs-2" id = "searchButton">
-        <a class = "navigation__button" href = "#"></a>
+  <header >
+    <nav class= 'containter-fluid'>
+      <div class="row navigation__global--wrapper">
+        <div class = "col-xs-4 col-sm-2 col-lg-2">
+            <h2 class = "navigation__logo--wide navigation__logo"  ><a  href = # >Wovenly</a></h2>
+            <h2 class = "navigation__logo--mobile navigation__logo"  ><a  href = # >W</a></h2>
+        </div>
 
+      <div class = "search__wrapper col-sm-4 col-lg-5">
+        <input class = "search__field" type="text" placeholder = "Search"/>
       </div>
-      <div class = "search__wrapper col-md-2 col-sm-2 col-lg-2" id = "searchFieldWrapper">
-        <input type="search" name="search" class = "search__field" placeholder="Search">
+          <div class = "navigation__buttons--wrapper col-xs-8 col-sm-6 col-lg-5">
+        <ul class = "nav-menu " id="navMenu">
+          <li class = "nav-menu__item"><a class = "nav-menu__item--link" href = "#">Shag</a></li>
+          <li class = "nav-menu__item"><a class = "nav-menu__item--link" href = "#">Contemporary</a></li>
+          <li class = "nav-menu__item nav-menu__dropdown">
+            <div class = "dropdown__triangle" id = "dropdown_triangle"></div>
+            <a class = "nav-menu__item--link nav-menu__dropdown--link" id = "navMenuDropDownBtn" href = "#">More Styles<span class="chevron">  </span></a>
+            <ul class = "nav-menu__dropdown--list" id = 'navMenuDropDown'>
+              <li class="nav-menu__level2--item"><a class="nav-menu__level2--link" href = "#">Test Link 1</a></li>
+              <li class="nav-menu__level2--item"><a class="nav-menu__level2--link" href = "#">Test Link 2</a></li>
+              <li class="nav-menu__level2--item"><a class="nav-menu__level2--link" href = "#">Test Link 3</a></li>
+              <li class="nav-menu__level2--item"><a class="nav-menu__level2--link" href = "#">Test Link 4</a></li>
+              <li class="nav-menu__level2--item"><a class="nav-menu__level2--link" href = "#">Test Link 5</a></li>
+            </ul>
+          </li>
+          <li class = "nav-menu__item"><a class = "nav-menu__item--link" href = "#">Sale</a></li>
+          <li class = "nav-menu__item"><a class = "nav-menu__item--link" href = "#">Shop All Rugs</a></li>
+        </ul>
+        <div class = "search__button"  id = "searchButton">
+          <a class = "navigation__button" href = "#"></a>
+        </div>
+        <div class = "navigation__chat "><a class = "navigation__button" href = "#"></a></div>
+        <div class = "navigation__cart ">
+          <a class = "navigation__button" href = "#" id='cart'></a>
+          <span class= "cart-count" id = "cartCount"></span>
+        </div>
+        <div class = "navigation__burger" id = 'burger'><a class = "navigation__button navigation__burger--link"  href = "#"></a></div>
       </div>
-      <ul class = "nav-menu col-md-7 col-sm-7 col-lg-7" id="navMenu">
-        <li class = "nav-menu__item"><a class = "nav-menu__item--link" href = "#">Shag</a></li>
-        <li class = "nav-menu__item"><a class = "nav-menu__item--link" href = "#">Contemporary</a></li>
-        <li class = "nav-menu__item more-styles">
-          <a class = "nav-menu__item--link more-styles__link" id = "moreStylesBtn" href = "#">More Styles</a>
-          <ul class = "more-styles__dropdown" id = 'moreStylesMenu'>
-            <li class="more-styles__style--item"><a class="more-styles__style--link" href = "#">Test Link 1</a></li>
-            <li class="more-styles__style--item"><a class="more-styles__style--link" href = "#">Test Link 2</a></li>
-            <li class="more-styles__style--item"><a class="more-styles__style--link" href = "#">Test Link 3</a></li>
-            <li class="more-styles__style--item"><a class="more-styles__style--link" href = "#">Test Link 4</a></li>
-            <li class="more-styles__style--item"><a class="more-styles__style--link" href = "#">Test Link 5</a></li>
-          </ul>
-        </li>
-        <li class = "nav-menu__item"><a class = "nav-menu__item--link" href = "#">Sale</a></li>
-        <li class = "nav-menu__item"><a class = "nav-menu__item--link" href = "#">Shop All Rugs</a></li>
-      </ul>
-      <div class = "navigation__chat col-xs-2 col-sm-1 col-md-1 col-lg-1"><a class = "navigation__button" href = "#"></a></div>
-      <div class = "navigation__cart col-xs-2 col-sm-1 col-md-1 col-lg-1">
-        <a class = "navigation__button" href = "#" id='cart'></a>
-        <span class= "cart-count" id = "cartCount"></span>
       </div>
-      <div class = "navigation__burger col-xs-2" id = 'burger'><a class = "navigation__button" href = "#"></a></div>
-
+      <div class = "search__wrapper--dropdown row" id = "searchFieldWrapper">
+        <div class = "col-xs-12 search__wrapper--dropdown__wrapper">
+        <input class = "search__field" id="searchFieldDropdown" type="search" name="search"  placeholder="Search">
+        <div class = "search__buttons--wrapper ">
+          <span class="search__clear search__controls--button" id="clearSearchBtn">✕</span>
+          <span class="search__submit  search__controls--button theme-green" id="submitSearchBtn"></span>
+        </div>
+      </div>
+    </div>
     </nav>
 
-    <section class= "header-content container-fluid row">
-        <div class="promo header__promo col-xs-12 col-sm-4 col-md-4 col-lg-4">
+    <section class="container-fluid">
+      <div class = 'row header-content'>
+        <div class=" promo header__promo col-xs-12 col-sm-5  ">
           <h2 class = "title promo__title">The #1 Destination for Premium Rugs</h2>
           <p class = "description promo__description">Shop best sellers and enjoy 60-Day home trial with free shipping and returns</p>
-          <button class = "button theme-green button-size-L">Shop</button>
+          <button class = "button theme-green button-size-L">Shop <span class="promo__button--addition">Now</span></button>
         </div>
-        <div class = "header__image col-xs-12 col-sm-8 col-md-8 col-lg-8">
-            <img class= "image header-content__image" src="img/header-content-img.png" alt = "cozy living room" />
-        </div>
-
-
-
+        <div class = "header__image col-xs-12 col-sm-7 "></div>
+      </div>
     </section>
+    <section class = "benefits__wrapper container">
+      <div class = "row">
+        <div class = "benefits__inner-wrapper col-xs-12 col-sm-9 col-md-9">
+          <ul class="benefits">
 
-
-
-
-
-
-
-
-
-
-
-
+            <li class="benefit">
+              <img src = "img/benefits-trial.png" class = "benefit__img1 benefit__img" alt = "60 day trial"/>
+              <div class = "benefit__wrapper">
+                <span class = "benefit__title">60-Day Trial</span>
+                <a class = "benefit__link" href = "#">Learn More</a>
+              </div>
+            </li>
+            <li class="benefit">
+              <img src = "img/benefits-shipping.png" class = "benefit__img2 benefit__img"  alt = "free shipping/">
+              <div class = "benefit__wrapper">
+                <span class = "benefit__title">Free Shipping & Returns</span>
+                <a class = "benefit__link" href = "#">Learn More</a>
+              </div>
+            </li>
+            <li class="benefit">
+              <img src = "img/benefits-low-mobile.png" class = "benefit__img3--mobile benefit__img" alt= "0% APR"/>
+              <img src = "img/benefits-low.png" class = "benefit__img3 benefit__img" alt= "0% APR"/>
+              <div class = "benefit__wrapper">
+                <span class = "benefit__title">As low as 0% APR with Affirm</span>
+                <a class = "benefit__link" href = "#">Pre-Qualify Now</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class = "contact-us benegit header col-sm-3 col-md-3">
+          <img class="contact-us__img benefit__img" src = "./img/message_bubble.svg" alt="contact us" />
+      <div class = 'contact-us__wrapper benefit__wrapper'>
+            <span class="contact-us__title"><a class = "contact-us__link" href = "#">Message Us</a> or</span>
+            <a href="tel:1-888-888-8888" class = "contact-us__link">Call Us at 1 - 888 - 888 - 8888</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </header>
-  <footer></footer>
+  <!-- <main>
+    <section class = "popular container">
+      <header class = "popular row">
+        <title class = "popular col-xs-3">Popular</title>
+        <div class = "popular slider__controls--wrapper top col col-sm-3">
+          <a href = "#" class = "slider__controls--link theme-green-text">See All</a>
+          <div class = "slider__controls wrapper">
+            <span class = "slider__controls--button slider__controls--prev"></span>
+            <span class = "slider__controls--button slider__controls--prev"></span>
+          </div>
+        </div>
+      </header>
+      <ul class = "popular__slider row">
+        <li class = "slider__item product popular">
+          <img src = "#" class = "product__img popular" alt= "rug" />
+          <span class = "product__title popular">name of rug</span>
+          <div class = "product__price--wrapper popular">
+            <span class = "product__oldprice popular">$500</span>
+            <span class = "product__price--from popular">$469</span>
+            <span class = "product__price--to popular">$769</span>
+          </div>
+          <ul class = "product__colors popular">
+              <li class = "product__color popular"></li>
+              <li class = "product__color popular"></li>
+          </ul>
+        </li>
+      </ul>
 
-<script src= "/js/navigation.js"></script>
-</body>
-</html>
+      </section>
+    </main>
+
+    <footer></footer> -->
+
+    <script src= "/js/main.js"></script>
+  </body>
+  </html>
