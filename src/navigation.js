@@ -38,12 +38,14 @@ if(document.getElementsByClassName('chevron')[0]){
 }
 
 function navMenuDropDownExpander(ev) {
+
   ev.preventDefault();
   ev.stopPropagation();
-  console.log('CLOSED!')
-  console.log(ev.target);
   navMenuDropDown.classList.toggle('dropdown__visible')
+  if(burgerBtn.style.display === "none"){
   triangle.classList.toggle('dropdown__visible')
+  }
+
   if (searchFieldWrapper.classList.contains('dropdown__visible')) {
     searchFieldWrapper.classList.remove('dropdown__visible');
   }
@@ -117,9 +119,8 @@ document.addEventListener('DOMContentLoaded', function() {
   })
 })
 
-document.addEventListener('DOMContentLoaded', function() {
+
   document.body.addEventListener('click', function(ev) {
-    console.log(ev.target);
     if (ev.target.id !== "searchFieldDropdown" &&
         ev.target.id !== "submitSearchBtn" &&
         ev.target.id !== "clearSearchBtn") {
@@ -128,4 +129,3 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }
   })
-})
