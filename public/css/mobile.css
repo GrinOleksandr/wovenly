@@ -332,14 +332,7 @@ header {
   background-position-y: center;
 }
 
-.header-content__image {
-  width: 100%;
-  height: 131%;
-  overflow: hidden;
-  position: absolute;
-  top: -32%;
-  object-fit: cover;
-}
+
 
 /* BENEFITS! */
 .content {
