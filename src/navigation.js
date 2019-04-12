@@ -41,9 +41,10 @@ function navMenuDropDownExpander(ev) {
 
   ev.preventDefault();
   ev.stopPropagation();
+  console.log('open menu');
   navMenuDropDown.classList.toggle('dropdown__visible')
-  if(burgerBtn.style.display === "none"){
-  triangle.classList.toggle('dropdown__visible')
+  if(getComputedStyle(burgerBtn).display === "none"){
+    triangle.classList.toggle('dropdown__visible')
   }
 
   if (searchFieldWrapper.classList.contains('dropdown__visible')) {

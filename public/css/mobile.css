@@ -48,6 +48,10 @@ header {
   border-left: 1px solid #e5e5e5;
 }
 
+.navigation__burger {
+  display: block;
+}
+
 .navigation__button a:link, .navigation__button a:visited, .navigation__button a:active, .navigation__button a:hover {
   color: black;
 }
