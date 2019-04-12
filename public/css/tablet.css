@@ -1,13 +1,12 @@
-@media (min-width: 375px){
-  .navigation__logo--mobile{
-    display:none;
+@media (min-width: 375px) {
+  .navigation__logo--mobile {
+    display: none;
   }
 
   .navigation__logo--wide {
-    display:block;
+    display: block;
   }
 }
-
 
 @media (min-width: 768px) {
   html {
@@ -24,12 +23,12 @@
     padding: 10px;
   }
 
-  .navigation__logo--mobile{
-    display:none;
+  .navigation__logo--mobile {
+    display: none;
   }
 
   .navigation__logo--wide {
-    display:block;
+    display: block;
   }
 
   .search__button {
@@ -84,8 +83,6 @@
   .nav-menu__dropdown {
     position: relative;
   }
-
-
 
   .dropdown__visible {
     display: flex;
@@ -186,72 +183,71 @@
 
   /* BENEFITS */
   .row.header-content {
-      display: flex;
-      flex-wrap: wrap;
-      overflow: hidden;
-      height: auto;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    height: auto;
+  }
 
-    .header-content__image {
-      top: -31%;
-    }
+  .header-content__image {
+    top: -31%;
+  }
 
-    .header__image {
-      height: auto;
-    }
+  .header__image {
+    height: auto;
+  }
 
-    .button-size-L {
-      font-size: 20px;
-      padding: 10px 30px;
-    }
+  .button-size-L {
+    font-size: 20px;
+    padding: 10px 30px;
+  }
 
-    .promo__button--addition {
-      display: inline;
-    }
+  .promo__button--addition {
+    display: inline;
+  }
 
-    .promo {
-      box-sizing: border-box;
-      padding: 46px 0 46px 70px;
-    }
+  .promo {
+    box-sizing: border-box;
+    padding: 46px 0 46px 70px;
+  }
 
-    .promo__title {
-      font-size: 41px;
-      line-height: 44px;
-    }
+  .promo__title {
+    font-size: 41px;
+    line-height: 44px;
+  }
 
-    .promo__description {
-      padding: 0 0 15px 0;
-      font-size: 18px;
-    }
+  .promo__description {
+    padding: 0 0 15px 0;
+    font-size: 18px;
+  }
 
-    .promo .button {
-      position: relative;
-    }
+  .promo .button {
+    position: relative;
+  }
 
-    .header__image {
-      padding: 0;
-    }
+  .header__image {
+    padding: 0;
+  }
 
     /* BENEFITS */
 
-    .benefits {
+  .benefits {
     display: flex;
-  justify-content: space-evenly;
-  margin: 0;
-  padding-left: 0;
-  width: 100%;
+    justify-content: space-evenly;
+    margin: 0;
+    padding-left: 0;
+    width: 100%;
   }
-
 
   .contact-us {
     display: flex;
     color: #066551;
-  justify-content: flex-end;
-  padding-left: 20px;
+    justify-content: flex-end;
+    padding-left: 20px;
   }
 
   .contact-us__img {
-    background-size:cover;
+    background-size: cover;
   }
 
   .contact-us__title {
