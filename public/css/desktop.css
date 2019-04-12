@@ -1,46 +1,46 @@
 @media (min-width: 1200px) {
 
-  html {
-    font-size: 20px;
-  }
+    html {
+        font-size: 20px;
+    }
 
 
-/* PROMO */
+    /* PROMO */
 
-  .header-content {
-    overflow: hidden;
-  }
+    .header-content {
+        overflow: hidden;
+    }
 
 
-/* BENEFITS */
+    /* BENEFITS */
 
-  .benefits {
-  }
+    .benefits {
+    }
 
-  .benefit__img3 {
-    display: block;
-  }
+    .benefit__img3 {
+        display: block;
+    }
 
-  .benefit__img3--mobile {
-    display: none;
-  }
+    .benefit__img3--mobile {
+        display: none;
+    }
 
-  .benefit {
-    padding: 13px 39px 13px 7px;
-  }
+    .benefit {
+        padding: 13px 39px 13px 7px;
+    }
 
-  .benefit__title {
-    font-size: 14px;
-  }
+    .benefit__title {
+        font-size: 14px;
+    }
 
-  .benefit__link {
-    font-size: 14px;
-  }
+    .benefit__link {
+        font-size: 14px;
+    }
 
-  .contact-us {
-  }
+    .contact-us {
+    }
 
-  .contact-us__wrapper {
-    font-size: 14px;
-  }
+    .contact-us__wrapper {
+        font-size: 14px;
+    }
 }
