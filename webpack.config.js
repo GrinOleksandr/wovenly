@@ -12,7 +12,7 @@ let conf = {
     output: {
         path: path.resolve(__dirname, 'public/js/'),
         filename: '[name].js',
-        publicPath: 'js/'
+        publicPath: 'public/js/'
     },
     devServer: {
         overlay: true
