@@ -4,6 +4,7 @@
   "description": "this is training project for Oleksandr Grin",
   "main": "./server/app.js",
   "dependencies": {
+      "express": "^4.16.4"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
@@ -15,14 +16,17 @@
     "style-loader": "^0.23.1",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
-    "webpack-dev-server": "^3.1.14"
+    "webpack-dev-server": "^3.1.14",
+    "nodemon": "^1.11.0",
+    "npm-run-all": "^4.1.5",
+    "path": "^0.12.7"
   },
   "scripts": {
-    "start": "webpack --mode production",
+    "start": "npm-run-all -p build serv",
     "build": "webpack --mode production",
     "dev": "webpack-dev-server --mode development --open",
-    "test": "echo \"Error: no test specified\" && exit 1"
-
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serv": "nodemon --inspect -w server/ server/app.js -L"
   },
   "repository": {
     "type": "git",
