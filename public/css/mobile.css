@@ -438,7 +438,7 @@ main {
 
 .slider__controls--button {
   padding: 11px 31px;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .slider__control--top {
@@ -521,5 +521,10 @@ main {
 }
 
 .slick-dots {
-  padding:0;
+  padding: 0;
+}
+
+.slick-track {
+  display: flex;
+  overflow: hidden;
 }
