@@ -211,3 +211,14 @@ html {
 .benefit__link {
   font-size: 12px;
 }
+
+/********************** POPULAR BLOCK! *****************************/
+.slider__control--bottom {
+  display: none;
+}
+
+.slider__control--top {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 32px;
+}
