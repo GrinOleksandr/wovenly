@@ -511,7 +511,6 @@ main {
 .product__color {
   width: 15px;
   height: 15px;
-  background-color: red;
   border-radius: 20px;
   margin-right: 5px;
 }
