@@ -7,7 +7,6 @@ $(document)
         slidesToScroll: 6,
         easing: 'swing',
         speed: 1200,
-        dots: false,
         prevArrow: $('.popular__prev'),
         nextArrow: $('.popular__next'),
         responsive: [{
@@ -16,7 +15,6 @@ $(document)
               slidesToShow: 4,
               slidesToScroll: 4,
               infinite: true,
-              dots: true
             }
           },
           {
@@ -25,7 +23,6 @@ $(document)
               slidesToShow: 2,
               slidesToScroll: 2,
               infinite: true,
-              dots: true
             }
           },
         ]
