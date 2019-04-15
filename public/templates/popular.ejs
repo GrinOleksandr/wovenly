@@ -1,0 +1,23 @@
+<div class="popular__slider--wrapper col-xs-12 ">
+
+  <% products.forEach(function (product) { %>
+  <div class="slider__item--wrapper">
+    <div class="slider__item product ">
+      <div class="product__img--wrapper">
+        <img src="<%= product.image %>" class="product__img" alt="rug" />
+      </div>
+      <span class="product__title"><%= product.name %></span>
+      <div class="product__price--wrapper">
+        <span class="product__oldprice"><%= product.oldPrice %></span>
+        <span class="product__newprice"><%= product.priceFrom %> - <%= product.priceTo %></span>
+      </div>
+      <ul class="product__colors">
+        <% product.colors.forEach(function (color) { %>
+        <li class="product__color" background-color="<%= color %>" > <%= product.name %> ></li>
+        <% }) %>
+      </ul>
+    </div>
+  </div>
+  <% }) %>
+
+</div>
