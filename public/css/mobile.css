@@ -283,7 +283,7 @@ header {
 /* Promo */
 .promo {
   background: #f4f5f0;
-  padding: 20px 40px;
+  padding: 20px;
 }
 
 .promo__title {
@@ -352,6 +352,7 @@ header {
 
 .benefits {
   list-style: none;
+  padding-left:0;
 }
 
 .benefit {

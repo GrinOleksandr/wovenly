@@ -132,53 +132,6 @@
   }
 
 /* PROMO */
-
-
-  .row.header-content {
-    display: flex;
-    flex-wrap: wrap;
-    overflow: hidden;
-    height: auto;
-  }
-
-
-  .header__image {
-    height: auto;
-  }
-
-  .button-size-L {
-    font-size: 20px;
-    padding: 10px 30px;
-  }
-
-  .promo__button--addition {
-    display: inline;
-  }
-
-  .promo {
-    box-sizing: border-box;
-    padding: 46px 0 46px 70px;
-  }
-
-  .promo__title {
-    font-size: 41px;
-    line-height: 44px;
-  }
-
-  .promo__description {
-    padding: 0 0 15px 0;
-    font-size: 18px;
-  }
-
-  .promo .button {
-    position: relative;
-  }
-
-  .header__image {
-    padding: 0;
-  }
-
-  /* BENEFITS */
   .row.header-content {
     display: flex;
     flex-wrap: wrap;
@@ -201,7 +154,7 @@
 
   .promo {
     box-sizing: border-box;
-    padding: 46px 0 46px 70px;
+    padding: 46px 0 46px 20px;
   }
 
   .promo__title {
