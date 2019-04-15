@@ -430,7 +430,6 @@ main {
   border: 1px solid #066551;
   border-radius: 6px;
   display: flex;
-  padding: 0 11px;
 }
 
 .slider__controls--wrapper span:first-child {
@@ -439,6 +438,7 @@ main {
 
 .slider__controls--button {
   padding: 11px 31px;
+  cursor:pointer;
 }
 
 .slider__control--top {
@@ -447,6 +447,7 @@ main {
 
 .popular__slider--wrapper {
   padding-bottom: 20px;
+  overflow: hidden;
 }
 
 .popular__title {
@@ -517,4 +518,8 @@ main {
 
 .theme-green-text, .theme-green-text:link, .theme-green-text:visited, .theme-green-text:active {
   color: #066551
+}
+
+.slick-dots {
+  padding:0;
 }
