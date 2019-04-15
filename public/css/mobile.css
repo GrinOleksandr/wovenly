@@ -277,10 +277,6 @@ header {
   background: white;
 }
 
-.visible {
-  display: flex;
-}
-
 /* Promo */
 .promo {
   background: #f4f5f0;
@@ -408,4 +404,117 @@ header {
   .navigation__logo--wide {
     display: block;
   }
+}
+
+/* POPULAR! */
+main {
+  padding: 10px;
+}
+
+.popular {
+  border-top: 1px solid #e5e5e5;
+}
+
+.slider__control--wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.slider__controls--link {
+  font-weight: 700;
+  padding: 0 30px;
+  white-space: nowrap;
+}
+
+.slider__controls--wrapper {
+  border: 1px solid #066551;
+  border-radius: 6px;
+  display: flex;
+  padding: 0 11px;
+}
+
+.slider__controls--wrapper span:first-child {
+  border-right: 1px solid #066551;
+}
+
+.slider__controls--button {
+  padding: 11px 31px;
+}
+
+.slider__control--top {
+  display: none;
+}
+
+.popular__slider--wrapper {
+  padding-bottom: 20px;
+}
+
+.popular__title {
+  font-family: "Graphik-Web", serif;
+  font-size: 25px;
+  font-weight: 700;
+  padding: 40px 0 20px;
+}
+
+.product__img--wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 105px;
+  padding: 5px;
+  margin: 0 auto;
+  height: 150px;
+}
+
+.product__img {
+  width: 100%;
+  height: 100%;
+}
+
+.slider__item {
+  border: 1px solid #066551;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.slider__item--wrapper:last-child .slider__item {
+  margin-right: 0;
+}
+
+.product__title {
+  font-family: "Graphik-Web", serif;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 0 10px 10px;
+}
+
+.product__price--wrapper {
+  padding: 5px 0 30px 10px;
+  font-family: "Graphik-Web", serif;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.product__oldprice {
+  color: #707070;
+  text-decoration: line-through;
+  padding-right: 3px;
+}
+
+.product__colors {
+  list-style: none;
+  display: flex;
+  padding-left: 10px;
+}
+
+.product__color {
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border-radius: 20px;
+  margin-right: 5px;
+}
+
+.theme-green-text, .theme-green-text:link, .theme-green-text:visited, .theme-green-text:active {
+  color: #066551
 }
