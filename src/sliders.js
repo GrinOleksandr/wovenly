@@ -7,6 +7,7 @@ $(document)
         slidesToScroll: 6,
         easing: 'swing',
         speed: 1200,
+        swipe:false,
         prevArrow: $('.popular__prev'),
         nextArrow: $('.popular__next'),
         responsive: [{
