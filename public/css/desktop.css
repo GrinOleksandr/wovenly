@@ -237,3 +237,18 @@ html {
 .contact-us__wrapper {
   font-size: 14px;
 }
+
+/********************** POPULAR BLOCK! *****************************/
+.slider__control--bottom {
+  display: none;
+}
+
+.slider__control--top {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 32px;
+}
+
+.slider__item--wrapper[data-slick-index="5"] > .slider__item {
+  margin:0;
+}

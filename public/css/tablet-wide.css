@@ -227,3 +227,7 @@
     justify-content: flex-end;
     padding-top: 32px;
   }
+
+  .slider__item--wrapper[data-slick-index="3"] > .slider__item {
+    margin-right:2px;
+  }

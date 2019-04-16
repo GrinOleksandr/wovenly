@@ -527,3 +527,7 @@ main {
   display: flex;
   overflow: hidden;
 }
+
+.slick-active:nth-child(1) {
+  background-color:red;
+}
