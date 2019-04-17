@@ -541,3 +541,38 @@ main {
   text-align: right;
     padding-top: 35px;
 }
+
+.shop-by-size__more--top {
+  display:none;
+}
+
+.shop-by-size__size-list{
+  padding-left:0;
+}
+
+.sizes__item--wrapper {
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items:center;
+}
+
+.sizes__item--image{
+  width:85%;
+}
+
+
+.sizes__item--wrapper:nth-child(3),.sizes__item--wrapper:nth-child(4) {
+  display:none;
+}
+
+.sizes__item--link{
+  text-align:center;
+}
+
+.sizes__item--title{
+  font-family: "Graphik-Web", serif;
+  font-weight: 700;
+  padding-top: 10px;
+}

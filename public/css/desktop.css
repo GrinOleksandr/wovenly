@@ -266,3 +266,15 @@ html {
   text-align: right;
     padding-top: 35px;
 }
+
+.shop-by-size__more--top {
+  display:block;
+}
+
+.shop-by-size__more--bottom {
+  display:none;
+}
+
+.sizes__item--wrapper:nth-child(3),.sizes__item--wrapper:nth-child(4) {
+  display:flex;
+}
