@@ -455,6 +455,7 @@ main {
   font-size: 25px;
   font-weight: 700;
   padding: 40px 0 20px;
+  white-space: nowrap;
 }
 
 .product__img--wrapper {
@@ -548,6 +549,7 @@ main {
 
 .shop-by-size__size-list{
   padding-left:0;
+  padding-bottom: 20px;
 }
 
 .sizes__item--wrapper {
