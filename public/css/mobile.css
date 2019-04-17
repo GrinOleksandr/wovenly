@@ -450,7 +450,7 @@ main {
   overflow: hidden;
 }
 
-.popular__title {
+.content__block--title {
   font-family: "Graphik-Web", serif;
   font-size: 25px;
   font-weight: 700;
@@ -530,4 +530,14 @@ main {
 
 .slick-active:nth-child(1) {
   background-color:red;
+}
+
+/********************** Shop By Size BLOCK! *****************************/
+
+.shop-by-size__more {
+  font-family: "Graphik-Web", serif;
+  font-weight: 700;
+  white-space: nowrap;
+  text-align: right;
+    padding-top: 35px;
 }

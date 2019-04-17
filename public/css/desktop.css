@@ -239,6 +239,11 @@ html {
 }
 
 /********************** POPULAR BLOCK! *****************************/
+.content__block--title{
+  padding: 10px 0;
+  font-size:32px;
+}
+
 .slider__control--bottom {
   display: none;
 }
@@ -246,9 +251,18 @@ html {
 .slider__control--top {
   display: flex;
   justify-content: flex-end;
-  padding-top: 32px;
+  padding-top: 27px;
 }
-
 .slider__item--wrapper[data-slick-index="5"] > .slider__item {
   margin:0;
+}
+
+/********************** Shop By Size BLOCK! *****************************/
+
+.shop-by-size__more {
+  font-family: "Graphik-Web", serif;
+  font-weight: 700;
+  white-space: nowrap;
+  text-align: right;
+    padding-top: 35px;
 }
