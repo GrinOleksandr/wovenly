@@ -96,7 +96,7 @@ const products = [{
   }
 ];
 
-fetch(`http://wovenly-server.herokuapp.com/getpopular`, {
+fetch(`https://wovenly-server.herokuapp.com/getpopular`, {
     method: 'GET',
     headers: {
       'Content-Type': 'text/plain',
