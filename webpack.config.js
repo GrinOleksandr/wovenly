@@ -2,12 +2,11 @@ let path = require('path');
 
 let ExtractTextPlugin = require("extract-text-webpack-plugin");
 
-
-
 let conf = {
     entry: {
       navigation: path.resolve(__dirname, 'src/navigation.js'),
-      sliders: path.resolve(__dirname, 'src/sliders.js')
+      popular: path.resolve(__dirname, 'src/popular.js'),
+
     },
     output: {
         path: path.resolve(__dirname, 'public/js/'),
