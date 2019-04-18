@@ -6,6 +6,7 @@ let conf = {
     entry: {
       navigation: path.resolve(__dirname, 'src/navigation.js'),
       popular: path.resolve(__dirname, 'src/popular.js'),
+      discoverYourStyle: path.resolve(__dirname, 'src/discoverYourStyle.js')
 
     },
     output: {

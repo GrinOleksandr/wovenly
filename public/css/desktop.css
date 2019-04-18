@@ -253,7 +253,7 @@ html {
   justify-content: flex-end;
   padding-top: 27px;
 }
-.slider__item--wrapper[data-slick-index="5"] > .slider__item {
+.popular__item--wrapper[data-slick-index="5"] > .slider__item {
   margin:0;
 }
 

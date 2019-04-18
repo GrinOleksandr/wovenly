@@ -228,7 +228,7 @@ html {
   padding-top: 27px;
 }
 
-.slider__item--wrapper[data-slick-index="3"] > .slider__item {
+.popular__item--wrapper[data-slick-index="3"] > .slider__item {
   margin-right:3px;
 }
 
@@ -253,3 +253,5 @@ html {
 .sizes__item--wrapper:nth-child(3),.sizes__item--wrapper:nth-child(4) {
   display:flex;
 }
+
+/********************** Discover Your Style BLOCK! *****************************/

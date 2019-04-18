@@ -473,13 +473,13 @@ main {
   height: 100%;
 }
 
-.slider__item {
-  border: 1px solid #066551;
+.popular__item {
+  border: 1px solid #e6e6e6;
   border-radius: 5px;
   margin-right: 10px;
 }
 
-.slider__item--wrapper:last-child .slider__item {
+.popular__item--wrapper:last-child .slider__item {
   margin-right: 0;
 }
 
@@ -529,9 +529,7 @@ main {
   overflow: hidden;
 }
 
-.slick-active:nth-child(1) {
-  background-color:red;
-}
+
 
 /********************** Shop By Size BLOCK! *****************************/
 
@@ -577,4 +575,40 @@ main {
   font-family: "Graphik-Web", serif;
   font-weight: 700;
   padding-top: 10px;
+}
+
+/********************** Discover Your Style BLOCK! *****************************/
+
+.discover-your-style__wrapper{
+  list-style: none;
+  overflow: hidden;
+}
+
+.discover-your-style__slide--wrapper {
+
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-right: 10px;
+}
+
+
+.discover-your-style__slide--image {
+  width: 100%;
+
+}
+
+
+
+.discover-your-style__slide--wrapper:last-child  {
+  margin-right: 0;
+}
+
+.discover-your-style__slide--title {
+  font-family: "Graphik-Web", serif;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 0 10px 10px;
 }
