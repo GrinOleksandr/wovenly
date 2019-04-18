@@ -22,25 +22,39 @@
     lightbrown:'#DEB887',
     lightblue: '#ADD8E6'
   }
+  const newBlockImages ={
+    0: "img/new1.jpg",
+    1: "img/new2.jpg",
+    2: "img/new3.jpg",
+    3: "img/new4.jpg"
+  }
+  let iterator = 0;
   %>
+
+
+
   <% newProducts.forEach(function (product) { %>
-  <div class="newBlock__item--wrapper">
-    <div class="newBlock__item product ">
-      <div class="newBlock__img--wrapper">
-        <img src="<%= product.thumb %>" class="newBlockproduct__img" alt="rug" />
+  <div class="newblock__item--wrapper">
+    <div class="newblock__item product ">
+      <div class="newblock__img--wrapper">
+        <img src="<%= newBlockImages[iterator] %>" class="newblock__product--img" alt="rug" />
       </div>
-      <span class="newBlock__product--title"><%= product.name %></span>
-      <div class="newBlock__product__price--wrapper">
-        <span class="newBlock__product__oldprice"><%= product.oldPrice %></span>
-        <span class="newBlock__product__newprice"><%= product.priceFrom %> - <%= product.priceTo %></span>
+      <span class="newblock__product--title"><%= product.name %></span>
+      <div class="newblock__product__price--wrapper">
+        <span class="newblock__product--oldprice"><%= product.oldPrice %></span>
+        <span class="newblock__product--newprice"><%= product.priceFrom %> - <%= product.priceTo %></span>
       </div>
-      <ul class="newBlock__product--colors">
+      <ul class="newblock__product--colors">
         <% product.colors.forEach(function (color) { %>
-        <li class="newBlock__product--color" style="background:<%= colorPalete[color] %>"></li>
+        <li class="newblock__product--color" style="background:<%= colorPalete[color] %>"></li>
         <% }) %>
       </ul>
     </div>
   </div>
-  <% }) %>
+  <% if(iterator === 3){
+    iterator = 0
+  }
+    else iterator++
+  }) %>
 
 </div>

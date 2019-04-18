@@ -20,18 +20,18 @@ fetch(`https://wovenly-server.herokuapp.com/getnew`, {
   .then(function() {
     $('.newblock__slider--wrapper')
       .slick({
-        slidesToShow: 6,
-        slidesToScroll: 6,
+        slidesToShow: 3,
+        slidesToScroll: 3,
         easing: 'swing',
         speed: 1200,
         swipe: false,
-        prevArrow: $('.popular__prev'),
-        nextArrow: $('.popular__next'),
+        prevArrow: $('.newblock__prev'),
+        nextArrow: $('.newblock__next'),
         responsive: [{
             breakpoint: 1200,
             settings: {
-              slidesToShow: 4,
-              slidesToScroll: 4,
+              slidesToShow: 3,
+              slidesToScroll: 3,
               infinite: true,
             }
           },
