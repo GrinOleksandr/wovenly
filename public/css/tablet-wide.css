@@ -232,9 +232,7 @@
     justify-content: flex-end;
     padding-top: 27px;
   }
-  .popular__item--wrapper[data-slick-index="3"] > .slider__item {
-    margin-right:2px;
-  }
+
 
   /********************** Shop By Size BLOCK! *****************************/
 
@@ -257,3 +255,5 @@
   .sizes__item--wrapper:nth-child(3),.sizes__item--wrapper:nth-child(4) {
     display:flex;
   }
+
+  /********************** Discover Your Style BLOCK! *****************************/

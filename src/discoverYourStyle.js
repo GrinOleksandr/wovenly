@@ -53,8 +53,8 @@
 
 $('.discover-your-style__wrapper')
   .slick({
-    slidesToShow: 6,
-    slidesToScroll: 6,
+    slidesToShow: 4,
+    slidesToScroll: 4,
     easing: 'swing',
     speed: 1200,
     swipe: false,
@@ -63,8 +63,8 @@ $('.discover-your-style__wrapper')
     responsive: [{
         breakpoint: 1200,
         settings: {
-          slidesToShow: 4,
-          slidesToScroll: 4,
+          slidesToShow: 3,
+          slidesToScroll: 3,
           infinite: true,
         }
       },

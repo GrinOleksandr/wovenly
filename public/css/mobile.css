@@ -441,6 +441,10 @@ main {
   cursor: pointer;
 }
 
+.slider__controls--button:focus {
+  outline:none;
+}
+
 .slider__control--top {
   display: none;
 }
@@ -476,12 +480,11 @@ main {
 .popular__item {
   border: 1px solid #e6e6e6;
   border-radius: 5px;
-  margin-right: 10px;
+  margin-left: 5px;
+  margin-right:5px;
 }
 
-.popular__item--wrapper:last-child .slider__item {
-  margin-right: 0;
-}
+
 
 .product__title {
   font-family: "Graphik-Web", serif;
@@ -591,7 +594,8 @@ main {
 display: flex;
 flex-direction: column;
 align-items: center;
-margin-right: 10px;
+margin-right: 5px;
+margin-left:5px;
 }
 
 
@@ -600,11 +604,6 @@ margin-right: 10px;
 
 }
 
-
-
-.discover-your-style__slide--wrapper:last-child  {
-  margin-right: 0;
-}
 
 .discover-your-style__slide--title {
   font-family: "Graphik-Web", serif;
