@@ -1,0 +1,46 @@
+<div class="popular__slider--wrapper col-xs-12 ">
+
+  <%
+ const colorPalete = {
+    purple:'purple',
+    blue:'blue',
+    orange:'orange',
+    green:'green',
+    black:'black',
+    gray:'gray',
+    yellow:'yellow',
+    brown:'brown',
+    pink:'pink',
+    neutral: '#afcfae94',
+    white:'#e2dbdb',
+    multicolor:'linear-gradient(to right, #da0000, #e50037, #e40061, #d5008c, #b500b3, #9941d3, #6e5fed, #0076ff, #009aff, #00aedf, #00b886, #00bb0b);',
+    red:'red',
+    darkblue: '#04046b',
+    tan:'#D2B48C',
+    cream:'#e8e486',
+    turquoise:'#40E0D0',
+    lightbrown:'#DEB887',
+    lightblue: '#ADD8E6'
+  }
+  %>
+  <% products.forEach(function (product) { %>
+  <div class="popular__item--wrapper">
+    <div class="popular__item product ">
+      <div class="product__img--wrapper">
+        <img src="<%= product.thumb %>" class="product__img" alt="rug" />
+      </div>
+      <span class="product__title"><%= product.name %></span>
+      <div class="product__price--wrapper">
+        <span class="product__oldprice"><%= product.oldPrice %></span>
+        <span class="product__newprice"><%= product.priceFrom %> - <%= product.priceTo %></span>
+      </div>
+      <ul class="product__colors">
+        <% product.colors.forEach(function (color) { %>
+        <li class="product__color" style="background:<%= colorPalete[color] %>"></li>
+        <% }) %>
+      </ul>
+    </div>
+  </div>
+  <% }) %>
+
+</div>

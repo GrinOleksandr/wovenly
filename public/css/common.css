@@ -64,3 +64,10 @@ input:active, input:focus {
   padding-right:0;
   padding-left:0;
 }
+
+
+/* temp addition for testing porposes comfort */
+
+body {
+  padding-bottom: 150px;
+}
