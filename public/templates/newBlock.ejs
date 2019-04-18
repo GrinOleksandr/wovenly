@@ -1,4 +1,4 @@
-<div class="popular__slider--wrapper col-xs-12 ">
+<div class="newblock__slider--wrapper col-xs-12 ">
 
   <%
  const colorPalete = {
@@ -23,20 +23,20 @@
     lightblue: '#ADD8E6'
   }
   %>
-  <% products.forEach(function (product) { %>
-  <div class="popular__item--wrapper">
-    <div class="popular__item product ">
-      <div class="product__img--wrapper">
-        <img src="<%= product.thumb %>" class="product__img" alt="rug" />
+  <% newProducts.forEach(function (product) { %>
+  <div class="newBlock__item--wrapper">
+    <div class="newBlock__item product ">
+      <div class="newBlock__img--wrapper">
+        <img src="<%= product.thumb %>" class="newBlockproduct__img" alt="rug" />
       </div>
-      <span class="product__title"><%= product.name %></span>
-      <div class="product__price--wrapper">
-        <span class="product__oldprice"><%= product.oldPrice %></span>
-        <span class="product__newprice"><%= product.priceFrom %> - <%= product.priceTo %></span>
+      <span class="newBlock__product--title"><%= product.name %></span>
+      <div class="newBlock__product__price--wrapper">
+        <span class="newBlock__product__oldprice"><%= product.oldPrice %></span>
+        <span class="newBlock__product__newprice"><%= product.priceFrom %> - <%= product.priceTo %></span>
       </div>
-      <ul class="product__colors">
+      <ul class="newBlock__product--colors">
         <% product.colors.forEach(function (color) { %>
-        <li class="product__color" style="background:<%= colorPalete[color] %>"></li>
+        <li class="newBlock__product--color" style="background:<%= colorPalete[color] %>"></li>
         <% }) %>
       </ul>
     </div>

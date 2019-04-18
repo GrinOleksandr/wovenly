@@ -1,4 +1,4 @@
-fetch(`https://wovenly-server.herokuapp.com/getpopular`, {
+fetch(`https://wovenly-server.herokuapp.com/getnew`, {
     method: 'GET',
     headers: {
       'Content-Type': 'text/plain',
@@ -9,16 +9,16 @@ fetch(`https://wovenly-server.herokuapp.com/getpopular`, {
     return response.json()
   })
   .then(function(json) {
-    let popularProductTemplate = new EJS({
-      url: './templates/popular.ejs'
+    let newProductTemplate = new EJS({
+      url: './templates/newBlock.ejs'
     });
-    $(".popular__slider__nesting-place")
-      .html(popularProductTemplate.render({
-        products: json
+    $(".new__slider--nesting-place")
+      .html(newProductTemplate.render({
+        newProducts: json
       }));
   })
   .then(function() {
-    $('.popular__slider--wrapper')
+    $('.newblock__slider--wrapper')
       .slick({
         slidesToShow: 6,
         slidesToScroll: 6,
