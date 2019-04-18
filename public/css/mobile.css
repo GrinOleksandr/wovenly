@@ -442,7 +442,7 @@ main {
 }
 
 .slider__controls--button:focus {
-  outline:none;
+  outline: none;
 }
 
 .slider__control--top {
@@ -481,10 +481,8 @@ main {
   border: 1px solid #e6e6e6;
   border-radius: 5px;
   margin-left: 5px;
-  margin-right:5px;
+  margin-right: 5px;
 }
-
-
 
 .product__title {
   font-family: "Graphik-Web", serif;
@@ -532,82 +530,72 @@ main {
   overflow: hidden;
 }
 
-
-
 /********************** Shop By Size BLOCK! *****************************/
-
 .shop-by-size__more {
   font-family: "Graphik-Web", serif;
   font-weight: 700;
   white-space: nowrap;
   text-align: right;
-    padding-top: 35px;
+  padding-top: 35px;
 }
 
 .shop-by-size__more--top {
-  display:none;
+  display: none;
 }
 
-.shop-by-size__size-list{
-  padding-left:0;
+.shop-by-size__size-list {
+  padding-left: 0;
   padding-bottom: 20px;
 }
 
 .sizes__item--wrapper {
-  list-style:none;
-  display:flex;
-  flex-direction:column;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items:center;
+  align-items: center;
 }
 
-.sizes__item--image{
-  width:85%;
+.sizes__item--image {
+  width: 85%;
 }
 
-
-.sizes__item--wrapper:nth-child(3),.sizes__item--wrapper:nth-child(4) {
-  display:none;
+.sizes__item--wrapper:nth-child(3), .sizes__item--wrapper:nth-child(4) {
+  display: none;
 }
 
-.sizes__item--link{
-  text-align:center;
+.sizes__item--link {
+  text-align: center;
 }
 
-.sizes__item--title{
+.sizes__item--title {
   font-family: "Graphik-Web", serif;
   font-weight: 700;
   padding-top: 10px;
 }
 
 /********************** Discover Your Style BLOCK! *****************************/
-
-.discover-your-style__wrapper{
+.discover-your-style__wrapper {
   list-style: none;
   overflow: hidden;
 }
 
 .discover-your-style__slide--wrapper {
-
   border: 1px solid #e6e6e6;
   border-radius: 5px;
-display: flex;
-flex-direction: column;
-align-items: center;
-margin-right: 5px;
-margin-left:5px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 5px;
+  margin-left: 5px;
 }
-
 
 .discover-your-style__slide--image {
   width: 100%;
-
 }
-
 
 .discover-your-style__slide--title {
   font-family: "Graphik-Web", serif;
-  font-size: 14px;
+  font-size: 24px;
   font-weight: 700;
   padding: 10px 0 10px 10px;
 }
