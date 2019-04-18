@@ -239,9 +239,9 @@ html {
 }
 
 /********************** POPULAR BLOCK! *****************************/
-.content__block--title{
+.content__block--title {
   padding: 10px 0;
-  font-size:32px;
+  font-size: 32px;
 }
 
 .slider__control--bottom {
@@ -254,31 +254,28 @@ html {
   padding-top: 27px;
 }
 
-
-
-
-
 /********************** Shop By Size BLOCK! *****************************/
-
 .shop-by-size__more {
   font-family: "Graphik-Web", serif;
   font-weight: 700;
   white-space: nowrap;
   text-align: right;
-    padding-top: 35px;
+  padding-top: 35px;
 }
 
 .shop-by-size__more--top {
-  display:block;
+  display: block;
 }
 
 .shop-by-size__more--bottom {
-  display:none;
+  display: none;
 }
 
-.sizes__item--wrapper:nth-child(3),.sizes__item--wrapper:nth-child(4) {
-  display:flex;
+.sizes__item--wrapper:nth-child(3), .sizes__item--wrapper:nth-child(4) {
+  display: flex;
 }
-
 
 /********************** Discover Your Style BLOCK! *****************************/
+.discover-your-style__slide--title {
+  font-size: 24px;
+}

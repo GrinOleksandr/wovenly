@@ -9,7 +9,6 @@ fetch(`https://wovenly-server.herokuapp.com/getpopular`, {
     return response.json()
   })
   .then(function(json) {
-    console.log(json);
     let popularProductTemplate = new EJS({
       url: './templates/popular.ejs'
     });
