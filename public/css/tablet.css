@@ -253,3 +253,19 @@ html {
 .discover-your-style__slide--title {
   font-size: 24px;
 }
+
+
+/********************** New BLOCK! *****************************/
+
+
+.newblock__product--title {
+  font-size: 16px;
+}
+
+.newblock__product__price--wrapper {
+    font-size: 14px;
+  }
+
+  .newblock__product--colors {
+    padding-bottom: 20px;
+}
