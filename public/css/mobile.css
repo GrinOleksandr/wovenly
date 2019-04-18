@@ -602,25 +602,15 @@ main {
 
 /********************** NEW BLOCK! *****************************/
 .new__slider--nesting-place {
-  overflow:hidden;
+  overflow: hidden;
 }
-
-/* .newblock__img--wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 105px;
-  padding: 5px;
-  margin: 0 auto;
-  height: 150px;
-} */
 
 .newblock__product--img {
   width: 100%;
   height: 100%;
   padding-bottom: 10px;
-  border-top-left-radius:5px;
-  border-top-right-radius:5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .newblock__item {

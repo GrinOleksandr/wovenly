@@ -34,8 +34,8 @@
   <% newProducts.forEach(function (product) { %>
   <div class="newblock__item--wrapper">
     <div class="newblock__item product ">
-          <img src="<%= newBlockImages[iterator] %>" class="newblock__product--img" alt="rug" />
-          <span class="newblock__product--title"><%= product.name %></span>
+      <img src="<%= newBlockImages[iterator] %>" class="newblock__product--img" alt="rug" />
+      <span class="newblock__product--title"><%= product.name %></span>
       <div class="newblock__product__price--wrapper">
         <span class="newblock__product--oldprice"><%= product.oldPrice %></span>
         <span class="newblock__product--newprice"><%= product.priceFrom %> - <%= product.priceTo %></span>
