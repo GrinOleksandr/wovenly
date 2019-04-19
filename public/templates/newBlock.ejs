@@ -28,8 +28,11 @@
     2: "img/new3.jpg",
     3: "img/new4.jpg"
   }
+
   let iterator = 0;
   %>
+
+
 
   <% newProducts.forEach(function (product) { %>
   <div class="newblock__item--wrapper">
@@ -42,7 +45,7 @@
       </div>
       <ul class="newblock__product--colors">
         <% product.colors.forEach(function (color) { %>
-        <li class="newblock__product--color" style="background:<%= colorPalete[color] %>"></li>
+        <li class="newblock__product--color" data-color="<%= color %>" style="background:<%= colorPalete[color]%>"></li>
         <% }) %>
       </ul>
     </div>

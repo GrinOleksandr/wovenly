@@ -620,6 +620,10 @@ main {
   margin-right: 5px;
 }
 
+.newblock__item--wrapper:focus {
+  outline:none;
+}
+
 .newblock__product--title {
   font-family: "Graphik-Web", serif;
   font-size: 14px;
@@ -649,6 +653,11 @@ main {
 .newblock__product--color {
   width: 15px;
   height: 15px;
-  border-radius: 20px;
   margin-right: 5px;
+  border-radius:50%;
+  cursor:pointer;
+}
+
+.newblock__color--active {
+  box-shadow: none;
 }

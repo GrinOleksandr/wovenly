@@ -266,3 +266,12 @@ html {
 .newblock__product--colors {
   padding-bottom: 20px;
 }
+
+.newblock__product--color {
+  width: 26px;
+  height: 26px;
+  margin-right: 6px;
+  border: 3px solid white;
+  border-radius: 50%;
+  box-sizing: content-box;
+}
