@@ -29,18 +29,16 @@ const throttle = (func, limit) => {
 
 
 function activateColor(element) {
-  console.log('color activated');
+  console.log('color activated', element.style.background);
   if (element.parentNode.querySelector('.newblock__color--active')) {
     element.parentNode.querySelector('.newblock__color--active')
       .style.boxShadow = "none";
     element.parentNode.querySelector('.newblock__color--active')
       .classList.remove('newblock__color--active');
   }
-  if (element.style.background.length < 20) {
+
     element.style.boxShadow = `0px 0px 0px 2px ${ element.style.background}`;
-  } else {
-    element.style.boxShadow = `0px 0px 0px 2px magenta `
-  }
+  
   element.classList.add('newblock__color--active');
   element.parentNode.parentNode.dataset.activeColor = element.dataset.color;
 }
@@ -93,6 +91,8 @@ fetch(`https://wovenly-server.herokuapp.com/getnew`, {
         ]
       });
 
+  }).then(function(){
+    implementActivation();
   })
   .catch(error => error);
 
@@ -101,30 +101,33 @@ function colorActivationWrapper(ev){
   activateColor(ev.target)
 }
 
-  window.addEventListener('resize', throttle(function() {
-    console.log(document.documentElement.clientWidth)
-    if (document.documentElement.clientWidth > 750) {
-      Array.from(document.querySelectorAll('.newblock__product--color:first-child'))
-        .forEach(function(elem) {
-          activateColor(elem);
-        })
+function implementActivation() {
+  console.log(document.documentElement.clientWidth)
+  if (document.documentElement.clientWidth > 750) {
+    Array.from(document.querySelectorAll('.newblock__product--color:first-child'))
+      .forEach(function(elem) {
+        activateColor(elem);
+      })
 
-      Array.from(document.getElementsByClassName('newblock__product--color'))
-        .forEach(function(item) {
-          item.addEventListener('click', colorActivationWrapper );
-        })
-    }
-    else {
-      Array.from(document.getElementsByClassName('newblock__product--color'))
-        .forEach(function(item) {
-          item.removeEventListener('click', colorActivationWrapper );
-          item.style.boxShadow ="none";
-          console.log('action removed!')
-        })
+    Array.from(document.getElementsByClassName('newblock__product--color'))
+      .forEach(function(item) {
+        item.addEventListener('click', colorActivationWrapper );
+      })
+  }
+  else {
+    Array.from(document.getElementsByClassName('newblock__product--color'))
+      .forEach(function(item) {
+        item.removeEventListener('click', colorActivationWrapper );
+        item.style.boxShadow ="none";
+        console.log('action removed!')
+      })
 
-    }
-  }, 1000)
-)
+  }
+}
+
+
+
+window.addEventListener('resize', throttle(implementActivation, 1000))
 
 
 

@@ -603,6 +603,7 @@ main {
 /********************** NEW BLOCK! *****************************/
 .new__slider--nesting-place {
   overflow: hidden;
+  padding-bottom: 10px;
 }
 
 .newblock__product--img {
