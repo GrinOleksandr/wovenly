@@ -1,7 +1,35 @@
-function activateColor(element) {
-  // if (document.documentElement.clientWidth > 767) {
-  console.log('color activated')
+const throttle = (func, limit) => {
+  let lastFunc
+  let lastRan
+  return function() {
+    const context = this
+    const args = arguments
+    if (!lastRan) {
+      func.apply(context, args)
+      lastRan = Date.now()
+    } else {
+      clearTimeout(lastFunc)
+      lastFunc = setTimeout(function() {
+        if ((Date.now() - lastRan) >= limit) {
+          func.apply(context, args)
+          lastRan = Date.now()
+        }
+      }, limit - (Date.now() - lastRan))
+    }
+  }
+}
+// function deactivateColor(element){
+//   if (element.parentNode.querySelector('.newblock__color--active')) {
+//     element.parentNode.querySelector('.newblock__color--active')
+//       .style.boxShadow = "none";
+//     element.parentNode.querySelector('.newblock__color--active')
+//       .classList.remove('newblock__color--active');
+//   }
+// }
 
+
+function activateColor(element) {
+  console.log('color activated');
   if (element.parentNode.querySelector('.newblock__color--active')) {
     element.parentNode.querySelector('.newblock__color--active')
       .style.boxShadow = "none";
@@ -16,7 +44,6 @@ function activateColor(element) {
   element.classList.add('newblock__color--active');
   element.parentNode.parentNode.dataset.activeColor = element.dataset.color;
 }
-// }
 
 fetch(`https://wovenly-server.herokuapp.com/getnew`, {
     method: 'GET',
@@ -67,23 +94,37 @@ fetch(`https://wovenly-server.herokuapp.com/getnew`, {
       });
 
   })
-  .then(function() {
-    window.addEventListener('resize', function() {
-      if (document.documentElement.clientWidth > 767) {
-        Array.from(document.querySelectorAll('.newblock__product--color:first-child'))
-          .forEach(function(elem) {
-            activateColor(elem);
-          })
-
-        Array.from(document.getElementsByClassName('newblock__product--color'))
-          .forEach(function(item) {
-            item.addEventListener('click', (ev) => activateColor(ev.target))
-          })
-      }
-    })
-
-  })
   .catch(error => error);
+
+
+function colorActivationWrapper(ev){
+  activateColor(ev.target)
+}
+
+  window.addEventListener('resize', throttle(function() {
+    console.log(document.documentElement.clientWidth)
+    if (document.documentElement.clientWidth > 750) {
+      Array.from(document.querySelectorAll('.newblock__product--color:first-child'))
+        .forEach(function(elem) {
+          activateColor(elem);
+        })
+
+      Array.from(document.getElementsByClassName('newblock__product--color'))
+        .forEach(function(item) {
+          item.addEventListener('click', colorActivationWrapper );
+        })
+    }
+    else {
+      Array.from(document.getElementsByClassName('newblock__product--color'))
+        .forEach(function(item) {
+          item.removeEventListener('click', colorActivationWrapper );
+          item.style.boxShadow ="none";
+          console.log('action removed!')
+        })
+
+    }
+  }, 1000)
+)
 
 
 
