@@ -45,7 +45,11 @@
       </div>
       <ul class="newblock__product--colors">
         <% product.colors.forEach(function (color) { %>
-        <li class="newblock__product--color" data-color="<%= color %>" style="background:<%= colorPalete[color]%>"></li>
+        <li class="newblock__color--outer" data-color="<%= color %>" style="background-color:<%= colorPalete[color]%>">
+          <div class = "newblock__color">
+            <div class = "newblock__color--inner" style="background-color:<%= colorPalete[color]%>"></div>
+          </div>
+        </li>
         <% }) %>
       </ul>
     </div>

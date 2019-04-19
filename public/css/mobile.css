@@ -622,7 +622,7 @@ main {
 }
 
 .newblock__item--wrapper:focus {
-  outline:none;
+  outline: none;
 }
 
 .newblock__product--title {
@@ -651,14 +651,12 @@ main {
   padding-left: 10px;
 }
 
-.newblock__product--color {
+.newblock__color--outer {
   width: 15px;
   height: 15px;
   margin-right: 5px;
-  border-radius:50%;
-  cursor:pointer;
-}
-
-.newblock__color--active {
-  box-shadow: none;
+  margin-top: 7px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
 }

@@ -18,27 +18,18 @@ const throttle = (func, limit) => {
     }
   }
 }
-// function deactivateColor(element){
-//   if (element.parentNode.querySelector('.newblock__color--active')) {
-//     element.parentNode.querySelector('.newblock__color--active')
-//       .style.boxShadow = "none";
-//     element.parentNode.querySelector('.newblock__color--active')
-//       .classList.remove('newblock__color--active');
-//   }
-// }
+
 
 
 function activateColor(element) {
-  console.log('color activated', element.style.background);
+  console.log('color activated', element.style.backgroundColor);
   if (element.parentNode.querySelector('.newblock__color--active')) {
-    element.parentNode.querySelector('.newblock__color--active')
-      .style.boxShadow = "none";
     element.parentNode.querySelector('.newblock__color--active')
       .classList.remove('newblock__color--active');
   }
 
-    element.style.boxShadow = `0px 0px 0px 2px ${ element.style.background}`;
-  
+  // element.style.boxShadow = `0px 0px 0px 2px ${element.style.background}`;
+  element.style.setProperty('--activeColor-color', element.style.backgroundColor);
   element.classList.add('newblock__color--active');
   element.parentNode.parentNode.dataset.activeColor = element.dataset.color;
 }
@@ -91,36 +82,36 @@ fetch(`https://wovenly-server.herokuapp.com/getnew`, {
         ]
       });
 
-  }).then(function(){
+  })
+  .then(function() {
     implementActivation();
   })
   .catch(error => error);
 
 
-function colorActivationWrapper(ev){
+function colorActivationWrapper(ev) {
   activateColor(ev.target)
 }
 
 function implementActivation() {
   console.log(document.documentElement.clientWidth)
   if (document.documentElement.clientWidth > 750) {
-    Array.from(document.querySelectorAll('.newblock__product--color:first-child'))
-      .forEach(function(elem) {
-        activateColor(elem);
-      })
+    for (let i = 0; i < (document.querySelectorAll('.newblock__color--outer:first-child'))
+      .length; i++) {
+      activateColor((document.querySelectorAll('.newblock__color--outer:first-child'))[i]);
+    }
 
-    Array.from(document.getElementsByClassName('newblock__product--color'))
-      .forEach(function(item) {
-        item.addEventListener('click', colorActivationWrapper );
-      })
-  }
-  else {
-    Array.from(document.getElementsByClassName('newblock__product--color'))
-      .forEach(function(item) {
-        item.removeEventListener('click', colorActivationWrapper );
-        item.style.boxShadow ="none";
-        console.log('action removed!')
-      })
+    for (let i = 0; i < (document.getElementsByClassName('newblock__color--outer'))
+      .length; i++) {
+      (document.getElementsByClassName('newblock__color--outer'))[i].addEventListener('click', colorActivationWrapper);
+    }
+  } else {
+    for (let i = 0; i < (document.getElementsByClassName('newblock__color--outer'))
+      .length; i++) {
+      (document.getElementsByClassName('newblock__color--outer'))[i].removeEventListener('click', colorActivationWrapper);
+      (document.getElementsByClassName('newblock__color--outer'))[i].style.border = "none";
+      console.log('action removed!')
+    }
 
   }
 }
