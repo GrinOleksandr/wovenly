@@ -604,6 +604,11 @@ header {
 }
 
 /********************** NEW BLOCK! *****************************/
+
+.new {
+  padding-bottom:40px;
+}
+
 .new__slider--nesting-place {
   overflow: hidden;
   padding-bottom: 10px;
@@ -666,9 +671,9 @@ header {
 
 
 /***********************  Promo2 BLOCK ***********************/
-.promo2 {
-  background: #f4f5f0;
-  padding: 20px;
+.promo2__wrapper {
+    padding-bottom: 25px;
+    background: #f4f5f0;
 }
 
 .promo2__title {
@@ -677,7 +682,8 @@ header {
   font-size: 25px;
   margin: 0;
   line-height: 26px;
-  padding: 0 0 10px 0;
+  padding: 20px 0 10px 0;
+  font-weight: 700;
 }
 
 .promo2__description {
@@ -691,7 +697,7 @@ header {
 .promo2__image {
   height: 226px;
   overflow: hidden;
-  background: url(../img/header-content-image.jpeg);
+  background: url(../img/shop-living.png);
   background-size: cover;
   background-position-y: center;
 }

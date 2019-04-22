@@ -331,3 +331,30 @@ html {
   top: 2px;
   left: 2px;
 }
+
+/***********************  Promo2 BLOCK ***********************/
+.promo2__wrapper {
+  padding-bottom:0;
+}
+
+.promo2 {
+  padding-left: 90px;
+}
+
+.promo2__title {
+  padding: 142px 0 26px 0;
+  font-size: 33px;
+  line-height: 36px;
+}
+
+.promo2__image {
+    height: 552px;
+  }
+
+  .promo2__description {
+    padding: 0 0 40px 0;
+
+  font-weight: 300;
+
+  font-size: 19px;
+}

@@ -22,7 +22,7 @@ const throttle = (func, limit) => {
 
 
 function activateColor(element) {
-  
+
   if (element.parentNode.querySelector('.newblock__color--active')) {
     element.parentNode.querySelector('.newblock__color--active')
       .classList.remove('newblock__color--active');
@@ -110,9 +110,7 @@ function implementActivation() {
       .length; i++) {
       (document.getElementsByClassName('newblock__color--outer'))[i].removeEventListener('click', colorActivationWrapper);
       (document.getElementsByClassName('newblock__color--outer'))[i].style.border = "none";
-      console.log('action removed!')
     }
-
   }
 }
 
