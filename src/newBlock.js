@@ -35,11 +35,7 @@ function activateColor(element) {
 }
 
 fetch(`https://wovenly-server.herokuapp.com/getnew`, {
-    method: 'GET',
-    headers: {
-      'Content-Type': 'text/plain',
-      'Access-Control-Allow-Origin': "*"
-    }
+    method: 'GET'
   })
   .then(function(response) {
     return response.json()

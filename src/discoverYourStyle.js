@@ -1,9 +1,5 @@
 fetch(`https://wovenly-server.herokuapp.com/getstyles`, {
-    method: 'GET',
-    headers: {
-      'Content-Type': 'text/plain',
-      'Access-Control-Allow-Origin': "*"
-    }
+    method: 'GET'
   })
   .then(function(response) {
     return response.json()
