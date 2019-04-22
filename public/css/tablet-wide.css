@@ -312,7 +312,7 @@
 
   /***********************  Promo2 BLOCK ***********************/
   .promo2__wrapper {
-    padding-bottom:0;
+    padding-bottom: 0;
   }
 
   .promo2 {
@@ -326,15 +326,14 @@
   }
 
   .promo2__image {
-      height: 312px;
-    }
-
-    .promo2__description {
-      padding: 0 0 40px 0;
-      font-weight: 300;
-      font-size: 18px;
+    height: 312px;
   }
 
+  .promo2__description {
+    padding: 0 0 40px 0;
+    font-weight: 300;
+    font-size: 18px;
+  }
 
   /***********************  Testimonials BLOCK ***********************/
   .testimonial__slide--wrapper {
@@ -382,18 +381,17 @@
     flex-direction: row;
     align-items: baseline;
     justify-content: space-between;
-        width: 100%;
+    width: 100%;
   }
 
   .testimonial__footer {
     align-items: flex-start;
   }
 
-  .testimonial__footer--wrapper .button-size-S{
+  .testimonial__footer--wrapper .button-size-S {
     margin-right: 10px;
   }
 
-
   .testimonial__slide--wrapper:nth-child(odd) .testimonial__wrapper {
-    order:1;
+    order: 1;
   }

@@ -712,10 +712,8 @@ header {
 .testimonials__product--img {
   width: 100%;
   padding-bottom: 10px;
-
-
-  background:url(../img/new4.jpg);
-  width:100%;
+  background: url(../img/new4.jpg);
+  width: 100%;
   height: 171px;
   background-size: cover;
   background-position: center;
@@ -772,8 +770,8 @@ header {
   display: flex;
 }
 
-.testimonial__slide--wrapper:focus{
-  outline:none
+.testimonial__slide--wrapper:focus {
+  outline: none
 }
 
 .testimonial__wrapper {
@@ -801,17 +799,18 @@ header {
   padding: 5px 14px;
 }
 
-.testimonials__title--button{
-  display:none;
+.testimonials__title--button {
+  display: none;
 }
+
 .testimonial__footer--wrapper {
-  display:flex;
-  flex-direction:column;
-  align-items:center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .testimonial__footer {
-  display:flex;
-  flex-direction:column;
-  align-items:center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

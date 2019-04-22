@@ -380,18 +380,17 @@ html {
   flex-direction: row;
   align-items: baseline;
   justify-content: space-between;
-      width: 100%;
+  width: 100%;
 }
 
 .testimonial__footer {
   align-items: flex-start;
 }
 
-.testimonial__footer--wrapper .button-size-S{
+.testimonial__footer--wrapper .button-size-S {
   margin-right: 10px;
 }
 
-
 .testimonial__slide--wrapper:nth-child(odd) .testimonial__wrapper {
-  order:1;
+  order: 1;
 }
