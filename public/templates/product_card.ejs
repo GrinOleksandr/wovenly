@@ -24,16 +24,16 @@
 
   <% if(block === "popular"){ %>
   <% products.forEach(function (product) { %>
-  <div class="product__item--wrapper">
-    <div class="product__item product ">
-      <div class="product__img--wrapper">
-        <img src="<%= product.thumb %>" class="product__img" alt="rug" />
-      </div>
-      <span class="product__title"><%= product.name %></span>
-      <div class="product__price--wrapper">
-        <span class="product__oldprice"><%= product.oldPrice %></span>
-        <span class="product__newprice"><%= product.priceFrom %> - <%= product.priceTo %></span>
-      </div>
+    <div class="popular__item--wrapper">
+        <div class="popular__item product ">
+          <div class="product__img--wrapper">
+            <img src="<%= product.thumb %>" class="product__img" alt="rug" />
+          </div>
+          <span class="product__title"><%= product.name %></span>
+          <div class="product__price--wrapper">
+            <span class="product__oldprice"><%= product.oldPrice %></span>
+            <span class="product__newprice"><%= product.priceFrom %> - <%= product.priceTo %></span>
+          </div>
       <ul class="product__colors">
         <% product.colors.forEach(function (color) { %>
         <li class="product__color" style="background:<%= colorPalete[color] %>"></li>

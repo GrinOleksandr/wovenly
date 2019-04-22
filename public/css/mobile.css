@@ -485,6 +485,10 @@ header {
   margin-right: 5px;
 }
 
+.slick-slide:focus {
+  outline:none;
+}
+
 .product__title {
   font-family: "Graphik-Web", serif;
   font-size: 14px;
