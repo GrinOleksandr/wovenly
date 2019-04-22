@@ -423,8 +423,9 @@ header {
 
 .slider__controls--link {
   font-weight: 700;
-  padding: 0 30px;
+  padding: 0 0 0 12px;
   white-space: nowrap;
+  font-size:13px;
 }
 
 .slider__controls--wrapper {
@@ -438,7 +439,7 @@ header {
 }
 
 .slider__controls--button {
-  padding: 11px 31px;
+  padding: 9px 25px;
   cursor: pointer;
 }
 
@@ -704,4 +705,69 @@ header {
   background: url(../img/shop-living.png);
   background-size: cover;
   background-position-y: center;
+}
+
+/***********************  Testimonials BLOCK ***********************/
+
+.testimonials__slider--nesting-place {
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+
+.testimonials__product--img {
+  width: 100%;
+
+  padding-bottom: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.testimonials__item {
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  width: 50%;
+}
+
+.testimonials__item--wrapper:focus {
+  outline: none;
+}
+
+.testimonials__product--title {
+  font-family: "Graphik-Web", serif;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 0 10px 10px;
+}
+
+.testimonials__product--inserted-text{
+  font-family: "Graphik-Web", serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.testimonials__product__price--wrapper {
+  padding: 5px 0 30px 10px;
+  font-family: "Graphik-Web", serif;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.testimonials__product--oldprice {
+  color: #707070;
+  text-decoration: line-through;
+  padding-right: 3px;
+}
+
+
+.rating {
+  font-family: "icon-font1", sans-serif;
+  color:orange;
+}
+.testimonial__slider--wrapper {
+      display: flex;
+}
+
+.testimonial__wrapper {
+  background: #f4f5f0;
+  width:50%;
 }
