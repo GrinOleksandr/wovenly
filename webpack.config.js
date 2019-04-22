@@ -7,7 +7,8 @@ let conf = {
       navigation: path.resolve(__dirname, 'src/navigation.js'),
       popular: path.resolve(__dirname, 'src/popular.js'),
       discoverYourStyle: path.resolve(__dirname, 'src/discoverYourStyle.js'),
-      newBlock: path.resolve(__dirname, 'src/newBlock.js')
+      newBlock: path.resolve(__dirname, 'src/newBlock.js'),
+      testimonials: path.resolve(__dirname, 'src/testimonials.js')
     },
     output: {
         path: path.resolve(__dirname, 'public/js/'),

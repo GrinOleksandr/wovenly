@@ -706,7 +706,7 @@ header {
 /***********************  Testimonials BLOCK ***********************/
 .testimonials__slider--nesting-place {
   overflow: hidden;
-      padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .testimonials__product--img {
@@ -718,10 +718,10 @@ header {
 
 .testimonials__item {
   width: 50%;
-display: flex;
-flex-direction: column;
-align-items: center;
-padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
 }
 
 .testimonials__item--wrapper:focus {
@@ -732,18 +732,18 @@ padding-bottom: 20px;
   font-family: "Graphik-Web", serif;
   font-size: 14px;
   font-weight: 700;
-    padding: 10px 0 0px 10px;
+  padding: 10px 0 0px 10px;
 }
 
 .testimonials__product--inserted-text {
   font-family: "Graphik-Web", serif;
   font-size: 13px;
   font-weight: 300;
-  color:#676767;
+  color: #676767;
 }
 
 .testimonials__product__price--wrapper {
-      padding: 0px 0 9px 10px;
+  padding: 0px 0 9px 10px;
   font-family: "Graphik-Web", serif;
   font-weight: 500;
   font-size: 13px;
@@ -789,5 +789,5 @@ padding-bottom: 20px;
 
 .button-size-S {
   font-size: 11px;
-padding: 5px 14px;
+  padding: 5px 14px;
 }
