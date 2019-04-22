@@ -1,4 +1,3 @@
-console.log('testimonial slider initialized')
     $('.testimonials__slider--wrapper')
       .slick({
         slidesToShow: 1,
@@ -13,6 +12,6 @@ console.log('testimonial slider initialized')
             breakpoint: 768,
             settings: "unslick"
           },
-          
+
         ]
       });

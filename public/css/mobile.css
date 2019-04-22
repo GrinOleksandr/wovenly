@@ -712,8 +712,13 @@ header {
 .testimonials__product--img {
   width: 100%;
   padding-bottom: 10px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+
+
+  background:url(../img/new4.jpg);
+  width:100%;
+  height: 171px;
+  background-size: cover;
+  background-position-y: center;
 }
 
 .testimonials__item {
@@ -767,6 +772,10 @@ header {
   display: flex;
 }
 
+.testimonial__slide--wrapper:focus{
+  outline:none
+}
+
 .testimonial__wrapper {
   background: #f4f5f0;
   width: 50%;
@@ -790,4 +799,19 @@ header {
 .button-size-S {
   font-size: 11px;
   padding: 5px 14px;
+}
+
+.testimonials__title--button{
+  display:none;
+}
+.testimonial__footer--wrapper {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.testimonial__footer {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
 }

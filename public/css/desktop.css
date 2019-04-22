@@ -239,6 +239,10 @@ html {
 }
 
 /********************** POPULAR BLOCK! *****************************/
+.slider__controls--link {
+  padding: 0 12px 0 12px;
+}
+
 .content__block--title {
   padding: 10px 0;
   font-size: 32px;
@@ -280,7 +284,7 @@ html {
   font-size: 24px;
 }
 
-  /********************** New BLOCK! *****************************/
+/********************** New BLOCK! *****************************/
 .newblock__product--title {
   font-size: 16px;
 }
@@ -292,7 +296,6 @@ html {
 .newblock__product--colors {
   padding-bottom: 20px;
 }
-
 
 .newblock__color--outer {
   position: relative;
@@ -334,7 +337,7 @@ html {
 
 /***********************  Promo2 BLOCK ***********************/
 .promo2__wrapper {
-  padding-bottom:0;
+  padding-bottom: 0;
 }
 
 .promo2 {
@@ -348,13 +351,11 @@ html {
 }
 
 .promo2__image {
-    height: 552px;
-  }
+  height: 552px;
+}
 
-  .promo2__description {
-    padding: 0 0 40px 0;
-
+.promo2__description {
+  padding: 0 0 40px 0;
   font-weight: 300;
-
   font-size: 19px;
 }
