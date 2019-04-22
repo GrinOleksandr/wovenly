@@ -407,12 +407,13 @@ header {
 }
 
 /********************** POPULAR BLOCK! *****************************/
-main {
-  padding: 10px;
+.popular__border--wrapper{
+  border-top: 1px solid #e5e5e5;
 }
 
-.popular {
-  border-top: 1px solid #e5e5e5;
+.content__block {
+  padding-right: 25px;
+    padding-left: 25px;
 }
 
 .slider__control--wrapper {
@@ -531,6 +532,7 @@ main {
 }
 
 /********************** Shop By Size BLOCK! *****************************/
+
 .shop-by-size__more {
   font-family: "Graphik-Web", serif;
   font-weight: 700;
@@ -575,6 +577,7 @@ main {
 }
 
 /********************** Discover Your Style BLOCK! *****************************/
+
 .discover-your-style__wrapper {
   list-style: none;
   overflow: hidden;
@@ -659,4 +662,36 @@ main {
   border-radius: 50%;
   cursor: pointer;
   position: relative;
+}
+
+
+/***********************  Promo2 BLOCK ***********************/
+.promo2 {
+  background: #f4f5f0;
+  padding: 20px;
+}
+
+.promo2__title {
+  color: #066551;
+  font-family: "Graphik-Web", serif;
+  font-size: 25px;
+  margin: 0;
+  line-height: 26px;
+  padding: 0 0 10px 0;
+}
+
+.promo2__description {
+  font-size: 14px;
+  color: #ababa9;
+  margin: 0;
+  font-family: "Graphik-Web", serif;
+  padding: 0 0 10px 0;
+}
+
+.promo2__image {
+  height: 226px;
+  overflow: hidden;
+  background: url(../img/header-content-image.jpeg);
+  background-size: cover;
+  background-position-y: center;
 }

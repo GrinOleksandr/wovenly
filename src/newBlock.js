@@ -22,7 +22,7 @@ const throttle = (func, limit) => {
 
 
 function activateColor(element) {
-  console.log('color activated', element.style.backgroundColor);
+  
   if (element.parentNode.querySelector('.newblock__color--active')) {
     element.parentNode.querySelector('.newblock__color--active')
       .classList.remove('newblock__color--active');
