@@ -6,10 +6,11 @@ fetch(`https://wovenly-server.herokuapp.com/getpopular`, {
   })
   .then(function(json) {
     let popularProductTemplate = new EJS({
-      url: './templates/popular.ejs'
+      url: './templates/product_card.ejs'
     });
-    $(".popular__slider__nesting-place")
+    $(".popular__slider--wrapper")
       .html(popularProductTemplate.render({
+        block: "popular",
         products: json
       }));
   })

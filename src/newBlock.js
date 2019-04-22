@@ -41,12 +41,14 @@ fetch(`https://wovenly-server.herokuapp.com/getnew`, {
     return response.json()
   })
   .then(function(json) {
-    let newProductTemplate = new EJS({
-      url: './templates/newBlock.ejs'
+      let newProductTemplate = new EJS({
+      url: './templates/product_card.ejs'
     });
-    $(".new__slider--nesting-place")
+    $(".newblock__slider--wrapper")
       .html(newProductTemplate.render({
-        newProducts: json
+        block: "newBlock",
+        products: json
+
       }));
   })
   .then(function() {
