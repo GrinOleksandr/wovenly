@@ -718,7 +718,7 @@ header {
   width:100%;
   height: 171px;
   background-size: cover;
-  background-position-y: center;
+  background-position: center;
 }
 
 .testimonials__item {
