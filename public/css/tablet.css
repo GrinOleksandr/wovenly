@@ -394,3 +394,42 @@ html {
 .testimonial__slide--wrapper:nth-child(odd) .testimonial__wrapper {
   order: 1;
 }
+
+/***********************  SignUp BLOCK ***********************/
+.signup {
+  padding: 20px 0;
+  background: #f4f5f0;
+}
+
+.signup__content--wrapper {
+  flex-direction: row;
+  align-items: center;
+}
+
+.signup__input--wrapper {
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 20px;
+}
+
+.signup__promo--title {
+  font-size: 26px;
+}
+
+.signup__title--wrapper {
+  font-size: 18px;
+}
+
+.signup__email--input-field {
+  margin-right: 15px;
+  font-size: 20px;
+}
+
+.signup__email--input-field::placeholder {
+  font-size: 20px;
+}
+
+.signup__button {
+  font-size: 18px;
+  padding: 10px 20px;
+}

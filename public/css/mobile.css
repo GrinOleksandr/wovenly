@@ -820,54 +820,58 @@ header {
 }
 
 /***********************  SignUp BLOCK ***********************/
-
-
 .signup {
-padding:40px 0 20px;
-background: #f4f5f0;
+  padding: 40px 0 20px;
+  background: #f4f5f0;
 }
 
 .signup__wrapper {
-  display:flex;
-  flex-direction:column;
-  align-items:center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+}
+
+.signup__content--wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .signup__title--wrapper {
   display: flex;
-flex-direction: column;
-font-family: "Graphik-Web", serif;
-font-weight: 700;
-font-size: 14px;
-    padding-left: 15px;
+  flex-direction: column;
+  font-family: "Graphik-Web", serif;
+  font-weight: 700;
+  font-size: 14px;
+  padding-left: 15px;
 }
 
-.signup__promo--title{
-      font-size: 20px;
+.signup__promo--title {
+  font-size: 20px;
 }
 
 .signup__text--wrapper {
-      display: flex;
+  display: flex;
+  align-items: center;
 }
 
 .signup__input--wrapper {
   padding-top: 20px;
-padding-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 .signup__email--input-field {
   border: none;
-background: #f4f5f0;
-border-bottom: 1.5px solid #d4d4d2;
-line-height:36px;
-font-family: "Graphik-Web", serif;
-font-weight: 500;
-font-size: 18px;
-    margin-right: 5px;
+  background: #f4f5f0;
+  border-bottom: 1.5px solid #d4d4d2;
+  line-height: 36px;
+  font-family: "Graphik-Web", serif;
+  font-weight: 500;
+  font-size: 18px;
+  margin-right: 5px;
 }
 
-.signup__email--input-field:focus{
+.signup__email--input-field:focus {
   border-bottom: 1.5px solid #d4d4d2;
 }
 
@@ -880,5 +884,10 @@ font-size: 18px;
 
 .signup__button {
   font-size: 15px;
-padding: 5px 13px;
+  padding: 5px 13px;
+}
+
+.signup__img {
+  width: 50px;
+  height: 50px;
 }
