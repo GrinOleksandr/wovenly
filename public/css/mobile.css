@@ -317,8 +317,8 @@ header {
   font-family: "Graphik-Web", serif;
 }
 
-.button:hover{
-  text-decoration:none;
+.button:hover {
+  text-decoration: none;
 }
 
 .promo__button--addition {
@@ -878,10 +878,9 @@ header {
 
 .signup__email--input-field:focus {
   border-bottom: 1.5px solid #d4d4d2;
-
 }
 
-.signup__email--input-field::placeholder, .signup__email--input-field::-webkit-input-placeholder, .signup__email--input-field::-moz-placeholder, .signup__email--input-field:-ms-input-placeholder, .signup__email--input-field:-moz-placeholder  {
+.signup__email--input-field::placeholder, .signup__email--input-field::-webkit-input-placeholder, .signup__email--input-field::-moz-placeholder, .signup__email--input-field:-ms-input-placeholder, .signup__email--input-field:-moz-placeholder {
   color: #d4d4d2;
   font-family: "Graphik-Web", serif;
   font-weight: 500;
@@ -899,7 +898,6 @@ header {
   height: 50px;
 }
 
-
 /***********************  FYS BLOCK ***********************/
 .fys {
   background: url(../img/fys_background.png) no-repeat center;
@@ -907,6 +905,22 @@ header {
 }
 
 .fys__img {
-  width: 100px;
-    height: 100px;
+  width: 90px;
+  height: 90px;
+}
+
+.fys__text--wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.fys__content--wrapper {
+  padding: 60px 0 60px 30px;
+}
+
+.fys__title {
+  color: #ffffff;
+  font-family: "Graphik-Web", serif;
+  font-weight: 700;
+  font-size: 18px;
 }
