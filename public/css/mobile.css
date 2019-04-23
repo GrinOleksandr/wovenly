@@ -902,6 +902,7 @@ header {
 .fys {
   background: url(../img/fys_background.png) no-repeat center;
   background-size: cover;
+  padding: 80px 0 80px 45px;
 }
 
 .fys__img {
@@ -915,9 +916,7 @@ header {
   align-items: flex-start;
 }
 
-.fys__content--wrapper {
-  padding: 80px 0 80px 30px;
-}
+.fys__content--wrapper {}
 
 .fys__title {
   color: #ffffff;
