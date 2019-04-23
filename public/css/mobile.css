@@ -317,6 +317,10 @@ header {
   font-family: "Graphik-Web", serif;
 }
 
+.button:hover{
+  text-decoration:none;
+}
+
 .promo__button--addition {
   display: none;
 }
@@ -523,7 +527,7 @@ header {
   margin-right: 5px;
 }
 
-.theme-green-text, .theme-green-text:link, .theme-green-text:visited, .theme-green-text:active {
+.theme-green-text, .theme-green-text:link, .theme-green-text:visited, .theme-green-text:active, a.theme-green-text:hover {
   color: #066551
 }
 
@@ -884,11 +888,6 @@ header {
   font-size: 18px;
 }
 
-
-
-
-
-
 .signup__button {
   font-size: 15px;
   padding: 5px 13px;
@@ -898,4 +897,16 @@ header {
 .signup__img {
   width: 50px;
   height: 50px;
+}
+
+
+/***********************  FYS BLOCK ***********************/
+.fys {
+  background: url(../img/fys_background.png) no-repeat center;
+  background-size: cover;
+}
+
+.fys__img {
+  width: 100px;
+    height: 100px;
 }
