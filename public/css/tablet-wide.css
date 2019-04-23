@@ -402,7 +402,7 @@
 
   /***********************  SignUp BLOCK ***********************/
   .signup {
-    padding: 20px 0;
+    padding: 40px 0;
     background: #f4f5f0;
   }
 
@@ -428,11 +428,12 @@
   .signup__email--input-field {
     margin-right: 25px;
     font-size: 24px;
-    line-height: 62px;
+        padding-bottom: 12px;
   }
 
-  .signup__email--input-field::placeholder {
+.signup__email--input-field::placeholder, .signup__email--input-field::-webkit-input-placeholder, .signup__email--input-field::-moz-placeholder, .signup__email--input-field:-ms-input-placeholder, .signup__email--input-field:-moz-placeholder{
     font-size: 24px;
+    font-weight:700;
   }
 
   .signup__button {

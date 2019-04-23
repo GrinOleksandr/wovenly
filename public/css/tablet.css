@@ -397,7 +397,7 @@ html {
 
 /***********************  SignUp BLOCK ***********************/
 .signup {
-  padding: 20px 0;
+  padding: 40px 0;
   background: #f4f5f0;
 }
 
@@ -425,8 +425,9 @@ html {
   font-size: 20px;
 }
 
-.signup__email--input-field::placeholder {
+.signup__email--input-field::placeholder, .signup__email--input-field::-webkit-input-placeholder, .signup__email--input-field::-moz-placeholder, .signup__email--input-field:-ms-input-placeholder, .signup__email--input-field:-moz-placeholder {
   font-size: 20px;
+  font-weight:700;
 }
 
 .signup__button {
