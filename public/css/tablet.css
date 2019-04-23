@@ -459,3 +459,7 @@ html {
   font-size: 35px;
   padding-bottom: 10px;
 }
+
+.fys__button {
+  font-weight: 700;
+}

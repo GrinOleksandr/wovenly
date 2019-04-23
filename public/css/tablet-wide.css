@@ -428,15 +428,44 @@
   .signup__email--input-field {
     margin-right: 25px;
     font-size: 24px;
-        padding-bottom: 12px;
+    padding-bottom: 12px;
   }
 
-.signup__email--input-field::placeholder, .signup__email--input-field::-webkit-input-placeholder, .signup__email--input-field::-moz-placeholder, .signup__email--input-field:-ms-input-placeholder, .signup__email--input-field:-moz-placeholder{
+  .signup__email--input-field::placeholder, .signup__email--input-field::-webkit-input-placeholder, .signup__email--input-field::-moz-placeholder, .signup__email--input-field:-ms-input-placeholder, .signup__email--input-field:-moz-placeholder {
     font-size: 24px;
-    font-weight:700;
+    font-weight: 700;
   }
 
   .signup__button {
     font-size: 20px;
     padding: 15px 50px;
+  }
+
+  /***********************  FYS BLOCK ***********************/
+  .fys {
+    padding: 100px 0 100px 60px;
+  }
+
+  .fys__content--wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .fys__img {
+    width: 110px;
+    height: 110px;
+  }
+
+  .fys__text--wrapper {
+    padding-left: 30px;
+    padding-bottom: 10px;
+  }
+
+  .fys__title {
+    font-size: 35px;
+    padding-bottom: 10px;
+  }
+
+  .fys__button {
+    font-weight: 700;
   }
