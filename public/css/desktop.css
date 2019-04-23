@@ -485,7 +485,7 @@ html {
 }
 
 .signup__email--input-field::-ms-input-placeholder {
-  color: #d4d4d2;
+  color: #c4c4c4;
   font-family: "Graphik-Web", serif;
   font-weight: 500;
   font-size: 18px;
