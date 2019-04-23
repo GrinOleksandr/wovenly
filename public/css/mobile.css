@@ -954,25 +954,30 @@ header {
 .big-benefit__wrapper {
   padding-left: 30px;
   padding-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 .big-benefit__content {
   padding-top: 15px;
-  display: flex;
-  flex-direction: column;
 }
 
 .big-benefit__title {
   font-weight: 700;
   font-size: 19px;
+  display: block;
 }
 
 .big-benefit__hint {
   color: #5e5e52;
   font-weight: 700;
   font-size: 18px;
+  display: block;
 }
 
 .footer-benefit__text {
@@ -980,6 +985,7 @@ header {
   padding-top: 10px;
   padding-bottom: 20px;
   font-weight: 500;
+  display: block;
 }
 
 .big-benefit__link {
@@ -988,13 +994,12 @@ header {
 
 .footer-benefit {
   padding-top: 50px;
-  display: flex;
-  flex-direction: column;
 }
 
 .footer-benefit__title {
   font-weight: 700;
   font-size: 19px;
+  display: block;
 }
 
 .footer-benefit__footer--image {
