@@ -821,9 +821,17 @@ header {
 
 /***********************  SignUp BLOCK ***********************/
 
+
 .signup {
-padding:40px 0 20px 40px;
+padding:40px 0 20px;
 background: #f4f5f0;
+}
+
+.signup__wrapper {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content: center;
 }
 
 .signup__title--wrapper {
