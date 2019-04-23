@@ -479,6 +479,7 @@ html {
 
 .footer-benefit {
   padding-top: 0;
+  padding-right: 10px;
 }
 
 .big-benefit__content {
@@ -486,6 +487,6 @@ html {
   padding-left: 20px;
 }
 
-.footer-benefit__footer-image {
-  height: 22px;
+.footer-benefit__footer--image {
+  height: 21px;
 }

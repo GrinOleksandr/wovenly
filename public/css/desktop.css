@@ -524,3 +524,45 @@ html {
 .fys__button {
   font-weight: 700;
 }
+
+/*********************** FOOTER BENEFITS BLOCK ***********************/
+.footer-benefits {
+  display: flex;
+}
+
+.footer-benefits__wrapper {
+  display: flex;
+}
+
+.big-benefit__wrapper {
+  flex-direction: row;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.footer-benefit {
+  padding-top: 0;
+  padding-right: 10px;
+}
+
+.big-benefit__content {
+  padding-top: 0;
+  padding-left: 30px;
+}
+
+.footer-benefit__footer--image {
+  height: 31px;
+}
+
+.big-benefit__img {
+  width: 100px;
+  height: 100px;
+}
+
+.big-benefit__title {
+  font-size: 24px;
+}
+
+.big-benefit__hint {
+  font-size: 24px;
+}
