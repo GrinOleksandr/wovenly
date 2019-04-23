@@ -463,3 +463,29 @@ html {
 .fys__button {
   font-weight: 700;
 }
+
+/*********************** FOOTER BENEFITS BLOCK ***********************/
+.footer-benefits {
+  display: flex;
+}
+
+.footer-benefits__wrapper {
+  display: flex;
+}
+
+.big-benefit__wrapper {
+  flex-direction: row;
+}
+
+.footer-benefit {
+  padding-top: 0;
+}
+
+.big-benefit__content {
+  padding-top: 0;
+  padding-left: 20px;
+}
+
+.footer-benefit__footer-image {
+  height: 22px;
+}
