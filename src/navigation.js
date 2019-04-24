@@ -114,7 +114,6 @@ $(document)
   .on('DOMContentLoaded', function() {
     $(document.body)
       .on('click', function(ev) {
-        console.log('event! ', ev.target.classList)
         ev.stopPropagation();
         if (!ev.target.classList.contains("nav-menu__item--link") &&
           !ev.target.classList.contains("nav-menu__level2--link") &&
@@ -123,7 +122,6 @@ $(document)
         }
       })
   })
-
 
 $(document.body)
   .on('click', function(ev) {
