@@ -1,17 +1,12 @@
-fetch(`https://wovenly-server.herokuapp.com/getpopular`, {
-    method: 'GET'
-  })
-  .then(function(response) {
-    return response.json()
-  })
-  .then(function(json) {
+getPopularBlockData()
+  .then(function(data) {
     let popularProductTemplate = new EJS({
       url: './templates/product_card.ejs'
     });
     $(".popular__slider--wrapper")
       .html(popularProductTemplate.render({
         block: "popular",
-        products: json
+        products: data
       }));
   })
   .then(function() {
@@ -46,7 +41,13 @@ fetch(`https://wovenly-server.herokuapp.com/getpopular`, {
   })
   .catch(error => error);
 
-  console.log('popular', getLocalStorageObjectItem('homepageData').popular)
+  function getPopularBlockData() {
+    return new Promise(function(resolve, reject) {
+      let data = getLocalStorageObjectItem('homepageData')
+        .popular;
+      resolve(data)
+    })
+  }
 
   function getLocalStorageObjectItem(key) {
       var json = localStorage.getItem(key);

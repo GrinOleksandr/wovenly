@@ -1,0 +1,27 @@
+<% function capitalizeAll(str) {
+   var splitStr = str.toLowerCase().split(' ');
+   for (var i = 0; i < splitStr.length; i++) {
+         splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
+   }
+   return splitStr.join(' ');
+} %>
+<%
+      const styleImages ={
+        0: "img/style-shag.png",
+        1: "img/style-kids.png",
+        2: "img/style-moroccan.png",
+        3: "img/style-updated_traditional.png"
+      } %>
+
+<ul class="discover-your-style__wrapper col-xs-12">
+  <% styles.forEach(function(style){ %>
+
+  <li class="discover-your-style__slide--wrapper">
+    <img class="discover-your-style__slide--image" src="<%= styleImages[Math.floor(Math.random()*3)] %>" alt="<%= capitalizeAll(style) %> style" />
+    <span class="discover-your-style__slide--title"><%= capitalizeAll(style) %></span>
+  </li>
+
+
+
+  <%  }) %>
+</ul>

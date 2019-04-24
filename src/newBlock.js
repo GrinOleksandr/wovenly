@@ -70,7 +70,6 @@ function getNewBlockData() {
   return new Promise(function(resolve, reject) {
     let data = getLocalStorageObjectItem('homepageData')
       .new;
-    console.log('newData!!! ', data)
     resolve(data)
   })
 }

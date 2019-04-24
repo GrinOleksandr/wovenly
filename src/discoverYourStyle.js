@@ -1,16 +1,11 @@
-fetch(`https://wovenly-server.herokuapp.com/getstyles`, {
-    method: 'GET'
-  })
-  .then(function(response) {
-    return response.json()
-  })
-  .then(function(json) {
-  let discoverYourStyleTemplate = new EJS({
+getDYSBlockData()
+  .then(function(data) {
+    let discoverYourStyleTemplate = new EJS({
       url: './templates/discoverYourStyle.ejs'
     });
     $(".discover-your-style__slider--nesting-place")
       .html(discoverYourStyleTemplate.render({
-        styles: json
+        styles: data
       }));
   })
   .then(function() {
@@ -44,10 +39,19 @@ fetch(`https://wovenly-server.herokuapp.com/getstyles`, {
   })
   .catch(error => error);
 
-  function getLocalStorageObjectItem(key) {
-      var json = localStorage.getItem(key);
-      if (json === undefined) {
-          return undefined;
-      }
-      return JSON.parse(json);
+
+function getDYSBlockData() {
+  return new Promise(function(resolve, reject) {
+    let data = getLocalStorageObjectItem('homepageData')
+      .styles;
+    resolve(data)
+  })
+}
+
+function getLocalStorageObjectItem(key) {
+  var json = localStorage.getItem(key);
+  if (json === undefined) {
+    return undefined;
   }
+  return JSON.parse(json);
+}
