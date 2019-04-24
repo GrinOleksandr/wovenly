@@ -78,7 +78,6 @@ function getNewBlockData() {
 }
 
 function activateColor(element) {
-  console.log('it works!!!', $(element).parent().find('.newblock__color--active'))
   if ($(element).parent().find('.newblock__color--active')) {
     $(element).parent().find('.newblock__color--active')
       .removeClass('newblock__color--active');
@@ -90,7 +89,6 @@ function activateColor(element) {
 }
 
 function implementActivation() {
-
   $('.newblock__color--outer')
     .each(function(index, element) {
       $(element)
