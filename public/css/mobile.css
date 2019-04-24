@@ -277,6 +277,10 @@ header {
   background: white;
 }
 
+.cart-conter__visible {
+  display: flex;
+}
+
 /* Promo */
 .promo {
   background: #f4f5f0;
