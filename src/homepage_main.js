@@ -5,7 +5,6 @@ fetch(`https://wovenly-server.herokuapp.com/gethomepagedata`, {
     return response.json()
   })
   .then(function(json) {
-    console.log(json);
     setLocalStorageObjectItem('homepageData', json)
   })
   .catch(error => error);

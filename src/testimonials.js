@@ -5,13 +5,11 @@
         easing: 'swing',
         mobileFirst: true,
         speed: 1200,
-        infinite:true,
+        infinite: true,
         prevArrow: $('.testimonials__prev'),
         nextArrow: $('.testimonials__next'),
         responsive: [{
-            breakpoint: 768,
-            settings: "unslick"
-          },
-
-        ]
+          breakpoint: 768,
+          settings: "unslick"
+        }, ]
       });

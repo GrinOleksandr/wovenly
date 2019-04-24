@@ -28,7 +28,6 @@ getNewBlockData()
       .html(newProductTemplate.render({
         block: "newBlock",
         products: data
-
       }));
   })
   .then(function() {
@@ -63,6 +62,10 @@ getNewBlockData()
   })
   .then(function() {
     implementActivation();
+    $('.newblock__color--outer:first-child')
+      .each(function(index, element) {
+        activateColor(element);
+      })
   })
   .catch(error => error);
 
@@ -85,29 +88,15 @@ function activateColor(element) {
   element.parentNode.parentNode.dataset.activeColor = element.dataset.color;
 }
 
-function colorActivationWrapper(ev) {
-  activateColor(ev.target)
-}
-
 function implementActivation() {
-  console.log(document.documentElement.clientWidth)
-  if (document.documentElement.clientWidth > 750) {
-    for (let i = 0; i < (document.querySelectorAll('.newblock__color--outer:first-child'))
-      .length; i++) {
-      activateColor((document.querySelectorAll('.newblock__color--outer:first-child'))[i]);
-    }
 
-    for (let i = 0; i < (document.getElementsByClassName('newblock__color--outer'))
-      .length; i++) {
-      (document.getElementsByClassName('newblock__color--outer'))[i].addEventListener('click', colorActivationWrapper);
-    }
-  } else {
-    for (let i = 0; i < (document.getElementsByClassName('newblock__color--outer'))
-      .length; i++) {
-      (document.getElementsByClassName('newblock__color--outer'))[i].removeEventListener('click', colorActivationWrapper);
-      (document.getElementsByClassName('newblock__color--outer'))[i].style.border = "none";
-    }
-  }
+  $('.newblock__color--outer')
+    .each(function(index, element) {
+      $(element)
+        .on('click', function(ev) {
+          activateColor(ev.target)
+        })
+    })
 }
 window.addEventListener('resize', throttle(implementActivation, 1000))
 
