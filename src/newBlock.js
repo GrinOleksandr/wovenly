@@ -19,127 +19,61 @@ const throttle = (func, limit) => {
   }
 }
 
+getNewBlockData()
+  .then(function(data) {
+    let newProductTemplate = new EJS({
+      url: './templates/product_card.ejs'
+    });
+    $(".newblock__slider--wrapper")
+      .html(newProductTemplate.render({
+        block: "newBlock",
+        products: data
 
+      }));
+  })
+  .then(function() {
+    $('.newblock__slider--wrapper')
+      .slick({
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        easing: 'swing',
+        speed: 1200,
+        swipe: false,
+        prevArrow: $('.newblock__prev'),
+        nextArrow: $('.newblock__next'),
+        responsive: [{
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              infinite: true,
+            }
+          },
+        ]
+      });
 
-// fetch(`https://wovenly-server.herokuapp.com/getnew`, {
-//     method: 'GET'
-//   })
-//   .then(function(response) {
-//     return response.json()
-//   })
-//   .then(function(json) {
-//     let newProductTemplate = new EJS({
-//       url: './templates/product_card.ejs'
-//     });
-//     $(".newblock__slider--wrapper")
-//       .html(newProductTemplate.render({
-//         block: "newBlock",
-//         products: json
-//
-//       }));
-//   })
-//   .then(function() {
-//     $('.newblock__slider--wrapper')
-//       .slick({
-//         slidesToShow: 3,
-//         slidesToScroll: 3,
-//         easing: 'swing',
-//         speed: 1200,
-//         swipe: false,
-//         prevArrow: $('.newblock__prev'),
-//         nextArrow: $('.newblock__next'),
-//         responsive: [{
-//             breakpoint: 1200,
-//             settings: {
-//               slidesToShow: 3,
-//               slidesToScroll: 3,
-//               infinite: true,
-//             }
-//           },
-//           {
-//             breakpoint: 768,
-//             settings: {
-//               slidesToShow: 2,
-//               slidesToScroll: 2,
-//               infinite: true,
-//             }
-//           },
-//         ]
-//       });
-//
-//   })
-//   .then(function() {
-//     implementActivation();
-//   })
-//   .catch(error => error);
+  })
+  .then(function() {
+    implementActivation();
+  })
+  .catch(error => error);
+
 function getNewBlockData() {
   return new Promise(function(resolve, reject) {
-  resolve(getLocalStorageObjectItem('homepageData'))
+    let data = getLocalStorageObjectItem('homepageData')
+      .new;
+    console.log('newData!!! ', data)
+    resolve(data)
   })
 }
-
-
-
-
-
-
-
-// const generateNewBlock = async function() {
-//   try {
-//     const response = await getLocalStorageObjectItem('homepageData')
-//       .new;
-//     const data = await response.json();
-//     const generateData = await function(){
-//       let newProductTemplate = new EJS({
-//         url: './templates/product_card.ejs'
-//       });
-//       $(".newblock__slider--wrapper")
-//         .html(newProductTemplate.render({
-//           block: "newBlock",
-//           products: json
-//
-//         }));
-//     };
-//     const implementSlider = await function(){
-//       $('.newblock__slider--wrapper')
-//         .slick({
-//           slidesToShow: 3,
-//           slidesToScroll: 3,
-//           easing: 'swing',
-//           speed: 1200,
-//           swipe: false,
-//           prevArrow: $('.newblock__prev'),
-//           nextArrow: $('.newblock__next'),
-//           responsive: [{
-//               breakpoint: 1200,
-//               settings: {
-//                 slidesToShow: 3,
-//                 slidesToScroll: 3,
-//                 infinite: true,
-//               }
-//             },
-//             {
-//               breakpoint: 768,
-//               settings: {
-//                 slidesToShow: 2,
-//                 slidesToScroll: 2,
-//                 infinite: true,
-//               }
-//             },
-//           ]
-//         });
-//     };
-//     const addActivator = await implementActivation();
-//     console.log(data);
-//   } catch (error) {
-//     throw new Error(`newBlock data get error`);
-//   }
-// }
-//
-//
-// generateNewBlock();
-
-
 
 function activateColor(element) {
   if (element.parentNode.querySelector('.newblock__color--active')) {
@@ -151,9 +85,11 @@ function activateColor(element) {
   element.classList.add('newblock__color--active');
   element.parentNode.parentNode.dataset.activeColor = element.dataset.color;
 }
+
 function colorActivationWrapper(ev) {
   activateColor(ev.target)
 }
+
 function implementActivation() {
   console.log(document.documentElement.clientWidth)
   if (document.documentElement.clientWidth > 750) {
@@ -175,6 +111,7 @@ function implementActivation() {
   }
 }
 window.addEventListener('resize', throttle(implementActivation, 1000))
+
 function getLocalStorageObjectItem(key) {
   var json = localStorage.getItem(key);
   if (json === undefined) {
