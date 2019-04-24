@@ -43,3 +43,11 @@ fetch(`https://wovenly-server.herokuapp.com/getstyles`, {
       });
   })
   .catch(error => error);
+
+  function getLocalStorageObjectItem(key) {
+      var json = localStorage.getItem(key);
+      if (json === undefined) {
+          return undefined;
+      }
+      return JSON.parse(json);
+  }

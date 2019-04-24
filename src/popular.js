@@ -45,3 +45,13 @@ fetch(`https://wovenly-server.herokuapp.com/getpopular`, {
 
   })
   .catch(error => error);
+
+  console.log('popular', getLocalStorageObjectItem('homepageData').popular)
+
+  function getLocalStorageObjectItem(key) {
+      var json = localStorage.getItem(key);
+      if (json === undefined) {
+          return undefined;
+      }
+      return JSON.parse(json);
+  }
