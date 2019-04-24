@@ -78,13 +78,14 @@ function getNewBlockData() {
 }
 
 function activateColor(element) {
-  if (element.parentNode.querySelector('.newblock__color--active')) {
-    element.parentNode.querySelector('.newblock__color--active')
-      .classList.remove('newblock__color--active');
+  console.log('it works!!!', $(element).parent().find('.newblock__color--active'))
+  if ($(element).parent().find('.newblock__color--active')) {
+    $(element).parent().find('.newblock__color--active')
+      .removeClass('newblock__color--active');
   }
 
-  element.style.setProperty('--activeColor-color', element.style.backgroundColor);
-  element.classList.add('newblock__color--active');
+  $(element).css('--activeColor-color', $(element).css('background-color'));
+  $(element).addClass('newblock__color--active');
   element.parentNode.parentNode.dataset.activeColor = element.dataset.color;
 }
 
