@@ -101,7 +101,7 @@ function cartCounterIncrement(ev) {
 submitSearchBtn.on(
   'click',
   function() {
-    alert(`searching for: ${searchFieldDropdown.value}`)
+    alert(`searching for: ${$(searchFieldDropdown).val()}`)
   })
 
 

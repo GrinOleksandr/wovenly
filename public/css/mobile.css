@@ -398,7 +398,7 @@ header {
 }
 
 .benefit__wrapper {
-  display: flex;
+  display: block;
   flex-direction: column;
   padding-left: 13px;
   padding-top: 5px;
