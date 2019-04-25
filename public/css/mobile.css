@@ -95,7 +95,7 @@ header {
 .search__controls--button {
   padding: 10px 18px;
   display: block;
-  flot: right;
+  float: right;
   cursor: pointer;
 }
 
@@ -192,6 +192,10 @@ header {
   display: block;
   padding: 13px;
   white-space: nowrap;
+}
+
+.nav-menu__item--link:hover, .nav-menu__item--link:link, .nav-menu__item--link:active, .nav-menu__item--link:focus {
+  color: inherit;
 }
 
 .nav-menu__dropdown--link {

@@ -2,6 +2,19 @@
     font-size: 16px;
   }
 
+  /*********************** Promo-line BLOCK ***********************/
+  .promo-line {
+    padding: 5px;
+  }
+
+  .promo-line__text {
+    display: inline;
+  }
+
+  .promo-line__text--mobile {
+    display: none;
+  }
+
   /*********************** Navigation BLOCK ***********************/
   .navigation__global--wrapper {
     border-bottom: 1px solid #e5e5e5;

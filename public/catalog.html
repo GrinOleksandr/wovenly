@@ -24,22 +24,73 @@
 
 <body>
   <header>
+    <section class="container-fluid">
+      <div class="row row-no-padding">
+        <div class="promo-line col-xs-12">
+          <span class="promo-line__text--mobile">Promo</span>
+          <span class="promo-line__text">Line for Messaging. Linit to 100 characters per line. Max 1 lines. Keep at least 5px around.</span>
+        </div>
+      </div>
+    </section>
+    <nav class="containter-fluid">
+      <div class="row navigation__global--wrapper">
+        <div class="col-xs-4 col-sm-2 col-lg-2">
+          <h2 class="navigation__logo--wide navigation__logo"><a href=#>Wovenly</a></h2>
+          <h2 class="navigation__logo--mobile navigation__logo"><a href=#>W</a></h2>
+        </div>
+        <div class="search__wrapper col-sm-4 col-lg-5">
+          <input class="search__field" type="text" placeholder="Search" />
+        </div>
+        <div class="navigation__buttons--wrapper col-xs-8 col-sm-6 col-lg-5">
+          <ul class="nav-menu " id="navMenu">
+            <li class="nav-menu__item"><a class="nav-menu__item--link" href="#">Shag</a></li>
+            <li class="nav-menu__item"><a class="nav-menu__item--link" href="#">Contemporary</a></li>
+            <li class="nav-menu__item nav-menu__dropdown">
+              <div class="dropdown__triangle" id="dropdown_triangle"></div>
+              <a class="nav-menu__item--link nav-menu__dropdown--link" id="navMenuDropDownBtn" href="#">More Styles<span class="chevron"> </span></a>
+              <ul class="nav-menu__dropdown--list" id="navMenuDropDown">
+                <li class="nav-menu__level2--item"><a class="nav-menu__level2--link" href="#">Test Link 1</a></li>
+                <li class="nav-menu__level2--item"><a class="nav-menu__level2--link" href="#">Test Link 2</a></li>
+                <li class="nav-menu__level2--item"><a class="nav-menu__level2--link" href="#">Test Link 3</a></li>
+                <li class="nav-menu__level2--item"><a class="nav-menu__level2--link" href="#">Test Link 4</a></li>
+                <li class="nav-menu__level2--item"><a class="nav-menu__level2--link" href="#">Test Link 5</a></li>
+              </ul>
+            </li>
+            <li class="nav-menu__item"><a class="nav-menu__item--link" href="#">Sale</a></li>
+            <li class="nav-menu__item"><a class="nav-menu__item--link" href="#">Shop All Rugs</a></li>
+          </ul>
+          <div class="search__button" id="searchButton">
+            <a class="navigation__button" href="#"></a>
+          </div>
+          <div class="navigation__chat "><a class="navigation__button" href="#"></a></div>
+          <div class="navigation__cart ">
+            <a class="navigation__button" href="#" id="cart"></a>
+            <span class="cart-count" id="cartCount"></span>
+          </div>
+          <div class="navigation__burger" id="burger"><a class="navigation__button navigation__burger--link" href="#"></a></div>
+        </div>
+      </div>
+      <div class="search__wrapper--dropdown row" id="searchFieldWrapper">
+        <div class="col-xs-12 search__wrapper--dropdown__wrapper">
+          <input class="search__field" id="searchFieldDropdown" type="search" name="search" placeholder="Search">
+          <div class="search__buttons--wrapper ">
+            <span class="search__clear search__controls--button" id="clearSearchBtn">✕</span>
+            <span class="search__submit  search__controls--button theme-green" id="submitSearchBtn"></span>
+          </div>
+        </div>
+      </div>
+    </nav>
   </header>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
+
+
+
+
   <script src="js/navigation.js"></script>
 </body>
 
