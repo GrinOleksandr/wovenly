@@ -45,29 +45,23 @@ input:active, input:focus {
   border: none;
 }
 
-.row.no-gutters > [class^="col-"],
-.row.no-gutters > [class*=" col-"] {
-  padding-right: 0  !important;
-  padding-left: 0  !important;
+.row.no-gutters>[class^="col-"],
+.row.no-gutters>[class*=" col-"] {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
 }
 
-.row-no-padding > [class*="col-"] {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+.row-no-padding>[class*="col-"] {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .row.no-pad {
-  margin-right:0;
-  margin-left:0;
-}
-.row.no-pad > [class*='col-'] {
-  padding-right:0;
-  padding-left:0;
+  margin-right: 0;
+  margin-left: 0;
 }
 
-
-/* temp addition for testing porposes comfort */
-
-body {
-  padding-bottom: 150px;
+.row.no-pad>[class*='col-'] {
+  padding-right: 0;
+  padding-left: 0;
 }
