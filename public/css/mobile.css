@@ -1119,6 +1119,8 @@ header {
 .footer__nav-menu--wrapper {
   display: flex;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   width: 100%;
 }

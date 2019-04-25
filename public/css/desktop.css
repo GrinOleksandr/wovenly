@@ -581,7 +581,7 @@ html {
 }
 
 .footer__logo--wrapper {
-  width: fit-content;
+  width: auto;
   text-align: left;
   padding-right: 50px;
 }
