@@ -309,9 +309,13 @@ header {
   color: white;
 }
 
+.theme-green:link, .theme-green:hover, .theme-green:active, .theme-green:visited {
+  color: white;
+}
+
 .button-size-L {
   font-size: 19px;
-  padding: 5px 30px;
+  padding: 10px 35px;
 }
 
 .button {
@@ -807,8 +811,8 @@ header {
 }
 
 .button-size-S {
-  font-size: 11px;
-  padding: 5px 14px;
+  font-size: 12px;
+  padding: 6px 19px;
 }
 
 .testimonials__title--button {
@@ -893,7 +897,7 @@ header {
 
 .signup__button {
   font-size: 15px;
-  padding: 5px 13px;
+  padding: 10px 20px;
   white-space: nowrap;
 }
 
@@ -1066,7 +1070,7 @@ header {
   align-items: center;
 }
 
-.footer__contact-us--button:hover {
+.footer__contact-us--button:hover, .footer__contact-us--button:link, .footer__contact-us--button:active, .footer__contact-us--button:visited {
   text-decoration: none;
 }
 
@@ -1101,6 +1105,10 @@ header {
   padding-bottom: 30px;
   font-size: 14px;
   padding-right: 30px;
+}
+
+.footer__nav-menu--category a:link, .footer__nav-menu--category a:active, .footer__nav-menu--category a:hover, .footer__nav-menu--category a:visited {
+  color: inherit;
 }
 
 .footer__nav-menu--category:last-child {
@@ -1154,4 +1162,8 @@ header {
 
 .footer__content--wrapper {
   width: 100%;
+}
+
+.footer__bottom--wrapper a:link, .footer__bottom--wrapper a:hover, .footer__bottom--wrapper a:active, .footer__bottom--wrapper a:visited {
+  color: #ffffff66;
 }

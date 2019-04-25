@@ -36,10 +36,9 @@ html {
   font-size: 10px;
 }
 
-a:link, a:hover, a:active, a:visited {
+/* a:link, a:hover, a:active, a:visited {
   color: inherit;
-}
-
+} */
 input:active, input:focus {
   outline: none;
   border: none;
