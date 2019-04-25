@@ -844,8 +844,9 @@ header {
 
 /***********************  SignUp BLOCK ***********************/
 .signup {
-  padding: 40px 0 20px;
   background: #f4f5f0;
+  padding-top: 40px;
+  padding-bottom: 20px;
 }
 
 .signup__wrapper {
@@ -921,7 +922,12 @@ header {
 .fys {
   background: url(../img/fys_background.png) no-repeat center;
   background-size: cover;
-  padding: 80px 0 80px 45px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.fys__content--wrapper {
+  padding-left: 45px;
 }
 
 .fys__img {

@@ -455,7 +455,8 @@ html {
 
 /***********************  SignUp BLOCK ***********************/
 .signup {
-  padding: 40px 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
   background: #f4f5f0;
 }
 
@@ -504,10 +505,12 @@ html {
 
 /***********************  FYS BLOCK ***********************/
 .fys {
-  padding: 100px 0 100px 60px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .fys__content--wrapper {
+  padding-left: 60px;
   display: flex;
   align-items: center;
 }
