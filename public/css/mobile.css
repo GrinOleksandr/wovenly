@@ -284,7 +284,7 @@ header {
 /* Promo */
 .promo {
   background: #f4f5f0;
-  padding: 20px;
+  padding: 20px 20px 40px 20px;
 }
 
 .promo__title {
@@ -301,7 +301,7 @@ header {
   color: #ababa9;
   margin: 0;
   font-family: "Graphik-Web", serif;
-  padding: 0 0 10px 0;
+  padding: 0 0 20px 0;
 }
 
 .theme-green {
@@ -684,6 +684,10 @@ header {
 }
 
 /***********************  Promo2 BLOCK ***********************/
+.promo2 {
+  padding-bottom: 20px;
+}
+
 .promo2__wrapper {
   padding-bottom: 25px;
   background: #f4f5f0;
@@ -704,7 +708,7 @@ header {
   color: #ababa9;
   margin: 0;
   font-family: "Graphik-Web", serif;
-  padding: 0 0 10px 0;
+  padding: 0 0 20px 0;
 }
 
 .promo2__image {
@@ -716,6 +720,10 @@ header {
 }
 
 /***********************  Testimonials BLOCK ***********************/
+.button:focus {
+  text-decoration: none;
+}
+
 .testimonials {
   padding-bottom: 40px;
 }
@@ -817,6 +825,10 @@ header {
 
 .testimonials__title--button {
   display: none;
+}
+
+.testimonials__title--link {
+  padding: 10px;
 }
 
 .testimonial__footer--wrapper {
@@ -937,7 +949,7 @@ header {
   font-weight: 500;
   font-size: 15px;
   background: #fff;
-  padding: 5px 10px;
+  padding: 10px 15px;
 }
 
 /*********************** FOOTER BENEFITS BLOCK ***********************/
@@ -1121,7 +1133,7 @@ header {
 }
 
 .footer__nav-menu--category-title {
-  color: #ffffff99;
+  color: #a7ddd0;
 }
 
 .footer__nav-menu--wrapper {
@@ -1147,7 +1159,7 @@ header {
 
 .footer__bottom--wrapper {
   font-size: 12px;
-  color: #ffffff66;
+  color: #a7ddd0;
   font-weight: 500;
   padding-top: 40px;
 }
@@ -1165,5 +1177,5 @@ header {
 }
 
 .footer__bottom--wrapper a:link, .footer__bottom--wrapper a:hover, .footer__bottom--wrapper a:active, .footer__bottom--wrapper a:visited {
-  color: #ffffff66;
+  color: #a7ddd0;
 }
