@@ -1103,6 +1103,10 @@ header {
   padding-right: 30px;
 }
 
+.footer__nav-menu--category:last-child {
+  padding-right: 0;
+}
+
 .footer__nav-menu--category-item {
   padding-bottom: 10px;
   font-weight: 500;

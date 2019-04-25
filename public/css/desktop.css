@@ -611,7 +611,7 @@ html {
 .footer__nav-menu--wrapper {
   padding-right: 50px;
   width: 100%;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: nowrap;
 }
 
