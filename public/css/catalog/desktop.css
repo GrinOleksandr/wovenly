@@ -139,3 +139,22 @@ html {
 .dropdown__triangle {
   top: 82px;
 }
+
+/*********************** Navigation BLOCK ***********************/
+.row.header-content {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  height: auto;
+}
+
+.header__image {
+  height: auto;
+  order: 1;
+}
+
+.header__content--title {
+  font-size: 43px;
+  width: 220px;
+  padding-bottom: 150px;
+}

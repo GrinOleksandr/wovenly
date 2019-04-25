@@ -175,7 +175,7 @@ header {
   height: 100%;
 }
 
-.navigation__button:link {
+.navigation__button:link, .navigation__button:hover {
   color: black;
   text-decoration: none;
 }
