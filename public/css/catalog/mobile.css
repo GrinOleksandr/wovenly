@@ -438,16 +438,18 @@ header {
 }
 
 .product__benefit {
+  border: none;
   background: #e6e6e6;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 30px;
+  padding-bottom: 19px;
   color: #0065a2;
   font-family: "Graphik-Web", serif;
 }
 
-.product__benefit--circle {
+.product__benefit--image {
   border-radius: 100%;
   background: white;
   width: 70px;
@@ -465,6 +467,10 @@ header {
   font-size: 12px;
   letter-spacing: 1px;
   text-decoration: underline;
-  padding-bottom: 17px;
   font-weight: 700;
+  text-transform: uppercase;
+}
+
+.product__benefit--link:hover, .product__benefit--link:visited, .product__benefit--link:active, .product__benefit--link:focus {
+  color: inherit;
 }

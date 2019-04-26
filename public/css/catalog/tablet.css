@@ -210,3 +210,13 @@ html {
   top: 3px;
   left: 3px;
 }
+
+.product__benefit--title {
+  padding-top: 34px;
+  font-size: 18px;
+  padding-bottom: 24px;
+}
+
+.product__benefit {
+  padding-bottom: 29px;
+}
