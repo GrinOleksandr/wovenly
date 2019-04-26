@@ -82,8 +82,8 @@
   
   if(block === "catalog"){
     <% products.forEach(function (product) { %>
-      <div class="popular__item--wrapper">
-          <div class="product ">
+      <div class="product__item--wrapper col-xs-6 col-sm-3">
+          <div class="product">
             <div class="product__img--wrapper">
               <img src="<%= product.thumb %>" class="product__img" alt="rug" />
             </div>
@@ -103,12 +103,7 @@
         </ul>
       </div>
     </div>
-    <% if(iterator === 3){
-        iterator = 0
-      }
-        else iterator++
-      })
-    } %>
+    <% })} %>
   
   
   

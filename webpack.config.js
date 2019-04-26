@@ -9,7 +9,9 @@ let conf = {
       discoverYourStyle: path.resolve(__dirname, 'src/discoverYourStyle.js'),
       newBlock: path.resolve(__dirname, 'src/newBlock.js'),
       testimonials: path.resolve(__dirname, 'src/testimonials.js'),
-      homepage_main: path.resolve(__dirname, 'src/homepage_main.js')
+      homepage_main: path.resolve(__dirname, 'src/homepage_main.js'),
+      catalog_main: path.resolve(__dirname, 'src/catalog_main.js'),
+      catalog_render: path.resolve(__dirname, 'src/catalog_render.js')
     },
     output: {
         path: path.resolve(__dirname, 'public/js/'),
