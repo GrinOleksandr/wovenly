@@ -82,8 +82,19 @@
   } %>
   
   <% if(block === "catalog"){
-    console.log('catalog rendering init!!')
-     products.forEach(function (product) { %>
+      let iterator = 0;
+    products.forEach(function (product) { 
+      if(iterator === 7){ %>
+          <div class="product__item--wrapper col-xs-6 col-sm-3">
+            <div class = "product product__benefit">
+              <div class = "product__benefit--image">
+                <div class = "product__benefit--circle"></div>
+              </div>
+              <div class = "product__benefit--title">Free shipping<br>&<br>60-day Trial</div>
+              <a class = "product__benefit--link" href = "#">LEARN MORE</a>
+            </div>
+          </div>
+    <% } else { %>
       <div class="product__item--wrapper col-xs-6 col-sm-3">
           <div class="product">
             <div class="product__img--wrapper">
@@ -105,7 +116,10 @@
         </ul>
       </div>
     </div>
-    <% })} %>
+    <% 
+    }iterator++
+  })
+} %>
   
   
   
