@@ -160,14 +160,27 @@ html {
 }
 
 /*********************** Сontent BLOCK ***********************/
+.product {
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.product__item--wrapper:nth-child(even)>.product {
+  margin-right: 10px;
+}
+
+.product__item--wrapper:nth-child(4n)>.product {
+  margin-right: 0;
+}
+
 .product__colors {
   padding-bottom: 20px;
 }
 
 .product__color--outer {
   position: relative;
-  width: 31px;
-  height: 31px;
+  width: 23px;
+  height: 23px;
   margin-right: 6px;
   margin-left: 6px;
   border-radius: 50%;
@@ -176,8 +189,8 @@ html {
 
 .product__color--active {
   position: relative;
-  width: 43px;
-  height: 43px;
+  width: 35px;
+  height: 35px;
   margin-left: 0px;
   margin-right: 0px;
   border-radius: 50%;
@@ -187,8 +200,8 @@ html {
 .product__color--active>.product__color {
   background-color: white;
   position: absolute;
-  width: 39px;
-  height: 39px;
+  width: 31px;
+  height: 31px;
   border-radius: 50%;
   top: 2px;
   left: 2px;
@@ -196,8 +209,8 @@ html {
 
 .product__color--active .product__color--inner {
   background-color: brown;
-  width: 31px;
-  height: 31px;
+  width: 23px;
+  height: 23px;
   border-radius: 50%;
   position: absolute;
   top: 4px;
