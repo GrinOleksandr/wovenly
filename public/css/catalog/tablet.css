@@ -134,7 +134,7 @@ html {
   height: 20px;
 }
 
-/*********************** Navigation BLOCK ***********************/
+/*********************** Header-content BLOCK ***********************/
 .row.header-content {
   display: flex;
   flex-wrap: wrap;
@@ -151,4 +151,49 @@ html {
   font-size: 43px;
   width: 220px;
   padding-bottom: 150px;
+}
+
+/*********************** Content BLOCK ***********************/
+.product__colors {
+  padding-bottom: 20px;
+}
+
+.product__color--outer {
+  position: relative;
+  width: 31px;
+  height: 31px;
+  margin-right: 6px;
+  margin-left: 6px;
+  border-radius: 50%;
+  margin-top: 6px;
+}
+
+.product__color--active {
+  position: relative;
+  width: 43px;
+  height: 43px;
+  margin-left: 0px;
+  margin-right: 0px;
+  border-radius: 50%;
+  margin-top: 0;
+}
+
+.product__color--active>.product__color {
+  background-color: white;
+  position: absolute;
+  width: 39px;
+  height: 39px;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+}
+
+.product__color--active .product__color--inner {
+  background-color: brown;
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  left: 4px;
 }
