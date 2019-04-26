@@ -220,3 +220,19 @@ html {
 .product__benefit {
   padding-bottom: 29px;
 }
+
+/***********************Footer  BLOCK ***********************/
+.footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 160px;
+}
+
+.pagination__pages--wrapper {
+  padding: 0 55px;
+}
+
+body {
+  background-size: 130%;
+}
