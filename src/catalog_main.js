@@ -1,11 +1,11 @@
-fetch(`https://wovenly-server.herokuapp.com/gethomepagedata`, {
+fetch(`https://wovenly-server.herokuapp.com/getcatalogdata`, {
     method: 'GET'
   })
   .then(function(response) {
     return response.json()
   })
   .then(function(json) {
-    setLocalStorageObjectItem('homepageData', json)
+    setLocalStorageObjectItem('allProducts', json)
   })
   .catch(error => error);
 
