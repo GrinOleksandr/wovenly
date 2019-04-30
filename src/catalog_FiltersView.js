@@ -19,17 +19,25 @@ $('.filter').click(function(ev){
 })
 
 function selectFilter(filter){
-  let allreadySelected = filter.parentElement.dataset.selectedfilters || [];
-  if(!$(filter).hasClass("filter--selected")){
-    console.log(allreadySelected)
-    allreadySelected.push($(filter).text());
-    $(filter).toggleClass("filter--selected");
-    }
-  else {
-    allreadySelected.splice(allreadySelected.indexOf($(filter).text()));
-    $(filter).toggleClass("filter--selected");
+  if(filter.parentElement.dataset.selectedfilters){
+    let allreadySelected = filter.parentElement.dataset.selectedfilters.split(",");
   }
-    $(filter).parent().attr("data-selectedfilters", allreadySelected)
+  else{
+    let allreadySelected = [];
+    if(!$(filter).hasClass("filter--selected")){
+      console.log(allreadySelected)
+      allreadySelected.push($(filter).text());
+      $(filter).toggleClass("filter--selected");
+      }
+    else {
+      allreadySelected.splice(allreadySelected.indexOf($(filter).text()));
+      $(filter).toggleClass("filter--selected");
+    }
+      $(filter).parent().attr("data-selectedfilters", allreadySelected)
+    
+    
+  }
+
   
   
 }
