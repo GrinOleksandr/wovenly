@@ -1,8 +1,5 @@
-// $('#more_filters_button').on('click',function(ev){
-// 
-// 
-// })
 
+//Expand category in mobile mode
 $('.more-filters__category--expander').click(function(ev){
   let thisCategory = $(ev.target).parent().parent();
   if(thisCategory.find(".filter__category--filters").css("visibility")==="hidden"){
@@ -14,5 +11,26 @@ $('.more-filters__category--expander').click(function(ev){
       thisCategory.find(".filter__category--filters").css("visibility","hidden");
       $(ev.target).html("+").css("padding-top","10px");
   }
-    console.log('category expanded')
 })
+
+
+$('.filter').click(function(ev){
+  selectFilter(ev.target)
+})
+
+function selectFilter(filter){
+  let allreadySelected = filter.parentElement.dataset.selectedfilters || [];
+  if(!$(filter).hasClass("filter--selected")){
+    console.log(allreadySelected)
+    allreadySelected.push($(filter).text());
+    $(filter).toggleClass("filter--selected");
+    }
+  else {
+    allreadySelected.splice(allreadySelected.indexOf($(filter).text()));
+    $(filter).toggleClass("filter--selected");
+  }
+    $(filter).parent().attr("data-selectedfilters", allreadySelected)
+  
+  
+}
+

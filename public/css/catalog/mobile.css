@@ -454,7 +454,7 @@ body {
   font-size: 14px;
   border-radius: 5px;
   border-radius: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   text-align: center;
   cursor: pointer;
 }
@@ -462,7 +462,10 @@ body {
 .filter--selected {
   color: white;
   background: #696c6b;
-  border: none;
+}
+
+.filter--selected:hover {
+  color: white;
 }
 
 .filter__size--S {
@@ -479,7 +482,6 @@ body {
 
 .filter:hover {
   border-color: black;
-  color: black;
 }
 
 .filter__apply-button--wrapper {
