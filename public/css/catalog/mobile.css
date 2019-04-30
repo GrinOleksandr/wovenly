@@ -432,7 +432,6 @@ body {
 
 .more-filters__category--name {
   padding: 10px 10px 5px 0;
-  cursor: pointer;
 }
 
 .filter__category--filters {
@@ -442,6 +441,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  visibility: hidden;
 }
 
 .filter {
