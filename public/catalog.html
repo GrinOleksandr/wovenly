@@ -91,12 +91,44 @@
     <section class="container-fluid">
       <div class="row row-no-padding">
         <div class="filters col-xs-12">
-          <div class="filters__wrapper">
-          <button class = "filter__category--button button theme-green-text">size</button>
-          <button class = "filter__category--button button theme-green-text">color</button>
-          <button class = "filter__category--button button theme-green-text">more filters</button>
-          
-        </div>
+          <div class="filters__global-wrapper">
+            <div class="filters__wrapper">
+              <button class="filter__category--button button theme-green-text">size</button>
+              <button class="filter__category--button button theme-green-text">color</button>
+
+              <button class="filter__category--button button theme-green-text">more filters</button>
+
+            </div>
+            <ul class="more-filters__dropdown">
+              <li class="more-filters__category">
+                <div class=more-filters__category--wrapper>
+                  <span class="more-filters__category--name">room</span>
+                  <span class="more-filters__category--expander more-filters__category--closed">+</span>
+                </div>
+                <ul class="filter__category--filters">
+                  <li class="filter filter__size--S">bedroom</li>
+                  <li class="filter filter__size--S">living room</li>
+                  <li class="filter filter__size--S">hallway</li>
+                  <li class="filter filter__size--S">Kitchen</li>
+                  <li class="filter filter__size--S">bedroom</li>
+                  <li class="filter filter__size--S">living room</li>
+                  <li class="filter filter__size--S">hallway</li>
+                  <li class="filter filter__size--S">Kitchen</li>
+                  <li class="filter filter__size--S">bedroom</li>
+                  <li class="filter filter__size--S">living room</li>
+                  <li class="filter filter__size--S">hallway</li>
+                  <li class="filter filter__size--S">Kitchen</li>
+                </ul>
+                <div class="filter__apply-button--wrapper">
+                  <span class="filter__apply-button">Apply</span>
+                  <div>
+              </li>
+              <li class="more-filters__category">price</li>
+              <li class="more-filters__category">material</li>
+              <li class="more-filters__category">construction</li>
+              <li class="more-filters__category">style</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
