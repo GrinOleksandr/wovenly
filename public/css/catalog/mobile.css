@@ -428,6 +428,7 @@ body {
   cursor: pointer;
   padding: 10px 0 5px 10px;
   line-height: 18px;
+  user-select: none;
 }
 
 .more-filters__category--name {
