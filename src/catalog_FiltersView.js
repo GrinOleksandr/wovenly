@@ -15,15 +15,16 @@ $('.more-filters__category--expander').click(function(ev){
 
 //Expand category
 $(".filter__category--button").click(function(ev){
-  let thisCategory = $(ev.target).parent().parent();
+  $(".filters__wrapper").find(".filter__category--active").removeClass('filter__category--active').find(".filter__category--filters").css("visibility","hidden");
+  let thisCategory = $(ev.target).parent();
   if(thisCategory.find(".filter__category--filters").css("visibility")==="hidden"){
     thisCategory.find(".filter__category--filters").css("visibility","visible");
-    $(ev.target).html("⎯").css("padding-top","4px");
+    $(ev.target).toggleClass(".filter__category--active ");
     
   }
   else {
       thisCategory.find(".filter__category--filters").css("visibility","hidden");
-      $(ev.target).html("+").css("padding-top","10px");
+      $(ev.target).toggleClass("filter__category--active ");
   }
 })
 

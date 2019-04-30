@@ -382,7 +382,6 @@ body {
 }
 
 .filter__category--active {
-  border: none;
   color: white;
   background: #066551;
 }
