@@ -3,13 +3,15 @@
 $('.more-filters__category--expander').click(function(ev){
   let thisCategory = $(ev.target).parent().parent();
   if($(ev.target).hasClass('more-filters__button--closed')){
-    
+    collapseFilterCategory();
     thisCategory.addClass('filter__category--expanded');
     $(ev.target).html("⎯").removeClass('more-filters__button--closed').addClass('more-filters__button--opened');
+    $(ev.target).parent().parent().css("border-bottom","none");
 }
   else {
-      thisCategory.removeClass('filter__category--expanded');
+    collapseFilterCategory();
       $(ev.target).html("+").removeClass('more-filters__button--opened').addClass('more-filters__button--closed');
+      $(ev.target).parent().parent().css("border-bottom","1px solid #b3b3b3");
   }
 })
 
@@ -22,6 +24,7 @@ $(".filter__category--button").click(function(ev){
 else {
   deactivateFilterCategory();
     $(ev.target).parent().toggleClass("filter__category--active");
+    $('.overlay__layer').css("display","block");
 }
 
 })
@@ -29,6 +32,11 @@ else {
 //deactivate filter category
 function deactivateFilterCategory(){
     $(".filter__category--active").removeClass('filter__category--active');
+    $('.overlay__layer').css("display","none");
+}
+
+function collapseFilterCategory(){
+    $(".filter__category--expanded").removeClass('filter__category--expanded');
 }
 
 //select filter
