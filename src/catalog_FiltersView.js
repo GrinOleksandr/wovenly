@@ -25,14 +25,15 @@ else {
   deactivateFilterCategory();
     $(ev.target).parent().toggleClass("filter__category--active");
     $('.overlay__layer').css("display","block");
+    $('.filters').css("position","absolute");
 }
-
 })
 
 //deactivate filter category
 function deactivateFilterCategory(){
     $(".filter__category--active").removeClass('filter__category--active');
     $('.overlay__layer').css("display","none");
+    $('.filters').css("position","relative");
 }
 
 function collapseFilterCategory(){
