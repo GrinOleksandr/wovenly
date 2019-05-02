@@ -361,6 +361,8 @@ body {
   justify-content: flex-start;
   padding: 0 10px;
   border: 1px solid #b3b3b3;
+  list-style: none;
+  position: relative;
 }
 
 .filters {
@@ -378,25 +380,33 @@ body {
   text-transform: capitalize;
   border: 1px solid #066551;
   width: 100%;
-  margin-right: 10px;
 }
 
-.filter__category--active {
+.filter__category--active>.filter__category--button {
   color: white;
   background: #066551;
+}
+
+.filter__category--active>.category__dropdown, .filter__category--active .more-filters__category {
+  visibility: visible;
 }
 
 .more-filters__wrapper {
   width: 100%;
 }
 
+.more-filters__category .filter__category--filters {
+  top: 100%;
+}
+
 .more-filters__dropdown {
   position: absolute;
   z-index: 2;
-  top: 100%;
+  top: 101%;
+  left: 0;
   padding-left: 0;
   list-style: none;
-  width: calc(100% - 10px);
+  width: 100%;
   padding: 0 5px;
 }
 
@@ -408,13 +418,39 @@ body {
   font-size: 18px;
   border-bottom: 1px solid #b3b3b3;
   padding: 20px 0;
+  visibility: hidden;
 }
 
+.filter__category--filters-wrapper {
+  visibility: hidden;
+  position: absolute;
+  top: 101%;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  background: white;
+}
+
+.filter__category--expanded .filter__category--filters-wrapper, .filter__category--expanded .filter__category--filters {
+  visibility: visible;
+}
+
+.more-filters__button--opened {
+  padding-top: 4px;
+}
+
+.more-filters__button--closed {
+  padding-top: 10px;
+}
+
+/* .category__dropdown {
+  display: none;
+} */
 .more-filters__category:last-child {
   border: none;
 }
 
-.more-filters__category--wrapper {
+.more-filters__category--header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -442,6 +478,21 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   visibility: hidden;
+  /* position: absolute;
+  top: 101%;
+  left: 0; */
+  width: 100%;
+  z-index: 3;
+  background: white;
+}
+
+.filter__category--item {
+  width: 100%;
+  margin-right: 10px;
+}
+
+.category--visible {
+  visibility: visible;
 }
 
 .filter {
@@ -494,6 +545,10 @@ body {
   font-size: 15px;
   cursor: pointer;
   padding: 10px;
+}
+
+.category__dropdown {
+  /* display: none; */
 }
 
 /***********************Content  BLOCK ***********************/

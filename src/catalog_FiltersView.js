@@ -2,38 +2,34 @@
 //Expand category "MORE FILTERS" mode
 $('.more-filters__category--expander').click(function(ev){
   let thisCategory = $(ev.target).parent().parent();
-  if(thisCategory.find(".filter__category--filters").css("visibility")==="hidden"){
-    thisCategory.find(".filter__category--filters").css("visibility","visible");
-    $(ev.target).html("⎯").css("padding-top","4px");
+  if($(ev.target).hasClass('more-filters__button--closed')){
     
-  }
+    thisCategory.addClass('filter__category--expanded');
+    $(ev.target).html("⎯").removeClass('more-filters__button--closed').addClass('more-filters__button--opened');
+}
   else {
-      thisCategory.find(".filter__category--filters").css("visibility","hidden");
-      $(ev.target).html("+").css("padding-top","10px");
+      thisCategory.removeClass('filter__category--expanded');
+      $(ev.target).html("+").removeClass('more-filters__button--opened').addClass('more-filters__button--closed');
   }
 })
 
 //Expand category
 $(".filter__category--button").click(function(ev){
-  $(".filters__wrapper").find(".filter__category--active").removeClass('filter__category--active').find(".filter__category--filters").css("visibility","hidden");
-  let thisCategory = $(ev.target).parent();
-  if(thisCategory.find(".filter__category--filters").css("visibility")==="hidden"){
-    thisCategory.find(".filter__category--filters").css("visibility","visible");
-    $(ev.target).toggleClass(".filter__category--active ");
-    
-  }
-  else {
-      thisCategory.find(".filter__category--filters").css("visibility","hidden");
-      $(ev.target).toggleClass("filter__category--active ");
-  }
+  console.log("Expanding category: ",$(ev.target).text());
+  if($(ev.target).parent().hasClass("filter__category--active")){
+  deactivateFilterCategory();
+}
+else {
+  deactivateFilterCategory();
+    $(ev.target).parent().toggleClass("filter__category--active");
+}
+
 })
 
-
-
-
-
-
-
+//deactivate filter category
+function deactivateFilterCategory(){
+    $(".filter__category--active").removeClass('filter__category--active');
+}
 
 //select filter
 $('.filter').click(function(ev){
@@ -41,23 +37,23 @@ $('.filter').click(function(ev){
 })
 
 function selectFilter(filter){
-  let allreadySelected
+  let alreadySelected
   if(filter.parentElement.dataset.selectedfilters){
-    allreadySelected = filter.parentElement.dataset.selectedfilters.split(",");
+    alreadySelected = filter.parentElement.dataset.selectedfilters.split(",");
   }
   else{
-  allreadySelected = [];
+  alreadySelected = [];
   }
     if(!$(filter).hasClass("filter--selected")){
-      allreadySelected.push($(filter).text());
+      alreadySelected.push($(filter).text());
       $(filter).toggleClass("filter--selected");
       }
     else {
-      allreadySelected.splice(allreadySelected.indexOf($(filter).text()));
+      alreadySelected.splice(alreadySelected.indexOf($(filter).text()));
       $(filter).toggleClass("filter--selected");
     }
-      $(filter).parent().attr("data-selectedfilters", allreadySelected)
-      console.log("Current selected filters in this Cat.: ", allreadySelected)
+      $(filter).parent().attr("data-selectedfilters", alreadySelected)
+      console.log("Current selected filters in this Cat.: ", alreadySelected)
 }
 
 
