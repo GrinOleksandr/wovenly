@@ -35,9 +35,9 @@ function deactivateFilterCategory(){
     $('.overlay__layer').css("display","none");
     $('.filters').css("position","relative");
 }
-
+//collapse filter category(more filters mode)
 function collapseFilterCategory(){
-    $(".filter__category--expanded").removeClass('filter__category--expanded');
+    $(".filter__category--expanded").removeClass('filter__category--expanded').find('.more-filters__category--expander').removeClass('more-filters__button--closed').addClass('more-filters__button--opened').html("+");
 }
 
 //select filter

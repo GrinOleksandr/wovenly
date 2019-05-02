@@ -434,7 +434,7 @@ body {
   position: relative;
 }
 
-.filter__category--filters-wrapper {
+/* .filter__category--filters-wrapper {
   position: absolute;
   top: 101%;
   left: 0;
@@ -442,11 +442,31 @@ body {
   z-index: 3;
   background: white;
   padding: 0;
+  height: 0;
+
+  transition: opacity 1s ease-out;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+} */
+.more-filters__dropdown .filter__category--filters-wrapper {
+  padding: 0;
   visibility: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-out, visibility 0.3s;
+  overflow: hidden;
+  /* height: 0; */
 }
 
-.filter__category--expanded .filter__category--filters-wrapper, .filter__category--expanded .filter__category--filters {
+.filter__category--expanded .filter__category--filters-wrapper {
+  flex: 1;
   visibility: visible;
+  max-height: 500px;
+  /* transition: max-height 2s ease-in; */
+}
+
+.more-filters__animation--wrapper {
+  transition: height 3s;
 }
 
 .more-filters__button--opened {
@@ -488,7 +508,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  visibility: hidden;
+  /* height: 0; */
   /* position: absolute;
   top: 101%;
   left: 0; */
