@@ -14,8 +14,8 @@ export default function renderCatalog() {
         startNumber = 0;
         finishNumber = 20;
       } else {
-        startNumber = 19 * (currentPage - 1);
-        finishNumber = 20 + 19 * (currentPage - 1);
+        startNumber = (19 * (currentPage-1))+1;
+        finishNumber = (19 * currentPage)+1;
       }
         console.log("currentpage  ", currentPage)
       console.log("start", startNumber)

@@ -17,17 +17,23 @@ function sortDescending(rug1, rug2) {
 $("#sort_priceAscending").click(function() {
   let sortedProductsList = getLocalStorageObjectItem("allProducts").products.sort(sortAscending);
   $(".catalog__products--total-count").html(`${sortedProductsList.length} Rugs`);
-  setLocalStorageObjectItem("sortedProducts",sortedProductsList)
-  renderCatalog()
-  $("#sort_dropDown").removeClass('sort__dropdown--visible')
+  setLocalStorageObjectItem("sortedProducts", sortedProductsList);
+  $("#sort_dropDown").removeClass('sort__dropdown--visible');
+  $("#pagination__current-page").html("1");
+  document.querySelector(".pagination__wrapper").dataset.currentPage = 1;
+  renderCatalog();
+
 })
 
 $("#sort_priceDescending").click(function() {
   let sortedProductsList = getLocalStorageObjectItem("allProducts").products.sort(sortDescending);
   $(".catalog__products--total-count").html(`${sortedProductsList.length} Rugs`);
-    setLocalStorageObjectItem("sortedProducts",sortedProductsList)
-  renderCatalog()
-  $("#sort_dropDown").removeClass('sort__dropdown--visible')
+  setLocalStorageObjectItem("sortedProducts", sortedProductsList);
+  $("#sort_dropDown").removeClass('sort__dropdown--visible');
+  $("#pagination__current-page").html("1");
+  document.querySelector(".pagination__wrapper").dataset.currentPage = 1;
+  renderCatalog();
+
 })
 
 function getLocalStorageObjectItem(key) {
