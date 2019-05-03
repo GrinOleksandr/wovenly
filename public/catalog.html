@@ -229,9 +229,12 @@
     <div class="row row-no-padding row-no-gutters">
       <div class="catalog__header col-xs-12">
         <span class="catalog__products--total-count">769 Rugs</span>
-        <div class="catalog-header__sort--menu">
-          <button class="catalog-headersort-button">Sort</button>
-          <button class="catalog__header--sorts">Sort</button>
+        <div class="sort__menu">
+          <button class="sort__button" id="sort_button">Sort</button>
+          <div class="sort__dropdown" id="sort_dropDown">
+            <button class="sort__sorts" id="sort_priceAscending">Price ascending</button>
+            <button class="sort__sorts" id="sort_priceDescending">Price descending</button>
+          </div>
         </div>
       </div>
     </div>
@@ -254,12 +257,13 @@
       </div>
     </div>
   </footer>
-  
-  
+
+
   <script src="js/navigation.js"></script>
   <script src="js/catalog_main.js"></script>
   <script src="js/catalog_render.js"></script>
-  <script src="js/catalog_FiltersView.js"></script>
+  <script src="js/catalog_filtersView.js"></script>
+  <script src="js/catalog_sort.js"></script>
 </body>
 
 </html>
