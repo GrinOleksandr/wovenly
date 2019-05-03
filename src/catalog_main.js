@@ -1,4 +1,5 @@
 import renderCatalog from './catalog_render.js';
+import { setLocalStorageObjectItem } from './localStorageTools.js';
 
 fetch(`https://wovenly-server.herokuapp.com/getcatalogdata`, {
     method: 'GET'
@@ -21,12 +22,3 @@ fetch(`https://wovenly-server.herokuapp.com/getcatalogdata`, {
     renderCatalog();
   })
   .catch(error => error);
-
-
-function setLocalStorageObjectItem(key, value) {
-  if (value === undefined) {
-    localStorage.removeItem(key);
-  } else {
-    localStorage.setItem(key, JSON.stringify(value));
-  }
-}

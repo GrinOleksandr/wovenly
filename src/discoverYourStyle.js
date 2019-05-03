@@ -1,3 +1,5 @@
+import { getLocalStorageObjectItem } from './localStorageTools.js';
+
 getDYSBlockData()
   .then(function(data) {
     let discoverYourStyleTemplate = new EJS({
@@ -46,12 +48,4 @@ function getDYSBlockData() {
       .styles;
     resolve(data)
   })
-}
-
-function getLocalStorageObjectItem(key) {
-  var json = localStorage.getItem(key);
-  if (json === undefined) {
-    return undefined;
-  }
-  return JSON.parse(json);
 }

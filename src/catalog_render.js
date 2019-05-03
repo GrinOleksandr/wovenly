@@ -1,3 +1,4 @@
+import {getLocalStorageObjectItem} from './localStorageTools.js';
 export default function renderCatalog() {
 
   getCatalogData()
@@ -38,14 +39,6 @@ export default function renderCatalog() {
       let data = getLocalStorageObjectItem('sortedProducts') || getLocalStorageObjectItem('allProducts').products;
       resolve(data)
     })
-  }
-
-  function getLocalStorageObjectItem(key) {
-    var json = localStorage.getItem(key);
-    if (json === undefined) {
-      return undefined;
-    }
-    return JSON.parse(json);
   }
 
   //color activator

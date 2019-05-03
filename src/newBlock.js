@@ -1,3 +1,5 @@
+import { getLocalStorageObjectItem } from './localStorageTools.js';
+
 const throttle = (func, limit) => {
   let lastFunc
   let lastRan
@@ -98,11 +100,3 @@ function implementActivation() {
     })
 }
 window.addEventListener('resize', throttle(implementActivation, 1000))
-
-function getLocalStorageObjectItem(key) {
-  var json = localStorage.getItem(key);
-  if (json === undefined) {
-    return undefined;
-  }
-  return JSON.parse(json);
-}
