@@ -791,6 +791,7 @@ header {
 
 .testimonial__slide--wrapper {
   display: flex;
+  margin-bottom: 10px;
 }
 
 .testimonial__slide--wrapper:focus {

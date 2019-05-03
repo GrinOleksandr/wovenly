@@ -191,7 +191,7 @@ html {
 .contact-us__wrapper {
   font-size: 12px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .contact-us__title {
@@ -494,4 +494,36 @@ html {
 
 .footer-benefit__footer--image {
   height: 21px;
+}
+
+/*********************** FOOTER BLOCK ***********************/
+.footer__contact-us--wrapper {
+  flex-direction: row;
+  font-size: 11px;
+}
+
+.footer__contact-us--item {
+  margin-right: 10px;
+  height: 50px;
+}
+
+.footer__contact-us--item:last-child {
+  margin-right: 0;
+}
+
+.footer__contact-us--button {
+  padding-left: 15px;
+}
+
+.footer__message-us--button {
+  background-size: 28px;
+}
+
+.footer__phone--button {
+  background-size: 15px;
+}
+
+.footer__email--button {
+  background-position: 12px;
+  background-size: 24px;
 }
