@@ -65,7 +65,10 @@ burgerBtn.on('click', function(ev) {
 searchBtn.on('click', function(ev) {
   ev.preventDefault();
   ev.stopPropagation()
-  searchFieldWrapper.toggleClass('dropdown__visible')
+  searchFieldWrapper.toggleClass('dropdown__visible');
+  if($("#sort_dropDown").hasClass('sort__dropdown--visible')){
+    $("#sort_dropDown").removeClass('sort__dropdown--visible')
+  }
   closeDropDown();
 })
 
@@ -142,7 +145,7 @@ $(document.body)
             $("#sort_dropDown").removeClass('sort__dropdown--visible')
           }
         }
-    })
+  })
   
   
   

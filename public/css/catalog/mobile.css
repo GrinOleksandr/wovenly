@@ -4,9 +4,10 @@ body {
   overflow-x: hidden;
 }
 
-/* header {
-  overflow-x: hidden;
-} */
+header {
+  overflow: hidden;
+}
+
 /*********************** Promo-line BLOCK ***********************/
 .promo-line {
   background: #f15f2a;
@@ -641,6 +642,11 @@ body {
 }
 
 /****** SORT END*******/
+.ajax-loader {
+  width: 100%;
+  text-align: center;
+}
+
 .product__img--wrapper {
   display: flex;
   justify-content: center;
@@ -750,7 +756,7 @@ body {
   border: 1px solid #066551;
   color: #066551;
   border-radius: 6px;
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: center;
   user-select: none;
