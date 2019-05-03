@@ -191,7 +191,7 @@ html {
 .contact-us__wrapper {
   font-size: 12px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .contact-us__title {

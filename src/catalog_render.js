@@ -1,3 +1,6 @@
+export default function renderCatalog(incomingData){
+
+
 getCatalogData()
   .then(function(data) {
   let catalogItemTemplate = new EJS({
@@ -11,6 +14,7 @@ getCatalogData()
       }));
   })
   .then(function() {
+    
       implementActivation();
       $('.product__color--outer:first-child')
         .each(function(index, element) {
@@ -21,7 +25,9 @@ getCatalogData()
 
   function getCatalogData() {
     return new Promise(function(resolve, reject) {
-      let data = getLocalStorageObjectItem('homepageData').popular;
+      let data = incomingData || getLocalStorageObjectItem('allProducts').products;
+      console.log(data)
+      $(".catalog__products--total-count").html(`${data.length} Rugs`)
       console.log("catalog data readed!")
       resolve(data)
     })
@@ -78,7 +84,6 @@ getCatalogData()
       })
   }
   window.addEventListener('resize', throttle(implementActivation, 1000))
-  
-
+}
 
 

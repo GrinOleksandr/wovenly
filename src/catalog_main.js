@@ -1,3 +1,5 @@
+import renderCatalog from './catalog_render.js';
+
 fetch(`https://wovenly-server.herokuapp.com/getcatalogdata`, {
     method: 'GET'
   })
@@ -17,3 +19,5 @@ function setLocalStorageObjectItem(key, value) {
     localStorage.setItem(key, JSON.stringify(value));
   }
 }
+
+renderCatalog();
