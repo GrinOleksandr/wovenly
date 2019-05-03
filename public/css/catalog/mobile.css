@@ -309,7 +309,7 @@ header {
   background: white;
 }
 
-.cart-counter__visible {
+.cart-counter__displayed {
   display: flex;
 }
 

@@ -643,19 +643,19 @@ html {
 
 .footer__message-us--button {
   background-position: 15px;
-  background-size: 9%;
+  background-size: 32px;
 }
 
 .footer__phone--button {
   background: url(../img/contact-phone.png) no-repeat white;
   background-position: 22px;
-  background-size: 5%;
+  background-size: 15px;
 }
 
 .footer__email--button {
   background: url(../img/contact-email.png) no-repeat white;
   background-position: 15px;
-  background-size: 9%;
+  background-size: 29px;
 }
 
 .footer__privacy--wrapper {

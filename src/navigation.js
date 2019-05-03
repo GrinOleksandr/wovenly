@@ -92,8 +92,8 @@ cartCount.on('click', cartCounterIncrement)
 
 function cartCounterIncrement(ev) {
   ev.preventDefault();
-  if (!cartCount.hasClass('cart-counter__visible')) {
-    cartCount.addClass('cart-counter__visible');
+  if (!cartCount.hasClass('cart-counter__displayed')) {
+    cartCount.addClass('cart-counter__displayed');
   }
   let newValue = parseInt($(cartCount)
     .text(), 10) + 1 || 1;

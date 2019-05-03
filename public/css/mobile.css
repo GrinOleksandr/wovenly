@@ -276,7 +276,7 @@ header {
   background: white;
 }
 
-.cart-counter__visible {
+.cart-counter__displayed {
   display: flex;
 }
 
@@ -1101,19 +1101,19 @@ header {
 .footer__message-us--button {
   background: url(../img/contact-message.png) no-repeat white;
   background-position: 15px;
-  background-size: 10%;
+  background-size: 32px;
 }
 
 .footer__phone--button {
   background: url(../img/contact-phone.png) no-repeat white;
   background-position: 22px;
-  background-size: 6%;
+  background-size: 20px;
 }
 
 .footer__email--button {
   background: url(../img/contact-email.png) no-repeat white;
   background-position: 15px;
-  background-size: 10%;
+  background-size: 32px;
 }
 
 .footer__nav-menu--category {

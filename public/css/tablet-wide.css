@@ -559,19 +559,19 @@
 
   .footer__message-us--button {
     background-position: 12px;
-    background-size: 9%;
+    background-size: 20px;
   }
 
   .footer__phone--button {
     background: url(../img/contact-phone.png) no-repeat white;
-    background-position: 19px;
-    background-size: 5%;
+    background-position: 17px;
+    background-size: 12px;
   }
 
   .footer__email--button {
     background: url(../img/contact-email.png) no-repeat white;
     background-position: 12px;
-    background-size: 9%;
+    background-size: 20px;
   }
 
   .footer__privacy--wrapper {
