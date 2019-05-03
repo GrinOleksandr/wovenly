@@ -583,6 +583,11 @@ header {
   font-weight: 700;
 }
 
+.catalog {
+  position: relative;
+  min-height: 500px;
+}
+
 /****** SORT START*******/
 .sort__menu {
   border: 1px solid #d9d9d9;
@@ -645,6 +650,8 @@ header {
 .ajax-loader {
   width: 100%;
   text-align: center;
+  position: absolute;
+  top: 100px;
 }
 
 .product__img--wrapper {
