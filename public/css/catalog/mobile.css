@@ -586,7 +586,10 @@ body {
 .sort__menu {
   border: 1px solid #d9d9d9;
   border-radius: 5px;
-  position: relative;
+  position: absolute;
+  right: 0;
+  top: 15px;
+  z-index: 2;
 }
 
 .sort__menu::after {
@@ -597,6 +600,7 @@ body {
   right: 10px;
   top: 3px;
   font-size: 19px;
+  pointer-events: none;
 }
 
 .sort__button {
@@ -604,17 +608,22 @@ body {
   background: white;
   padding: 5px 50px 5px 15px;
   color: #666666;
-  position: relative;
+  width: 100%;
+  text-align: left;
 }
 
-.sort__button:active, .sort__button:focus, .sort__button:hover {
+.sort__button--links:active, .sort__button--links:focus, .sort__button--links:hover {
   border: auto;
   outline: none;
 }
 
 .sort__dropdown {
-  display: flex;
+  display: none;
   flex-direction: column;
+}
+
+.sort__dropdown--visible {
+  display: flex;
 }
 
 .sort__sorts {

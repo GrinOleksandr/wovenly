@@ -134,3 +134,15 @@ $(document.body)
       }
     }
   })
+  
+  $(document.body)
+    .on('click', function(ev) {
+        if(!$(ev.target).hasClass("sort__button--links")){
+          if($("#sort_dropDown").hasClass('sort__dropdown--visible')){
+            $("#sort_dropDown").removeClass('sort__dropdown--visible')
+          }
+        }
+    })
+  
+  
+  
