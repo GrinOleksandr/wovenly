@@ -12,7 +12,8 @@ let conf = {
       homepage_main: path.resolve(__dirname, 'src/homepage_main.js'),
       catalog_main: path.resolve(__dirname, 'src/catalog_main.js'),
       catalog_filtersView: path.resolve(__dirname, 'src/catalog_filtersView.js'),
-      catalog_sort: path.resolve(__dirname, 'src/catalog_sort.js')
+      catalog_sort: path.resolve(__dirname, 'src/catalog_sort.js'),
+      catalog_pagination: path.resolve(__dirname, 'src/catalog_pagination.js')
     },
     output: {
         path: path.resolve(__dirname, 'public/js/'),

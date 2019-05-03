@@ -1,6 +1,5 @@
 export default function renderCatalog(incomingData){
 
-
 getCatalogData()
   .then(function(data) {
   let catalogItemTemplate = new EJS({
@@ -26,8 +25,7 @@ getCatalogData()
   function getCatalogData() {
     return new Promise(function(resolve, reject) {
       let data = incomingData || getLocalStorageObjectItem('allProducts').products;
-      console.log(data)
-      $(".catalog__products--total-count").html(`${data.length} Rugs`)
+      
       console.log("catalog data readed!")
       resolve(data)
     })
