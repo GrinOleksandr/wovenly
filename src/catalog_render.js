@@ -1,45 +1,55 @@
-export default function renderCatalog(incomingData){
+export default function renderCatalog(incomingData) {
 
-getCatalogData()
-  .then(function(data) {
-  let catalogItemTemplate = new EJS({
-      url: './templates/product_card.ejs'
-    });
+  getCatalogData()
+    .then(function(data) {
+      let catalogItemTemplate = new EJS({
+        url: './templates/product_card.ejs'
+      });
       console.log('catalog templates initialised in:  ', $(".catalog__content"));
-    
-    $(".catalog__content").html(catalogItemTemplate.render({
+      let currentPage = +document.querySelector(".pagination__wrapper").dataset.currentPage;
+      let startNumber, finishNumber;
+
+      if (currentPage === 1) {
+        startNumber = 0;
+        finishNumber = 18;
+      } else {
+        startNumber = 19 * (currentPage - 1);
+        finishNumber = 19 + 19 * (currentPage - 1);
+      }
+
+      console.log(startNumber, finishNumber)
+
+      $(".catalog__content").html(catalogItemTemplate.render({
         block: "catalog",
-        products: data
+        products: data,
       }));
-  })
-  .then(function() {
-    
+    })
+    .then(function() {
+
       implementActivation();
       $('.product__color--outer:first-child')
         .each(function(index, element) {
           activateColor(element);
         })
     })
-  .catch(error => error);
+    .catch(error => error);
 
   function getCatalogData() {
     return new Promise(function(resolve, reject) {
       let data = incomingData || getLocalStorageObjectItem('allProducts').products;
-      
-      console.log("catalog data readed!")
       resolve(data)
     })
   }
 
   function getLocalStorageObjectItem(key) {
-      var json = localStorage.getItem(key);
-      if (json === undefined) {
-          return undefined;
-      }
-      return JSON.parse(json);
+    var json = localStorage.getItem(key);
+    if (json === undefined) {
+      return undefined;
+    }
+    return JSON.parse(json);
   }
 
-//color activator
+  //color activator
   const throttle = (func, limit) => {
     let lastFunc
     let lastRan
@@ -60,18 +70,18 @@ getCatalogData()
       }
     }
   }
-  
+
   function activateColor(element) {
     if ($(element).parent().find('.product__color--active')) {
       $(element).parent().find('.product__color--active')
         .removeClass('product__color--active');
     }
-  
+
     $(element).css('--activeColor-color', $(element).css('background-color'));
     $(element).addClass('product__color--active');
     element.parentNode.parentNode.dataset.activeColor = element.dataset.color;
   }
-  
+
   function implementActivation() {
     $('.product__color--outer')
       .each(function(index, element) {
@@ -83,5 +93,3 @@ getCatalogData()
   }
   window.addEventListener('resize', throttle(implementActivation, 1000))
 }
-
-

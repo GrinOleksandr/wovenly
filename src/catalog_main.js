@@ -9,9 +9,11 @@ fetch(`https://wovenly-server.herokuapp.com/getcatalogdata`, {
   .then(function(json) {
     setLocalStorageObjectItem('allProducts', json);
     console.log(Math.ceil(json.products.length/19))
-      document.querySelector(".pagination__wrapper").dataset.pagesTotal =  Math.ceil(json.products.length/19);
+      
       $("#pagination__current-page").html("1");
+      document.querySelector(".pagination__wrapper").dataset.currentPage =  1;
       $("#pagination__pages-total").html(Math.ceil(json.products.length/19));
+      document.querySelector(".pagination__wrapper").dataset.pagesTotal =  Math.ceil(json.products.length/19);
       $(".catalog__products--total-count").html(`${json.products.length} Rugs`);
   })
   .catch(error => error);

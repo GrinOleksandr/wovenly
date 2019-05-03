@@ -14,7 +14,6 @@ function sortDescending(rug1, rug2) {
   return rug2.priceTo.substr(1) - rug1.priceTo.substr(1);
 }
 
-
 $("#sort_priceAscending").click(function() {
   let sortedProductsList = getLocalStorageObjectItem("allProducts").products.sort(sortAscending);
   $(".catalog__products--total-count").html(`${sortedProductsList.length} Rugs`);
@@ -28,14 +27,6 @@ $("#sort_priceDescending").click(function() {
   renderCatalog(sortedProductsList)
   $("#sort_dropDown").removeClass('sort__dropdown--visible')
 })
-
-
-
-
-
-
-
-
 
 function getLocalStorageObjectItem(key) {
   var json = localStorage.getItem(key);
