@@ -1,27 +1,31 @@
-export default function renderCatalog(incomingData) {
+export default function renderCatalog() {
 
   getCatalogData()
     .then(function(data) {
+        $(".catalog__content").html("")
       let catalogItemTemplate = new EJS({
         url: './templates/product_card.ejs'
       });
       console.log('catalog templates initialised in:  ', $(".catalog__content"));
-      let currentPage = +document.querySelector(".pagination__wrapper").dataset.currentPage;
+      let currentPage = +document.querySelector(".pagination__wrapper").dataset.currentPage || 1;
       let startNumber, finishNumber;
 
       if (currentPage === 1) {
         startNumber = 0;
-        finishNumber = 18;
+        finishNumber = 20;
       } else {
         startNumber = 19 * (currentPage - 1);
-        finishNumber = 19 + 19 * (currentPage - 1);
+        finishNumber = 20 + 19 * (currentPage - 1);
       }
-
-      console.log(startNumber, finishNumber)
-
+        console.log("currentpage  ", currentPage)
+      console.log("start", startNumber)
+      console.log("finish ",  finishNumber)
+      let pageContent = data.slice(startNumber,finishNumber);
+      
+      console.log("pagecontent : ", pageContent)
       $(".catalog__content").html(catalogItemTemplate.render({
         block: "catalog",
-        products: data,
+        products: pageContent
       }));
     })
     .then(function() {
@@ -36,7 +40,8 @@ export default function renderCatalog(incomingData) {
 
   function getCatalogData() {
     return new Promise(function(resolve, reject) {
-      let data = incomingData || getLocalStorageObjectItem('allProducts').products;
+      let data = getLocalStorageObjectItem('sortedProducts') || getLocalStorageObjectItem('allProducts').products;
+      console.log(data);
       resolve(data)
     })
   }

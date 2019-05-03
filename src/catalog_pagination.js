@@ -1,11 +1,13 @@
+import renderCatalog from './catalog_render.js';
+
 $("#pagination__prev").click(function() {
   console.log("PREV PAGE!")
   if ($("#pagination__current-page").html() > 1) {
     let newCurrentPage = +$("#pagination__current-page").html() - 1;
     $("#pagination__current-page").html(newCurrentPage);
     document.querySelector(".pagination__wrapper").dataset.currentPage = newCurrentPage;
-    
-  }
+    renderCatalog();
+    }
 })
 
 $("#pagination__next").click(function() {
@@ -14,5 +16,6 @@ $("#pagination__next").click(function() {
     let newCurrentPage = +$("#pagination__current-page").html() + 1;
     $("#pagination__current-page").html(newCurrentPage);
       document.querySelector(".pagination__wrapper").dataset.currentPage = newCurrentPage;
+      renderCatalog();
   }
 })
