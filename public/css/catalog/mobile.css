@@ -617,6 +617,20 @@ body {
   flex-direction: column;
 }
 
+.sort__sorts {
+  border: none;
+  background: white;
+  padding: 5px 15px;
+  color: #666666;
+  position: relative;
+  border-top: 1px solid #d9d9d9;
+  text-align: left;
+}
+
+.sort__sorts:hover {
+  color: black;
+}
+
 /****** SORT END*******/
 .product__img--wrapper {
   display: flex;
