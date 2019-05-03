@@ -5,14 +5,12 @@ $('.more-filters__category--expander').click(function(ev) {
 
   let thisCategory = $(ev.target).parent().parent();
   if ($(ev.target).hasClass('more-filters__button--closed')) {
-    console.log("expanding", thisCategory)
     collapseFilterCategory();
     thisCategory.addClass('filter__category--expanded');
     $(ev.target).html("⎯").removeClass('more-filters__button--closed');
     $(ev.target).addClass('more-filters__button--opened');
   } else {
     collapseFilterCategory();
-    console.log($(ev.target))
     $(ev.target).removeClass('more-filters__button--opened');
     $(ev.target).addClass('more-filters__button--closed').html("+");
   }
@@ -20,7 +18,6 @@ $('.more-filters__category--expander').click(function(ev) {
 
 //Expand category
 $(".filter__category--button").click(function(ev) {
-  console.log("Expanding category: ", $(ev.target).text());
   if ($(ev.target).parent().hasClass("filter__category--active")) {
     deactivateFilterCategory();
   } else {
@@ -39,7 +36,6 @@ function deactivateFilterCategory() {
 }
 //collapse filter category(more filters mode)
 function collapseFilterCategory() {
-  console.log("expander!!! "  ,$(".filter__category--expanded").find('.more-filters__category--expander'))
   $(".filter__category--expanded").find('.more-filters__category--expander').removeClass('more-filters__button--closed');
   $(".filter__category--expanded").removeClass('filter__category--expanded');
   $(".filter__category--expanded").find('.more-filters__category--expander').addClass('more-filters__button--opened').html("+")
@@ -65,5 +61,4 @@ function selectFilter(filter) {
     $(filter).toggleClass("filter--selected");
   }
   $(filter).parent().attr("data-selectedfilters", alreadySelected)
-  console.log("Current selected filters in this Cat.: ", alreadySelected)
 }

@@ -66,7 +66,7 @@ searchBtn.on('click', function(ev) {
   ev.preventDefault();
   ev.stopPropagation()
   searchFieldWrapper.toggleClass('dropdown__visible');
-  if($("#sort_dropDown").hasClass('sort__dropdown--visible')){
+  if ($("#sort_dropDown").hasClass('sort__dropdown--visible')) {
     $("#sort_dropDown").removeClass('sort__dropdown--visible')
   }
   closeDropDown();
@@ -137,15 +137,12 @@ $(document.body)
       }
     }
   })
-  
-  $(document.body)
-    .on('click', function(ev) {
-        if(!$(ev.target).hasClass("sort__button--links")){
-          if($("#sort_dropDown").hasClass('sort__dropdown--visible')){
-            $("#sort_dropDown").removeClass('sort__dropdown--visible')
-          }
-        }
+
+$(document.body)
+  .on('click', function(ev) {
+    if (!$(ev.target).hasClass("sort__button--links")) {
+      if ($("#sort_dropDown").hasClass('sort__dropdown--visible')) {
+        $("#sort_dropDown").removeClass('sort__dropdown--visible')
+      }
+    }
   })
-  
-  
-  
