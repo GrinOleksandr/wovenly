@@ -166,6 +166,10 @@ html {
   margin-right: 20px;
 }
 
+.product__item--wrapper {
+  height: 365px;
+}
+
 .product__item--wrapper:nth-child(even)>.product {
   margin-right: 20px;
 }
@@ -176,7 +180,6 @@ html {
 
 .product__img--wrapper {
   width: 140px;
-  height: 200px;
   padding: 5px 5px 20px 5px;
   height: 220px;
 }

@@ -657,6 +657,11 @@ body {
   top: 100px;
 }
 
+.product__item--wrapper{
+  height:267px;
+}
+
+
 .product__img--wrapper {
   display: flex;
   justify-content: center;
