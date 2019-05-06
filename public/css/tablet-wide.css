@@ -157,7 +157,7 @@
   }
 
   .promo__description {
-    padding: 0 0 15px 0;
+    padding: 0 0 40px 0;
     font-size: 18px;
   }
 
@@ -220,6 +220,7 @@
   /********************** POPULAR BLOCK! *****************************/
   .slider__controls--link {
     padding: 0 12px 0 12px;
+    white-space: nowrap;
   }
 
   .content__block--title {
@@ -404,7 +405,8 @@
 
   /***********************  SignUp BLOCK ***********************/
   .signup {
-    padding: 40px 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
     background: #f4f5f0;
   }
 
@@ -429,6 +431,7 @@
 
   .signup__email--input-field {
     margin-right: 25px;
+    margin-bottom: 0;
     font-size: 24px;
     padding-bottom: 12px;
   }
@@ -445,10 +448,12 @@
 
   /***********************  FYS BLOCK ***********************/
   .fys {
-    padding: 100px 0 100px 60px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 
   .fys__content--wrapper {
+    padding-left: 60px;
     display: flex;
     align-items: center;
   }
@@ -556,19 +561,19 @@
 
   .footer__message-us--button {
     background-position: 12px;
-    background-size: 9%;
+    background-size: 20px;
   }
 
   .footer__phone--button {
     background: url(../img/contact-phone.png) no-repeat white;
-    background-position: 19px;
-    background-size: 5%;
+    background-position: 17px;
+    background-size: 12px;
   }
 
   .footer__email--button {
     background: url(../img/contact-email.png) no-repeat white;
     background-position: 12px;
-    background-size: 9%;
+    background-size: 20px;
   }
 
   .footer__privacy--wrapper {

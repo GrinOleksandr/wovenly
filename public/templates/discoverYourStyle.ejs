@@ -1,10 +1,3 @@
-<% function capitalizeAll(str) {
-   var splitStr = str.toLowerCase().split(' ');
-   for (var i = 0; i < splitStr.length; i++) {
-         splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
-   }
-   return splitStr.join(' ');
-} %>
 <%
       const styleImages ={
         0: "img/style-shag.png",
@@ -17,8 +10,8 @@
   <% styles.forEach(function(style){ %>
 
   <li class="discover-your-style__slide--wrapper">
-    <img class="discover-your-style__slide--image" src="<%= styleImages[Math.floor(Math.random()*3)] %>" alt="<%= capitalizeAll(style) %> style" />
-    <span class="discover-your-style__slide--title"><%= capitalizeAll(style) %></span>
+    <img class="discover-your-style__slide--image" src="<%= styleImages[Math.floor(Math.random()*3)] %>" alt="<%= style %> style" />
+    <span class="discover-your-style__slide--title"><%= style %></span>
   </li>
 
 

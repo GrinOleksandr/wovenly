@@ -220,6 +220,7 @@ html {
 
 .slider__controls--link {
   padding: 0 12px 0 12px;
+  white-space: nowrap;
 }
 
 .slider__control--bottom {
@@ -399,8 +400,9 @@ html {
 
 /***********************  SignUp BLOCK ***********************/
 .signup {
-  padding: 40px 0;
   background: #f4f5f0;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .signup__content--wrapper {
@@ -424,6 +426,7 @@ html {
 
 .signup__email--input-field {
   margin-right: 15px;
+  margin-bottom: 0;
   font-size: 20px;
 }
 
@@ -439,10 +442,12 @@ html {
 
 /***********************  FYS BLOCK ***********************/
 .fys {
-  padding: 100px 0 100px 60px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .fys__content--wrapper {
+  padding-left: 60px;
   display: flex;
   align-items: center;
 }
@@ -491,4 +496,36 @@ html {
 
 .footer-benefit__footer--image {
   height: 21px;
+}
+
+/*********************** FOOTER BLOCK ***********************/
+.footer__contact-us--wrapper {
+  flex-direction: row;
+  font-size: 11px;
+}
+
+.footer__contact-us--item {
+  margin-right: 10px;
+  height: 50px;
+}
+
+.footer__contact-us--item:last-child {
+  margin-right: 0;
+}
+
+.footer__contact-us--button {
+  padding-left: 15px;
+}
+
+.footer__message-us--button {
+  background-size: 28px;
+}
+
+.footer__phone--button {
+  background-size: 15px;
+}
+
+.footer__email--button {
+  background-position: 12px;
+  background-size: 24px;
 }

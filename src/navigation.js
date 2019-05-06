@@ -65,7 +65,10 @@ burgerBtn.on('click', function(ev) {
 searchBtn.on('click', function(ev) {
   ev.preventDefault();
   ev.stopPropagation()
-  searchFieldWrapper.toggleClass('dropdown__visible')
+  searchFieldWrapper.toggleClass('dropdown__visible');
+  if ($("#sort_dropDown").hasClass('sort__dropdown--visible')) {
+    $("#sort_dropDown").removeClass('sort__dropdown--visible')
+  }
   closeDropDown();
 })
 
@@ -89,8 +92,8 @@ cartCount.on('click', cartCounterIncrement)
 
 function cartCounterIncrement(ev) {
   ev.preventDefault();
-  if (!cartCount.hasClass('cart-conter__visible')) {
-    cartCount.addClass('cart-conter__visible');
+  if (!cartCount.hasClass('cart-counter__displayed')) {
+    cartCount.addClass('cart-counter__displayed');
   }
   let newValue = parseInt($(cartCount)
     .text(), 10) + 1 || 1;
@@ -131,6 +134,15 @@ $(document.body)
       ev.target.id !== "clearSearchBtn") {
       if (searchFieldWrapper.hasClass('dropdown__visible')) {
         searchFieldWrapper.removeClass('dropdown__visible');
+      }
+    }
+  })
+
+$(document.body)
+  .on('click', function(ev) {
+    if (!$(ev.target).hasClass("sort__button--links")) {
+      if ($("#sort_dropDown").hasClass('sort__dropdown--visible')) {
+        $("#sort_dropDown").removeClass('sort__dropdown--visible')
       }
     }
   })

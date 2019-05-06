@@ -1,4 +1,5 @@
   <%
+  console.log('catalog rendering init!!')
  const colorPalete = {
     purple:'purple',
     blue:'blue',
@@ -79,3 +80,45 @@
       else iterator++
     })
   } %>
+  
+  <% if(block === "catalog"){
+      let iterator = 0;
+    products.forEach(function (product) { 
+      if(iterator === 7){ %>
+          <div class="product__item--wrapper col-xs-6 col-sm-3">
+            <div class = "product product__benefit">
+              <div class = "product__benefit--image"></div>
+              <div class = "product__benefit--title">Free shipping<br>&<br>60-day Trial</div>
+              <a class = "product__benefit--link" href = "#">learn more</a>
+            </div>
+          </div>
+    <% } else { %>
+      <div class="product__item--wrapper col-xs-6 col-sm-3">
+          <div class="product">
+            <div class="product__img--wrapper">
+              <img src="<%= product.thumb %>" class="product__img" alt="rug" />
+            </div>
+            <span class="product__title"><%= product.name %></span>
+            <div class="product__price--wrapper">
+              <span class="product__oldprice"><%= product.oldPrice %></span>
+              <span class="product__newprice"><%= product.priceFrom %> - <%= product.priceTo %></span>
+            </div>
+            <ul class="product__colors">
+              <% product.colors.forEach(function (color) { %>
+              <li class="product__color--outer" data-color="<%= color %>" style="background-color:<%= colorPalete[color]%>">
+                <div class="product__color">
+                  <div class="product__color--inner" style="background-color:<%= colorPalete[color]%>"></div>
+                </div>
+              </li>
+          <% }) %>
+        </ul>
+      </div>
+    </div>
+    <% 
+    }iterator++
+  })
+} %>
+  
+  
+  
+  
