@@ -2,6 +2,8 @@ body {
   position: relative;
   font-family: "Graphik-Web", sans-serif;
   overflow-x: hidden;
+  background: url(../../img/catalog-footer-bg.png) no-repeat bottom;
+  background-size: contain;
 }
 
 header {
@@ -796,9 +798,4 @@ header {
 
 .pagination__pages--wrapper span:last-child {
   padding-right: 0;
-}
-
-body {
-  background: url(../../img/catalog-footer-bg.png) no-repeat bottom;
-  background-size: 140%;
 }
