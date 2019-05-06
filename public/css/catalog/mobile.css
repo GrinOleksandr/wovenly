@@ -6,10 +6,6 @@ body {
   background-size: contain;
 }
 
-header {
-  overflow: hidden;
-}
-
 /*********************** Promo-line BLOCK ***********************/
 .promo-line {
   background: #f15f2a;
