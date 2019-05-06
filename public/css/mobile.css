@@ -1163,7 +1163,17 @@ header {
 .footer__social-block--item {
   width: 30px;
   height: 30px;
-  margin-right: 10px;
+  margin-right: 15px;
+  font-family: "icon-font1", sans-serif;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  user-select: none;
+}
+
+.footer__social-block--item a:link, .footer__social-block--item a:hover, .footer__social-block--item a:active, .footer__social-block--item a:visited {
+  color: inherit;
+  text-decoration: none;
 }
 
 .footer__bottom--wrapper {
