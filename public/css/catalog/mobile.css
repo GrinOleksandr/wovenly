@@ -128,19 +128,20 @@ body {
 }
 
 .search__controls--button {
-  padding: 10px 18px;
-  display: block;
+   display: block;
   float: right;
   cursor: pointer;
 }
 
 .search__submit {
+  padding: 10px 20.5px;
   font-family: "icon-font1", sans-serif;
   font-size: 21px;
   color: white;
 }
 
 .search__clear {
+  padding: 10px 16px;
   font-family: "icon-font1", sans-serif;
   font-size: 21px;
   color: grey;
