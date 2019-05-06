@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "this is training project for Oleksandr Grin",
   "main": "./server/app.js",
+  "engines": {
+    "node": "10.13.0"
+  },
   "dependencies": {
     "express": "^4.16.4"
   },
