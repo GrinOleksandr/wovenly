@@ -160,6 +160,10 @@ html {
   margin-right: 10px;
 }
 
+.product__item--wrapper{
+  height:290px;
+}
+
 .product__item--wrapper:nth-child(even)>.product {
   margin-right: 10px;
 }

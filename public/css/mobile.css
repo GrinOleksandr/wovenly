@@ -59,7 +59,6 @@ header {
 .search__wrapper--dropdown {
   opacity: 0.4;
   visibility: hidden;
-  border-bottom: 1px solid #e5e5e5;
   height: 49px;
   background: white;
   overflow: hidden;
