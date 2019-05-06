@@ -28,7 +28,7 @@ CatalogPage also has a client-side rendering, pagination and sorting.
 
 **Preview HomePage** - https://wovenly.herokuapp.com/
  
-**Preview CatalogPage** - https://wovenly.herokuapp.com/
+**Preview CatalogPage** - https://wovenly.herokuapp.com/catalog.html
 
 ## Server-side
 Server is running on Node.JS. 
