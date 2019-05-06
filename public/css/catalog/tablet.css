@@ -111,6 +111,7 @@ html {
 .nav-menu__dropdown--list {
   left: -33px;
   top: 71px;
+  border-radius: 6px;
 }
 
 .nav-menu__level2--link {

@@ -98,6 +98,7 @@ html {
   width: 220px;
   left: -56px;
   top: 90px;
+  border-radius: 6px;
 }
 
 .nav-menu__level2--link {
