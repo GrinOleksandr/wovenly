@@ -36,22 +36,28 @@ html {
   font-size: 10px;
 }
 
-a:link, a:hover, a:active, a:visited {
-  color: inherit;
-}
-
 input:active, input:focus {
   outline: none;
   border: none;
 }
 
-.row.no-gutters {
+.row.no-gutters>[class^="col-"],
+.row.no-gutters>[class*=" col-"] {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.row-no-padding>[class*="col-"] {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.row.no-pad {
   margin-right: 0;
   margin-left: 0;
+}
 
-  &>[class^="col-"],
-  &>[class*=" col-"] {
-    padding-right: 0;
-    padding-left: 0;
-  }
+.row.no-pad>[class*='col-'] {
+  padding-right: 0;
+  padding-left: 0;
 }

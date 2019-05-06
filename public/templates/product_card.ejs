@@ -1,0 +1,81 @@
+  <%
+ const colorPalete = {
+    purple:'purple',
+    blue:'blue',
+    orange:'orange',
+    green:'green',
+    black:'black',
+    gray:'gray',
+    yellow:'yellow',
+    brown:'brown',
+    pink:'pink',
+    neutral: '#afcfae94',
+    white:'#e2dbdb',
+    multicolor:'magenta',
+    red:'red',
+    darkblue: '#04046b',
+    tan:'#D2B48C',
+    cream:'#e8e486',
+    turquoise:'#40E0D0',
+    lightbrown:'#DEB887',
+    lightblue: '#ADD8E6'
+  }
+  %>
+
+  <% if(block === "popular"){ %>
+  <% products.forEach(function (product) { %>
+    <div class="popular__item--wrapper">
+        <div class="popular__item product ">
+          <div class="product__img--wrapper">
+            <img src="<%= product.thumb %>" class="product__img" alt="rug" />
+          </div>
+          <span class="product__title"><%= product.name %></span>
+          <div class="product__price--wrapper">
+            <span class="product__oldprice"><%= product.oldPrice %></span>
+            <span class="product__newprice"><%= product.priceFrom %> - <%= product.priceTo %></span>
+          </div>
+      <ul class="product__colors">
+        <% product.colors.forEach(function (color) { %>
+        <li class="product__color" style="background:<%= colorPalete[color] %>"></li>
+        <% }) %>
+      </ul>
+    </div>
+  </div>
+  <% })
+} if(block === "newBlock"){
+  let iterator = 0;
+
+  const newBlockImages ={
+    0: "img/new1.jpg",
+    1: "img/new2.jpg",
+    2: "img/new3.jpg",
+    3: "img/new4.jpg"
+  }
+
+ products.forEach(function (product) {
+     %>
+  <div class="newblock__item--wrapper">
+    <div class="newblock__item product ">
+      <img src="<%= newBlockImages[iterator] %>" class="newblock__product--img" alt="rug" />
+      <span class="newblock__product--title"><%= product.name %></span>
+      <div class="newblock__product__price--wrapper">
+        <span class="newblock__product--oldprice"><%= product.oldPrice %></span>
+        <span class="newblock__product--newprice"><%= product.priceFrom %> - <%= product.priceTo %></span>
+      </div>
+      <ul class="newblock__product--colors">
+        <% product.colors.forEach(function (color) { %>
+        <li class="newblock__color--outer" data-color="<%= color %>" style="background-color:<%= colorPalete[color]%>">
+          <div class="newblock__color">
+            <div class="newblock__color--inner" style="background-color:<%= colorPalete[color]%>"></div>
+          </div>
+        </li>
+        <% }) %>
+      </ul>
+    </div>
+  </div>
+  <% if(iterator === 3){
+      iterator = 0
+    }
+      else iterator++
+    })
+  } %>

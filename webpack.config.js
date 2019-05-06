@@ -2,16 +2,19 @@ let path = require('path');
 
 let ExtractTextPlugin = require("extract-text-webpack-plugin");
 
-
-
 let conf = {
     entry: {
-      navigation: path.resolve(__dirname, 'src/navigation.js')
+      navigation: path.resolve(__dirname, 'src/navigation.js'),
+      popular: path.resolve(__dirname, 'src/popular.js'),
+      discoverYourStyle: path.resolve(__dirname, 'src/discoverYourStyle.js'),
+      newBlock: path.resolve(__dirname, 'src/newBlock.js'),
+      testimonials: path.resolve(__dirname, 'src/testimonials.js'),
+      homepage_main: path.resolve(__dirname, 'src/homepage_main.js')
     },
     output: {
         path: path.resolve(__dirname, 'public/js/'),
-        filename: 'main.js',
-        publicPath: 'js/'
+        filename: '[name].js',
+        publicPath: 'public/js/'
     },
     devServer: {
         overlay: true
