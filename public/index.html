@@ -1,0 +1,477 @@
+<!DOCTYPE HTML>
+<html lang=en>
+
+<head>
+  <title>Wovenly</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="title" content="Wovenly" />
+  <meta name="description" content="This website is best of the best of the best!  Buy our carpets and enjoy your life!" />
+  <meta property="og:site_name" content="Wovenly" />
+  <meta property="og:description" content="This website is best of the best of the best!  Buy our carpets and enjoy your life!" />
+  <link media="screen" rel="stylesheet" href="css/bootstrap.css">
+  <link media="screen" rel="stylesheet" href="css/bootstrap-theme.css">
+  <link media="screen" rel="stylesheet" href="css/common.css">
+  <link media="screen" rel="stylesheet" href="css/mobile.css">
+  <link media="screen and (min-width: 768px) and (max-width: 991px) " rel="stylesheet" href="css/tablet.css">
+  <link media="screen and (min-width: 992px) and (max-width: 1199px) " rel="stylesheet" href="css/tablet-wide.css">
+  <link media="screen and (min-width: 1200px)" rel="stylesheet" href="css/desktop.css">
+  <script src="js/lib/polyfill_promise.min.js"></script>
+  <script src="js/lib/polyfill_fetch.umd.js"></script>
+  <script src="js/lib/jquery-3.4.0.min.js"></script>
+  <script src="js/lib/ejs_production.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="containter-fluid">
+      <div class="row navigation__global--wrapper">
+        <div class="col-xs-4 col-sm-2 col-lg-2">
+          <h2 class="navigation__logo--wide navigation__logo"><a href=#>Wovenly</a></h2>
+          <h2 class="navigation__logo--mobile navigation__logo"><a href=#>W</a></h2>
+        </div>
+        <div class="search__wrapper col-sm-4 col-lg-5">
+          <input class="search__field" type="text" placeholder="Search" />
+        </div>
+        <div class="navigation__buttons--wrapper col-xs-8 col-sm-6 col-lg-5">
+          <ul class="nav-menu " id="navMenu">
+            <li class="nav-menu__item"><a class="nav-menu__item--link" href="#">Shag</a></li>
+            <li class="nav-menu__item"><a class="nav-menu__item--link" href="#">Contemporary</a></li>
+            <li class="nav-menu__item nav-menu__dropdown">
+              <div class="dropdown__triangle" id="dropdown_triangle"></div>
+              <a class="nav-menu__item--link nav-menu__dropdown--link" id="navMenuDropDownBtn" href="#">More Styles<span class="chevron"> </span></a>
+              <ul class="nav-menu__dropdown--list" id="navMenuDropDown">
+                <li class="nav-menu__level2--item"><a class="nav-menu__level2--link" href="#">Test Link 1</a></li>
+                <li class="nav-menu__level2--item"><a class="nav-menu__level2--link" href="#">Test Link 2</a></li>
+                <li class="nav-menu__level2--item"><a class="nav-menu__level2--link" href="#">Test Link 3</a></li>
+                <li class="nav-menu__level2--item"><a class="nav-menu__level2--link" href="#">Test Link 4</a></li>
+                <li class="nav-menu__level2--item"><a class="nav-menu__level2--link" href="#">Test Link 5</a></li>
+              </ul>
+            </li>
+            <li class="nav-menu__item"><a class="nav-menu__item--link" href="/catalog.html">Sale</a></li>
+            <li class="nav-menu__item"><a class="nav-menu__item--link" href="/catalog.html">Shop All Rugs</a></li>
+          </ul>
+          <div class="search__button" id="searchButton">
+            <a class="navigation__button" href="#"></a>
+          </div>
+          <div class="navigation__chat "><a class="navigation__button" href="#"></a></div>
+          <div class="navigation__cart ">
+            <a class="navigation__button" href="#" id="cart"></a>
+            <span class="cart-count" id="cartCount"></span>
+          </div>
+          <div class="navigation__burger" id="burger"><a class="navigation__button navigation__burger--link" href="#"></a></div>
+        </div>
+      </div>
+      <div class="search__wrapper--dropdown row" id="searchFieldWrapper">
+        <div class="col-xs-12 search__wrapper--dropdown__wrapper">
+          <input class="search__field" id="searchFieldDropdown" type="search" name="search" placeholder="Search">
+          <div class="search__buttons--wrapper ">
+            <span class="search__clear search__controls--button" id="clearSearchBtn">✕</span>
+            <span class="search__submit  search__controls--button theme-green" id="submitSearchBtn"></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="container-fluid">
+      <div class="row header-content">
+        <div class="promo header__promo col-xs-12 col-sm-5">
+          <h2 class="title promo__title">The #1 Destination for Premium Rugs</h2>
+          <p class="description promo__description">Shop best sellers and enjoy 60-Day home trial with free shipping and returns</p>
+          <a href="/catalog.html" class="button theme-green button-size-L">Shop <span class="promo__button--addition">Now</span></a>
+        </div>
+        <div class="header__image col-xs-12 col-sm-7 "></div>
+      </div>
+    </section>
+    <section class="benefits__wrapper container">
+      <div class="row row-no-padding">
+        <div class="benefits__inner-wrapper col-xs-12 col-sm-9 col-md-9">
+          <ul class="benefits">
+            <li class="benefit">
+              <div>
+                <img src="./img/benefits-trial.png" class="benefit__img1 benefit__img" alt="60 day trial" />
+              </div>
+              <div class="benefit__wrapper">
+                <span class="benefit__title">60-Day Trial</span>
+                <a class="benefit__link" href="#">Learn More</a>
+              </div>
+            </li>
+            <li class="benefit">
+              <div>
+                <img src="./img/benefits-shipping.png" class="benefit__img2 benefit__img" alt="free shipping/">
+              </div>
+              <div class="benefit__wrapper">
+                <span class="benefit__title">Free Shipping & Returns</span>
+                <a class="benefit__link" href="#">Learn More</a>
+              </div>
+            </li>
+            <li class="benefit">
+              <div>
+                <img src="./img/benefits-low-mobile.png" class="benefit__img3--mobile benefit__img" alt="0% APR" />
+                <img src="./img/benefits-low.png" class="benefit__img3 benefit__img" alt="0% APR" />
+              </div>
+              <div class="benefit__wrapper">
+                <span class="benefit__title">As low as 0% APR with Affirm</span>
+                <a class="benefit__link" href="#">Pre-Qualify Now</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-us benegit header col-sm-3 col-md-3">
+          <img class="contact-us__img benefit__img" src="./img/message_bubble.svg" alt="contact us" />
+          <div class="contact-us__wrapper benefit__wrapper">
+            <span class="contact-us__title"><a class="contact-us__link" href="#">Message Us</a> or</span>
+            <a href="tel:1-888-888-8888" class="contact-us__link">Call Us at 1 - 888 - 888 - 8888</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+  <main>
+    <section class="popular content__block container ">
+      <div class="row row-no-padding popular__border--wrapper">
+        <h3 class="popular__title content__block--title col-xs-3">Popular</h3>
+        <div class="slider__control--wrapper slider__control--top col-sm-9">
+          <a href="/catalog.html" class="slider__controls--link theme-green-text">See All</a>
+          <div class="slider__controls--wrapper">
+            <span class="slider__controls--button popular__prev"><img src="img/prev-arrow.png" alt="previous" /></span>
+            <span class="slider__controls--button popular__next"><img src="img/next-arrow.png" alt="next" /></span>
+          </div>
+        </div>
+      </div>
+      <div class="popular__slider__nesting-place row row-no-padding">
+        <div class="popular__slider--wrapper col-xs-12 "></div>
+      </div>
+      <div class="slider__control--wrapper slider__control--bottom row">
+        <div class="slider__controls--wrapper">
+          <span class="slider__controls--button popular__prev"><img src="img/prev-arrow.png" alt="previous" /></span>
+          <span class="slider__controls--button popular__next"><img src="img/next-arrow.png" alt="next" /></span>
+        </div>
+        <a href="/catalog.html" class="slider__controls--link theme-green-text">See All</a>
+      </div>
+    </section>
+    <section class="shop-by-size content__block container">
+      <div class="row row-no-padding">
+        <h3 class="shop-by-size__title content__block--title col-xs-6 col-sm-10">Shop By Size</h3>
+        <a class="shop-by-size__more shop-by-size__more--top theme-green-text col-sm-2" href="/catalog.html">Size Guide</a>
+      </div>
+      <ul class="shop-by-size__size-list row row-no-padding">
+        <li class="sizes__item--wrapper col-xs-6 col-sm-3">
+          <a class="sizes__item--link" href="/catalog.html"><img class="sizes__item--image" src="img/size-5x8.png" alt="size - 5x8 feet" /> </a>
+          <span class="sizes__item--title">5' x 8'</span>
+        </li>
+        <li class="sizes__item--wrapper col-xs-6 col-sm-3">
+          <a class="sizes__item--link" href="/catalog.html"><img class="sizes__item--image" src="img/size-8x10.png" alt="size - 8x10 feet" /> </a>
+          <span class="sizes__item--title">8' x 10'</span>
+        </li>
+        <li class="sizes__item--wrapper col-sm-3">
+          <a class="sizes__item--link" href="/catalog.html"><img class="sizes__item--image" src="img/size-9x12.png" alt="size - 9x12 feet" /> </a>
+          <span class="sizes__item--title">9' x 12'</span>
+        </li>
+        <li class="sizes__item--wrapper col-sm-3">
+          <a class="sizes__item--link" href="/catalog.html"><img class="sizes__item--image" src="img/size-runners.png" alt="size - Runners" /> </a>
+          <span class="sizes__item--title">Runners</span>
+        </li>
+
+      </ul>
+      <div class="shop-by-size__more--bottom row row-no-padding">
+        <a class="shop-by-size__more theme-green-text col-sm-2" href="#">Size Guide</a>
+      </div>
+    </section>
+    <section class="discover-your-style content__block container ">
+      <div class="row row-no-padding">
+        <h3 class="discover-your-style__title content__block--title col-xs-3">Discover Your Style</h3>
+        <div class="slider__control--wrapper slider__control--top col-sm-9">
+          <div class="slider__controls--wrapper">
+            <span class="slider__controls--button discover-your-style__prev"><img src="img/prev-arrow.png" alt="previous" /></span>
+            <span class="slider__controls--button discover-your-style__next"><img src="img/next-arrow.png" alt="next" /></span>
+          </div>
+        </div>
+      </div>
+      <div class="discover-your-style__slider--nesting-place row row-no-padding">
+
+      </div>
+      <div class="slider__control--wrapper slider__control--bottom row">
+        <div class="slider__controls--wrapper">
+          <span class="slider__controls--button discover-your-style__prev"><img src="img/prev-arrow.png" alt="previous" /></span>
+          <span class="slider__controls--button discover-your-style__next"><img src="img/next-arrow.png" alt="next" /></span>
+        </div>
+      </div>
+    </section>
+    <section class="new  content__block container ">
+      <div class="row row-no-padding">
+        <h3 class="new__title content__block--title col-xs-3">New</h3>
+        <div class="slider__control--wrapper slider__control--top col-sm-9">
+          <a href="/catalog.html" class="slider__controls--link theme-green-text">See All</a>
+          <div class="slider__controls--wrapper">
+            <span class="slider__controls--button newblock__prev"><img src="img/prev-arrow.png" alt="previous" /></span>
+            <span class="slider__controls--button newblock__next"><img src="img/next-arrow.png" alt="next" /></span>
+          </div>
+        </div>
+      </div>
+      <div class="new__slider--nesting-place row row-no-padding">
+        <div class="newblock__slider--wrapper col-xs-12 "></div>
+      </div>
+      <div class="slider__control--wrapper slider__control--bottom row">
+        <div class="slider__controls--wrapper">
+          <span class="slider__controls--button newblock__prev"><img src="img/prev-arrow.png" alt="previous" /></span>
+          <span class="slider__controls--button newblock__next"><img src="img/next-arrow.png" alt="next" /></span>
+        </div>
+        <a href="/catalog.html" class="slider__controls--link theme-green-text">See All</a>
+      </div>
+    </section>
+    <section class="promo2__wrapper container-fluid">
+      <div class="row">
+        <div class="promo2__image col-xs-12 col-sm-7 "></div>
+        <div class="promo2 col-xs-12 col-sm-5">
+          <h2 class="title promo2__title">Shop Living Room Rugs</h2>
+          <p class="description promo2__description">Our best-selling collection for stylish, cozy, contemporary rugs.</p>
+          <a href="/catalog.html" class="button theme-green button-size-L">Shop Now</a>
+        </div>
+      </div>
+    </section>
+    <section class="testimonials content__block container ">
+      <div class="row row-no-padding">
+        <h3 class="testimonials__title content__block--title col-xs-12 col-sm-7">Customer Reviews</h3>
+        <div class="testimonials__title--button"><a href="#" class="testimonials__title--link theme-green-text">See All Customer Reviews</a></div>
+      </div>
+      <div class="testimonials__slider--nesting-place row row-no-padding">
+        <div class="testimonials__slider--wrapper col-xs-12 ">
+          <div class="testimonial__slide--wrapper">
+            <div class="testimonial__wrapper">
+              <div class="rating">     </div>
+              <div class="testimonial__text">"My new rug fits into my home absolutely prefectly, couldn't be hapier."</div>
+              <div class="testimonial__author">Kourtney C, Cincinnati, OH</div>
+            </div>
+            <div class="testimonials__item product ">
+              <div class="testimonials__product--img"></div>
+              <div class="testimonial__footer--wrapper">
+                <div class="testimonial__footer">
+                  <span class="testimonials__product--title">Dreya Area Rug</span>
+                  <span class="testimonials__product--inserted-text">Starting at</span>
+                  <div class="testimonials__product__price--wrapper">
+                    <span class="testimonials__product--oldprice">300$</span>
+                    <span class="testimonials__product--newprice">400$</span>
+                  </div>
+                </div>
+                <a class="button theme-green button-size-S" href="/catalog.html">Shop</a>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial__slide--wrapper">
+            <div class="testimonial__wrapper">
+              <div class="rating">     </div>
+              <div class="testimonial__text">"We are so happy with our rugs from Wovenly. Beautiful materials, gorgeous colors, excellent customer service. Whatever it is you're doing please keep doing it!"</div>
+              <div class="testimonial__author">Anna H., Boston, MA</div>
+            </div>
+            <div class="testimonials__item product ">
+              <div class="testimonials__product--img"></div>
+              <div class="testimonial__footer--wrapper">
+                <div class="testimonial__footer">
+                  <span class="testimonials__product--title">Dreya Area Rug</span>
+                  <span class="testimonials__product--inserted-text">Starting at</span>
+                  <div class="testimonials__product__price--wrapper">
+                    <span class="testimonials__product--oldprice">300$</span>
+                    <span class="testimonials__product--newprice">400$</span>
+                  </div>
+                </div>
+                <a class="button theme-green button-size-S" href="/catalog.html">Shop</a>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial__slide--wrapper">
+            <div class="testimonial__wrapper">
+              <div class="rating">     </div>
+              <div class="testimonial__text">"Newest and most beautiful addition to my home! I love this new rug and show it off any chance I get!"</div>
+              <div class="testimonial__author">Kendra M., Grand Rapids, MI</div>
+            </div>
+            <div class="testimonials__item product ">
+              <div class="testimonials__product--img"></div>
+              <div class="testimonial__footer--wrapper">
+                <div class="testimonial__footer">
+                  <span class="testimonials__product--title">Dreya Area Rug</span>
+                  <span class="testimonials__product--inserted-text">Starting at</span>
+                  <div class="testimonials__product__price--wrapper">
+                    <span class="testimonials__product--oldprice">300$</span>
+                    <span class="testimonials__product--newprice">400$</span>
+                  </div>
+                </div>
+                <a class="button theme-green button-size-S" href="/catalog.html">Shop</a>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial__slide--wrapper">
+            <div class="testimonial__wrapper">
+              <div class="rating">     </div>
+              <div class="testimonial__text">"I love that Wovenly offers a 60 day trial period with free returns. It made me feel very comfortable when placing my order."</div>
+              <div class="testimonial__author">Kendra M., Grand Rapids, MI</div>
+            </div>
+            <div class="testimonials__item product ">
+              <div class="testimonials__product--img"></div>
+              <div class="testimonial__footer--wrapper">
+                <div class="testimonial__footer">
+                  <span class="testimonials__product--title">Dreya Area Rug</span>
+                  <span class="testimonials__product--inserted-text">Starting at</span>
+                  <div class="testimonials__product__price--wrapper">
+                    <span class="testimonials__product--oldprice">300$</span>
+                    <span class="testimonials__product--newprice">400$</span>
+                  </div>
+                </div>
+                <a class="button theme-green button-size-S" href="/catalog.html">Shop</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="slider__control--wrapper slider__control--bottom row">
+        <div class="slider__controls--wrapper">
+          <span class="slider__controls--button testimonials__prev"><img src="img/prev-arrow.png" alt="previous" /></span>
+          <span class="slider__controls--button testimonials__next"><img src="img/next-arrow.png" alt="next" /></span>
+        </div>
+        <a href="#" class="slider__controls--link theme-green-text">See All Customer Reviews</a>
+      </div>
+    </section>
+    <section class="signup container-fluid">
+      <div class="row row-no-padding">
+        <div class="signup__wrapper col-xs-12">
+          <div class="signup__content--wrapper">
+            <div class="signup__text--wrapper">
+              <img src="img/signup-icon.png" class="signup__img" alt="green book" />
+              <div class="signup__title--wrapper">
+                <span class="signup__promo--title theme-green-text">Want more Wovenly?</span>
+                <span class="signup__promo--text theme-green-text">Enjoy 10% off your next purchase.</span>
+              </div>
+            </div>
+            <div class="signup__input--wrapper">
+              <input class="signup__email--input-field" type="text" placeholder="Email" />
+              <a class="signup__button theme-green button" href="#">Sign Up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="fys container-fluid">
+      <div class="row row-no-padding">
+        <div class="col-sm-12">
+          <div class="fys__content--wrapper">
+            <img class="fys__img" src="img/find-your-size.png" alt="red book" />
+            <div class="fys__text--wrapper">
+              <span class="fys__title">Find Your Perfect Size</span>
+              <a class="fys__button button theme-green-text button-size-L" href="/catalog.html">See Rug Guide</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid">
+      <div class="row row-no-padding">
+        <div class="footer-benefits col-xs-12">
+          <div class="big-benefit__wrapper">
+            <div>
+              <img class="big-benefit__img" src="img/benefits-trial.png" alt="trial" />
+            </div>
+            <div class="big-benefit__content">
+              <span class="big-benefit__title theme-green-text">No Risk, 60-Day Trial.</span>
+              <span class="big-benefit__hint">100% Satisfaction Guaranteed.</span>
+              <span class="footer-benefit__text">We stand behind every rug we sell. If you're not happy with your purchase, we'd love to help. Exchanges and returns are easy.</span>
+              <a class="big-benefit__link theme-green-text" href="#">Learn More</a>
+            </div>
+          </div>
+          <div class="footer-benefits__wrapper">
+            <div class="footer-benefit">
+              <span class="footer-benefit__title theme-green-text">Fast Checkout</span>
+              <span class="footer-benefit__text">All major credit cards accepted and financing offered through Affirm</span>
+              <div class="footer-benefit__footer">
+                <img class="footer-benefit__footer--image" src="img/checkout-visa.png" alt="visa logo">
+                <img class="footer-benefit__footer--image" src="img/checkout-amex.png" alt="amex logo">
+                <img class="footer-benefit__footer--image" src="img/checkout-discover.png" alt="discover logo">
+                <img class="footer-benefit__footer--image" src="img/checkout-mastercard.png" alt="mastercard logo">
+              </div>
+            </div>
+            <div class="footer-benefit">
+              <span class="footer-benefit__title theme-green-text">Purchase Safety</span>
+              <span class="footer-benefit__text">All payments are securely processed through Stripe.</span>
+              <div class="footer-benefit__footer">
+                <img class="footer-benefit__footer--image" src="img/checkout-stripe.png" alt="stripe logo">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="container-fluid">
+    <div class="row">
+      <div class="footer col-xs-12">
+        <div class="footer__logo--wrapper">
+          <h2 class="footer__logo">Wovenly</h2>
+          <ul class="footer__social-block footer__social-block--top">
+            <li class="footer__social-block--item"><a href="#"></a></li>
+            <li class="footer__social-block--item"><a href="#"></a></li>
+            <li class="footer__social-block--item"><a href="#"></a></li>
+            <li class="footer__social-block--item"><a href="#"></a></li>
+          </ul>
+        </div>
+        <div class="footer__content--wrapper">
+          <div class="footer__navigation--wrapper">
+            <ul class="footer__contact-us--wrapper">
+              <li class="footer__contact-us--item footer__message-us--button"> <a class="footer__contact-us--button  theme-green-text" href="#">Message Us</a></li>
+              <li class="footer__contact-us--item footer__phone--button"><a class="footer__contact-us--button  theme-green-text" href="tel:1-888-888-8888">1 - 888 - 888 - 8888</a></li>
+              <li class="footer__contact-us--item footer__email--button"><a class="footer__contact-us--button  theme-green-text" href="mailto:support@wovenlyrugs.com">Support@WovenlyRugs.com</a></li>
+            </ul>
+            <div class="footer__nav-menu--wrapper">
+              <ul class="footer__nav-menu--category">
+                <li class="footer__nav-menu--category-item footer__nav-menu--category-title">Shop</li>
+                <li class="footer__nav-menu--category-item"><a href="#">New</a></li>
+                <li class="footer__nav-menu--category-item"><a href="#">Popular</a></li>
+                <li class="footer__nav-menu--category-item"><a href="#">On Sale</a></li>
+                <li class="footer__nav-menu--category-item"><a href="#">Shop All Rugs</a></li>
+              </ul>
+              <ul class="footer__nav-menu--category">
+                <li class="footer__nav-menu--category-item footer__nav-menu--category-title">Shop By Style</li>
+                <li class="footer__nav-menu--category-item"><a href="#">Contemporary</a></li>
+                <li class="footer__nav-menu--category-item"><a href="#">Traditional</a></li>
+                <li class="footer__nav-menu--category-item"><a href="#">Moroccan</a></li>
+                <li class="footer__nav-menu--category-item"><a href="#">Southwestern</a></li>
+                <li class="footer__nav-menu--category-item"><a href="#">Boho/Bohemian</a></li>
+                <li class="footer__nav-menu--category-item"><a href="#">Modern Vintage</a></li>
+              </ul>
+              <ul class="footer__nav-menu--category">
+                <li class="footer__nav-menu--category-item footer__nav-menu--category-title">Company</li>
+                <li class="footer__nav-menu--category-item"><a href="#">About</a></li>
+                <li class="footer__nav-menu--category-item"><a href="#">Reviews</a></li>
+                <li class="footer__nav-menu--category-item"><a href="#">FAQs</a></li>
+                <li class="footer__nav-menu--category-item"><a href="#">Warranty</a></li>
+                <li class="footer__nav-menu--category-item"><a href="#">Shipping & Returns</a></li>
+              </ul>
+            </div>
+            <ul class="footer__social-block footer__social-block--bottom">
+              <li class="footer__social-block--item"><a href="#"></a></li>
+              <li class="footer__social-block--item"><a href="#"></a></li>
+              <li class="footer__social-block--item"><a href="#"></a></li>
+              <li class="footer__social-block--item"><a href="#"></a></li>
+            </ul>
+          </div>
+          <div class="footer__bottom--wrapper">
+            <div class="footer__copyright--wrapper">
+              <a class="footer__copyright" href="#">© 2018 Wovenly. All Rights Reserved.</a>
+            </div>
+            <div class="footer__privacy--wrapper">
+              <a class="footer__privacy--link" href="#">Privacy Policy</a>
+              <a class="footer__privacy--link" href="#">Terms of Service</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/lib/slick-1.8.1/slick/slick.min.js"></script>
+  <script src="js/homepage_main.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/popular.js"></script>
+  <script src="js/discoverYourStyle.js"></script>
+  <script src="js/newBlock.js"></script>
+  <script src="js/testimonials.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE HTML>
+<html lang=en>
+
+<head>
+  <title>Wovenly</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="title" content="Wovenly" />
+  <meta name="description" content="This website is best of the best of the best!  Buy our carpets and enjoy your life!" />
+  <meta property="og:site_name" content="Wovenly" />
+  <meta property="og:description" content="This website is best of the best of the best!  Buy our carpets and enjoy your life!" />
+  <link media="screen" rel="stylesheet" href="css/bootstrap.css">
+  <link media="screen" rel="stylesheet" href="css/bootstrap-theme.css">
+  <link media="screen" rel="stylesheet" href="css/common.css">
+  <link media="screen" rel="stylesheet" href="css/catalog/mobile.css">
+  <link media="screen and (min-width: 768px) and (max-width: 991px) " rel="stylesheet" href="css/catalog/tablet.css">
+  <link media="screen and (min-width: 992px) and (max-width: 1199px) " rel="stylesheet" href="css/catalog/tablet-wide.css">
+  <link media="screen and (min-width: 1200px)" rel="stylesheet" href="css/catalog/desktop.css">
+  <script src="js/lib/polyfill_promise.min.js"></script>
+  <script src="js/lib/polyfill_fetch.umd.js"></script>
+  <script src="js/lib/jquery-3.4.0.min.js"></script>
+  <script src="js/lib/ejs_production.js"></script>
+</head>
+
+<body>
+  <header>
+    <section class="container-fluid">
+      <div class="row row-no-padding">
+        <div class="promo-line col-xs-12">
+          <span class="promo-line__text--mobile">Promo</span>
+          <span class="promo-line__text">Line for Messaging. Limit to 100 characters per line. Max 1 lines. Keep at least 5px around.</span>
+        </div>
+      </div>
+    </section>
+    <nav class="containter-fluid">
+      <div class="row navigation__global--wrapper row-no-padding row-no-gutters">
+        <div class="col-xs-4 col-sm-2 col-lg-2">
+          <h2 class="navigation__logo--wide navigation__logo"><a href=#>Wovenly</a></h2>
+          <h2 class="navigation__logo--mobile navigation__logo"><a href=#>W</a></h2>
+        </div>
+        <div class="search__wrapper col-sm-4 col-lg-5">
+          <input class="search__field" type="text" placeholder="Search" />
+        </div>
+        <div class="navigation__buttons--wrapper col-xs-8 col-sm-6 col-lg-5">
+          <ul class="nav-menu " id="navMenu">
+            <li class="nav-menu__item"><a class="nav-menu__item--link" href="#">Shag</a></li>
+            <li class="nav-menu__item"><a class="nav-menu__item--link" href="#">Contemporary</a></li>
+            <li class="nav-menu__item nav-menu__dropdown">
+              <div class="dropdown__triangle" id="dropdown_triangle"></div>
+              <a class="nav-menu__item--link nav-menu__dropdown--link" id="navMenuDropDownBtn" href="#">More Styles<span class="chevron"> </span></a>
+              <ul class="nav-menu__dropdown--list" id="navMenuDropDown">
+                <li class="nav-menu__level2--item"><a class="nav-menu__level2--link" href="#">Test Link 1</a></li>
+                <li class="nav-menu__level2--item"><a class="nav-menu__level2--link" href="#">Test Link 2</a></li>
+                <li class="nav-menu__level2--item"><a class="nav-menu__level2--link" href="#">Test Link 3</a></li>
+                <li class="nav-menu__level2--item"><a class="nav-menu__level2--link" href="#">Test Link 4</a></li>
+                <li class="nav-menu__level2--item"><a class="nav-menu__level2--link" href="#">Test Link 5</a></li>
+              </ul>
+            </li>
+            <li class="nav-menu__item"><a class="nav-menu__item--link" href="#">Sale</a></li>
+            <li class="nav-menu__item"><a class="nav-menu__item--link" href="#">Shop All Rugs</a></li>
+          </ul>
+          <div class="search__button" id="searchButton">
+            <a class="navigation__button" href="#"></a>
+          </div>
+          <div class="navigation__chat "><a class="navigation__button" href="#"></a></div>
+          <div class="navigation__cart ">
+            <a class="navigation__button" href="#" id="cart"></a>
+            <span class="cart-count" id="cartCount"></span>
+          </div>
+          <div class="navigation__burger" id="burger"><a class="navigation__button navigation__burger--link" href="#"></a></div>
+        </div>
+      </div>
+      <div class="search__wrapper--dropdown row row-no-padding row-no-gutters" id="searchFieldWrapper">
+        <div class="col-xs-12 search__wrapper--dropdown__wrapper">
+          <input class="search__field" id="searchFieldDropdown" type="search" name="search" placeholder="Search">
+          <div class="search__buttons--wrapper ">
+            <span class="search__clear search__controls--button" id="clearSearchBtn">✕</span>
+            <span class="search__submit  search__controls--button theme-green" id="submitSearchBtn"></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="container-fluid">
+      <div class="row header-content">
+        <div class="header__image col-xs-12 col-sm-7 pull-right"></div>
+        <div class="header__content--title-wrapper col-xs-12 col-sm-5 pull-left">
+          <h2 class="header__content--title ">New Arrivals</h2>
+        </div>
+      </div>
+    </section>
+    <!-- <section class="container-fluid">
+      <div class="row row-no-padding">
+        <div class="filters col-xs-12">
+          <div class="filters__global-wrapper">
+            <ul class="filters__wrapper">
+              <li class="filter__category--item">
+                <button class="filter__category--button button theme-green-text">size</button>
+                <div class="filter__category--filters-wrapper">
+                  <ul class="filter__category--filters category__dropdown">
+                    <li class="filter filter__size--S">bedroom</li>
+                    <li class="filter filter__size--S">living room</li>
+                    <li class="filter filter__size--S">hallway</li>
+                    <li class="filter filter__size--S">Kitchen</li>
+                    <li class="filter filter__size--S">bedroom</li>
+                    <li class="filter filter__size--S">living room</li>
+                    <li class="filter filter__size--S">hallway</li>
+                    <li class="filter filter__size--S">Kitchen</li>
+                    <li class="filter filter__size--S">bedroom</li>
+                    <li class="filter filter__size--S">living room</li>
+                    <li class="filter filter__size--S">hallway</li>
+                    <li class="filter filter__size--S">Kitchen</li>
+                  </ul>
+                  <div class="filter__apply-button--wrapper">
+                    <span class="filter__apply-button">Apply</span>
+                  </div>
+                </div>
+              </li>
+              <li class="filter__category--item">
+                <button class="filter__category--button button theme-green-text">color</button>
+                <div class="filter__category--filters-wrapper">
+                  <ul class="filter__category--filters category__dropdown">
+                    <li class="filter filter__size--S">bedroom</li>
+                    <li class="filter filter__size--S">living room</li>
+                    <li class="filter filter__size--S">hallway</li>
+                    <li class="filter filter__size--S">Kitchen</li>
+                    <li class="filter filter__size--S">bedroom</li>
+                    <li class="filter filter__size--S">living room</li>
+                    <li class="filter filter__size--S">hallway</li>
+                    <li class="filter filter__size--S">Kitchen</li>
+                    <li class="filter filter__size--S">bedroom</li>
+                    <li class="filter filter__size--S">living room</li>
+                    <li class="filter filter__size--S">hallway</li>
+                    <li class="filter filter__size--S">Kitchen</li>
+                  </ul>
+                  <div class="filter__apply-button--wrapper">
+                    <span class="filter__apply-button">Apply</span>
+                  </div>
+                </div>
+              </li>
+              <li class="filter__category--item">
+                <button class="filter__category--button button theme-green-text" id="more_filters_button">more filters</button>
+                <ul class="more-filters__dropdown category__dropdown">
+                  <li class="more-filters__category">
+                    <div class="more-filters__category--header">
+                      <span class="more-filters__category--name">room</span>
+                      <span class="more-filters__category--expander more-filters__button--closed">+</span>
+                    </div>
+                      <div class="filter__category--filters-wrapper">
+                      <ul class="filter__category--filters">
+                        <li class="filter filter__size--S">bedroom</li>
+                        <li class="filter filter__size--S">living room</li>
+                        <li class="filter filter__size--S">hallway</li>
+                        <li class="filter filter__size--S">Kitchen</li>
+                        <li class="filter filter__size--S">bedroom</li>
+                        <li class="filter filter__size--S">living room</li>
+                        <li class="filter filter__size--S">hallway</li>
+                        <li class="filter filter__size--S">Kitchen</li>
+                        <li class="filter filter__size--S">bedroom</li>
+                        <li class="filter filter__size--S">living room</li>
+                        <li class="filter filter__size--S">hallway</li>
+                        <li class="filter filter__size--S">Kitchen</li>
+                      </ul>
+                      <div class="filter__apply-button--wrapper">
+                        <span class="filter__apply-button">Apply</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="more-filters__category">
+                    <div class="more-filters__category--header">
+                      <span class="more-filters__category--name">style</span>
+                      <span class="more-filters__category--expander more-filters__button--closed">+</span>
+                    </div>
+                    <div class="filter__category--filters-wrapper">
+                      <ul class="filter__category--filters">
+                        <li class="filter filter__size--S">bedroom</li>
+                        <li class="filter filter__size--S">living room</li>
+                        <li class="filter filter__size--S">hallway</li>
+                        <li class="filter filter__size--S">Kitchen</li>
+                        <li class="filter filter__size--S">bedroom</li>
+                        <li class="filter filter__size--S">living room</li>
+                        <li class="filter filter__size--S">hallway</li>
+                        <li class="filter filter__size--S">Kitchen</li>
+                        <li class="filter filter__size--S">bedroom</li>
+                        <li class="filter filter__size--S">living room</li>
+                        <li class="filter filter__size--S">hallway</li>
+                        <li class="filter filter__size--S">Kitchen</li>
+                      </ul>
+                      <div class="filter__apply-button--wrapper">
+                        <span class="filter__apply-button">Apply</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="more-filters__category">
+                    <div class="more-filters__category--header">
+                      <span class="more-filters__category--name">carpet</span>
+                      <span class="more-filters__category--expander more-filters__button--closed">+</span>
+                    </div>
+                    <div class="filter__category--filters-wrapper">
+                      <ul class="filter__category--filters">
+                        <li class="filter filter__size--S">bedroom</li>
+                        <li class="filter filter__size--S">living room</li>
+                        <li class="filter filter__size--S">hallway</li>
+                        <li class="filter filter__size--S">Kitchen</li>
+                        <li class="filter filter__size--S">bedroom</li>
+                        <li class="filter filter__size--S">living room</li>
+                        <li class="filter filter__size--S">hallway</li>
+                        <li class="filter filter__size--S">Kitchen</li>
+                        <li class="filter filter__size--S">bedroom</li>
+                        <li class="filter filter__size--S">living room</li>
+                        <li class="filter filter__size--S">hallway</li>
+                        <li class="filter filter__size--S">Kitchen</li>
+                      </ul>
+                      <div class="filter__apply-button--wrapper">
+                        <span class="filter__apply-button">Apply</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+
+          </div>
+        </div>
+      </div>
+    </section> -->
+  </header>
+  <main class="catalog container">
+    <div class="row row-no-padding row-no-gutters">
+      <div class="catalog__header col-xs-12">
+        <span class="catalog__products--total-count"></span>
+        <div class="sort__menu">
+          <button class="sort__button sort__button--links" id="sort_button">Sort</button>
+          <div class="sort__dropdown" id="sort_dropDown">
+            <button class="sort__sorts sort__button--links" id="sort_priceAscending">Price ascending</button>
+            <button class="sort__sorts sort__button--links" id="sort_priceDescending">Price descending</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ajax-loader"><img src="img/ajax-loader.gif" alt="catalog is loading" /></div>
+    <div class="row row-no-padding row-no-gutters catalog__content">
+    </div>
+  </main>
+  <footer class="container-fluid">
+    <div class="row row-no-padding row-no-gutters">
+      <div class="footer col-xs-12">
+        <div class="pagination__wrapper">
+          <span class="pagination__button" id="pagination__prev"><img src="img/prev-arrow.png" alt="previous" /></span>
+          <div class="pagination__pages--wrapper">
+            <span>PAGE</span>
+            <span id="pagination__current-page"></span>
+            <span>OF</span>
+            <span id="pagination__pages-total"></span>
+          </div>
+          <span class="pagination__button" id="pagination__next"><img src="img/next-arrow.png" alt="next" /></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="js/navigation.js"></script>
+  <script src="js/catalog_main.js"></script>
+  <script src="js/catalog_sort.js"></script>
+  <script src="js/catalog_pagination.js"></script>
+
+
+</body>
+
+</html>
