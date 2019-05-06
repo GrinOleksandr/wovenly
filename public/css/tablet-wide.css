@@ -220,6 +220,7 @@
   /********************** POPULAR BLOCK! *****************************/
   .slider__controls--link {
     padding: 0 12px 0 12px;
+    white-space: nowrap;
   }
 
   .content__block--title {
@@ -430,6 +431,7 @@
 
   .signup__email--input-field {
     margin-right: 25px;
+    margin-bottom: 0;
     font-size: 24px;
     padding-bottom: 12px;
   }

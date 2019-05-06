@@ -93,7 +93,7 @@ header {
 }
 
 .search__controls--button {
-  padding: 10px 18px;
+  padding: 10px 20.5px;
   display: block;
   float: right;
   cursor: pointer;
@@ -109,6 +109,7 @@ header {
   font-family: "icon-font1", sans-serif;
   font-size: 21px;
   color: grey;
+  padding: 10px 16px;
 }
 
 .cart-count {
@@ -435,7 +436,6 @@ header {
 .slider__controls--link {
   font-weight: 700;
   padding: 0 0 0 12px;
-  white-space: nowrap;
   font-size: 13px;
 }
 
@@ -861,6 +861,7 @@ header {
 .signup__content--wrapper {
   display: flex;
   flex-direction: column;
+  padding-left: 10px;
 }
 
 .signup__title--wrapper {
@@ -895,6 +896,7 @@ header {
   font-weight: 500;
   font-size: 18px;
   margin-right: 5px;
+  margin-bottom: 20px;
   color: #c4c4c4;
 }
 

@@ -220,6 +220,7 @@ html {
 
 .slider__controls--link {
   padding: 0 12px 0 12px;
+  white-space: nowrap;
 }
 
 .slider__control--bottom {
@@ -425,6 +426,7 @@ html {
 
 .signup__email--input-field {
   margin-right: 15px;
+  margin-bottom: 0;
   font-size: 20px;
 }
 
