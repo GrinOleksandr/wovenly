@@ -25,7 +25,8 @@ Templates built using EJS.
 
 CatalogPage also has a client-side rendering, pagination and sorting.
 
-**Preview HomePage** - https://wovenly.herokuapp.com/ 
+**Preview HomePage** - https://wovenly.herokuapp.com/
+ 
 **Preview CatalogPage** - https://wovenly.herokuapp.com/
 
 ## Server-side
@@ -35,7 +36,7 @@ It serves all requests for products and product-related data as styles, colors a
 
 Server also has ability to parse all images from database and save them into it's local folder, then change link to images in database to the local ones.
 
-### Server uses:
+## Server uses:
 Node.js, WebPack, Babel, Express.
 
 Server is deployed on heroku
